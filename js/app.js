@@ -15,6 +15,7 @@ yepnope([{
 		    header.height(screenHeight);
     	};
 
+    window.scrollTo(0,1);
     resizeHeader();
 
     setInterval(resizeHeader, 100);
