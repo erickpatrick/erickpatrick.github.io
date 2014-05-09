@@ -18,6 +18,7 @@ h1 {font: normal bold normal 5.5em/1 'Open Sans Condensed', sans-serif; margin-b
 
 
 /* LAYOUT */
-.header {background: #3575dd;position:relative;}
-.menu {display:inline-block;padding:5px 8px;border:1px #5797ff solid;position:absolute;top:5%;right:5%;cursor: pointer;}
-@media screen and (min-width:480px) {.menu {top:11%;}}
+.header {background: #3575dd;position:relative; padding-top:25%;}
+@media screen and (min-width:480px) {
+	.header {padding-top:10%;}
+}
