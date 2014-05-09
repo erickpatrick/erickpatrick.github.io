@@ -2,12 +2,12 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
 
 /* TYPOGRAPHY */
-body {font: normal normal normal 16px/1.5 Helvetica, Arial, Verdana, Sans-serif}
+body {font: normal normal normal 16px/1.5 'Roboto', sans-serif}
 h1, h2, h3, h4, h5, h6, p {margin:0;}
 h1 {font: normal bold normal 5.5em/1 'Open Sans Condensed', sans-serif; margin-bottom:20px;}
 
 .header {color:#fff;}
-.lead {font-family: 'Roboto', sans-serif; font-size:1.5em; font-style: oblique;}
+.lead {font-size:1.5em; font-style: oblique;}
 
 
 
