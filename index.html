@@ -24,7 +24,7 @@
         $('.wrapper').css({minWidth:window.innerHeight});
       });
 
-      window.addEventListener("orientationchange", function() {
+      $(window).on("orientationchange", function() {
         $('.wrapper').css({minWidth:window.innerHeight});
       });
     });
