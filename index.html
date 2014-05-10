@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <title>Portfolio de Erick Patrick</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto:100' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<header class="header">
-		<div class="browser">
-			<img src="assets/img/browser.png" width="100%" alt="">    
-		</div>
-	</header>
-	<section class="content">
-		&nbsp;
-	</section>
+  <div class="wrapper">
+    <div class="hero">
+      <h1 class="hero-title">Erick Patrick</h1>
+      <p class="hero-lead">Programação Web, Experiência do Usuário e Consultoria</p>
+    </div>
+  </div>
+
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.wrapper').height(window.innerHeight);
+      $(window).on('resize', function() {
+        $('.wrapper').css({minWidth:window.innerHeight});
+      });
+    });
+  </script>
 </body>
 </html>
