@@ -21,11 +21,11 @@
     $(document).ready(function() {
       $('.wrapper').height(window.innerHeight);
       $(window).on('resize', function() {
-        $('.wrapper').css({minWidth:window.innerHeight});
+        $('.wrapper').css({height:window.innerHeight});
       });
 
       $(window).on("orientationchange", function() {
-        $('.wrapper').css({minWidth:window.innerHeight});
+        $('.wrapper').css({height:window.innerHeight});
       });
     });
   </script>
