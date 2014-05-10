@@ -23,6 +23,8 @@
       $(window).on('resize', function() {
         $('.wrapper').css({minWidth:window.innerHeight});
       });
+
+      window.addEventListener("orientationchange", $(window).trigger('resize'));
     });
   </script>
 </body>
