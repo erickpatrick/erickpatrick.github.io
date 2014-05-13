@@ -383,35 +383,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 298,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "j",
-			"file": "css/style.css",
-			"file_size": 0,
-			"file_write_time": 130441247481553064,
-			"settings":
-			{
-				"buffer_size": 1,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nSublime Files:\n-------------\n\n  Sublime Files\n  =============\n  \n  A keyboard driven file navigation/opening plugin for Sublime Text 2/3.\n  \n  ![Plugin in action](http://i.imgur.com/grlinzi.gif)\n  \n  Sublime Files works entirely through the command palette. By running the Sublime Files Navigator, you can \"`cd`\" around directories similar to how you would on a command line in order to open up files. New files will open up in new tabs.\n  \n  Because Sublime Files actually navigates the file system by changing directories, the navigator remembers and starts from last visited directory on subsequent uses. To open the navigator, you can either just invoke the *Command Palette...* command or use the keybinding:\n  -  OSX: `ctrl + cmd + n` \n  -  Windows/Linux: `ctrl + alt + n`\n  \n  Installation\n  ------------\n  \n  Sublime Files can be installed through Sublime Package Control.\n  \n  Usage\n  -----\n  \n  Sublime files an be activated with the *Command Palette...* command: *Sublime Files: Open Navigator*, or with the key command `ctrl + cmd + n` (or `ctrl + alt + n` for Windows / Linux). The first option will always show the current directory. Selecting another directory will navigate to that directory and selecting a file will open that file.\n  \n  There are a few notable options:\n  \n  - Selecting *Directory actions* will pop up a small list of actions that can be applied onto the current directory. Mainly, a user can create new files, add the directory to the current project, and open a terminal at the directory.\n  - Selecting *~/* navigates to the home directory.\n  - Selecting *../* navigates to the parent directory.\n  - Selecting *To current view* navigates to the directory of the current file being edited.\n  \n  Configuration \n  -------------\n  \n  Default configuration is stored in `SublimeFiles.sublime-settings` accessible from _Preferences->Package Settings->Sublime Files->Settings - Default_. When changing any of the settings below it's suggested to use the user settings: _Preferences->Package Settings->Sublime Files->Settings - User_ as the file will remain untouched when updating plugin.\n  \n  __Ignore file types__\n  \n  Sublime Files by default will ignore `*.pyc` files and `*.class` files. You can modify the list of ignored files by changing the `ignore_list`. For example:\n  \n  	{\n  	    \"ignore_list\": [\"*.pyc\", \"*.class\", \"*.o\"]\n  	}\n  \n  __Open Terminal__\n  \n  For OS X/Linux systems, Sublime Files can open up a terminal at the current directory navigated to. In order for this feature to work properly, you will have to modify the `term_command`. As a default, it is set to open up Terminal.app for OS X systems. \n  \n  For example, Gnome Terminal and iTerm2 users respectively will want to change `term_command` to: \n  \n  	{\n  	    \"term_command\": \"gnome-terminal --working-directory=\"\n  	}\n  \n  and\n  \n  	{\n  	    \"term_command\" : \"open -a iTerm\\ 2 \"\n  	}\n  \n  __Start directory__\n  \n  If you _always_ want to start navigation from a given directory for example `~` just update the `start_directory` setting:\n  \n  	{\n  	    \"start_directory\": \"~\"\n  	}\n  \n  Default configuration comes with this setting turned off (set to `null`).\n  \n",
-			"settings":
-			{
-				"buffer_size": 3226,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"scratch": true
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -506,6 +477,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/erick/Documents/GitHub/erickpatrick.github.io/index.html",
+		"/C/Users/erick/Documents/GitHub/erickpatrick.github.io/css/style.css",
 		"/C/Users/erick/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"//10.1.1.5/sites$/novouninovafapi/wordpress/todavida/index.php",
 		"//10.1.1.5/sites$/novouninovafapi/wordpress/todavida/login_vai.php",
@@ -631,9 +604,7 @@
 		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/app/posts/1398712607/fr.php",
 		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/app/posts/1398712997/fr.php",
 		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/EventDispatcherInterface.php",
-		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/EventDispatcher.php",
-		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/app/lang/pt/topbar.php",
-		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/app/lang/en/aside.php"
+		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/EventDispatcher.php"
 	],
 	"find":
 	{
@@ -893,13 +864,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"folders":
-	[
-		{
-			"follow_symlinks": true,
-			"path": "C:\\Users\\erick\\Documents\\GitHub\\erickpatrick.github.com"
-		}
-	],
 	"groups":
 	[
 		{
@@ -908,97 +872,8 @@
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 298,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								282,
-								282
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "css/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1,
-								1
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": false,
-							"_anf_new": "",
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3226,
-								3226
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1030,7 +905,7 @@
 		"cols":
 		[
 			0.0,
-			0.130208333333,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1044,7 +919,7 @@
 	{
 		"height": 0.0
 	},
-	"project": "",
+	"project": "erickpatrick-github-com.sublime-workspace",
 	"replace":
 	{
 		"height": 60.0
@@ -1400,7 +1275,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 266.0,
 	"status_bar_visible": true,
 	"template_settings":
