@@ -70,6 +70,12 @@ h2, .call-to-action {
 	.listing-content {
 		margin-top:-25%;
 	}
+}
+
+@media screen and (min-width:37.25em) {
+	.listing-content {
+		margin-top:-25%;
+	}
 	.listing-title {
 		font-size:4em;
 		margin-bottom:0.625em;
