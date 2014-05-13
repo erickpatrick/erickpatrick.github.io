@@ -6,12 +6,17 @@
 	padding:7% 15%;
 	text-decoration: none;
 } 
+@media screen and (min-width:37.25em) {
+	.btn {
+		padding:3% 7%;
+	}
+}
 
 
 /*typography*/
 h1, h2, h3, h4, h5, h6, p {
 	margin:0;
-	margin-bottom: 1.25em
+	margin-bottom: 0.625em
 }
 
 h1 {
@@ -25,8 +30,9 @@ h2, .call-to-action {
 	font-size:0.8em;
 }
 
-
 /*layout*/
+
+
 .header {
 	background: #000 url(../img/bg-alternative-2-dark.jpg) center center no-repeat;
 	background-size: cover;
@@ -51,11 +57,43 @@ h2, .call-to-action {
 	margin-top:-50%;
 }
 
+@media screen and (min-width:22.5em) {
+	.listing-content {
+		padding:0 0.5em;
+	}
+	.listing-title {
+		font-size:3em;
+	}
+}
+
+@media screen and (min-width:37.25em) {
+	.listing-content {
+		margin-top:-25%;
+	}
+	.listing-title {
+		font-size:4em;
+		margin-bottom:0.625em;
+	}
+}
+
+.listing-description {}
+@media screen and (min-width:22.5em) {
+	.listing-description {
+		font-size:1.5em;
+	}
+}
+@media screen and (min-width:32.25em) {
+	.listing-description {
+		font-size:1.0em;
+	}
+}
+
 .call-to-action {
 	font-weight: bold;
 	border: 1px solid #fff;
 	color:#fff;
 }
+
 
 .call-to-action:hover {
 	background: #fff;

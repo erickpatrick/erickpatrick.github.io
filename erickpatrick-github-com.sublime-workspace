@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
 				"cdn",
 				"cdn	jQuery"
 			],
@@ -32,10 +56,6 @@
 				"background-size"
 			],
 			[
-				"background",
-				"background-attachment"
-			],
-			[
 				"backgroun",
 				"background-clip"
 			],
@@ -60,10 +80,6 @@
 				"background-image"
 			],
 			[
-				"text",
-				"text-transform"
-			],
-			[
 				"array",
 				"array_map"
 			],
@@ -82,10 +98,6 @@
 			[
 				"php",
 				"phpinfo"
-			],
-			[
-				"font",
-				"font-weight"
 			],
 			[
 				"trim",
@@ -182,10 +194,6 @@
 			[
 				"item",
 				"itemId"
-			],
-			[
-				"margin",
-				"margin-left"
 			],
 			[
 				"social-networ",
@@ -383,11 +391,27 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1213,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/css/styles.css",
+			"settings":
+			{
+				"buffer_size": 1430,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 248.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -455,7 +479,7 @@
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 400.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -477,6 +501,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/erick/Documents/GitHub/erickpatrick.github.io/.gitignore",
 		"/C/Users/erick/Documents/GitHub/erickpatrick.github.io/index.html",
 		"/C/Users/erick/Documents/GitHub/erickpatrick.github.io/css/style.css",
 		"/C/Users/erick/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
@@ -603,12 +628,11 @@
 		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/ShellExec.php",
 		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/app/posts/1398712607/fr.php",
 		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/app/posts/1398712997/fr.php",
-		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/EventDispatcherInterface.php",
-		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/EventDispatcher.php"
+		"//10.1.1.5/sites$/novouninovafapi/wordpress/eventos/ixjirs/vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/EventDispatcherInterface.php"
 	],
 	"find":
 	{
-		"height": 32.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -623,6 +647,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"p{",
 			"]",
 			"[",
 			" = ",
@@ -749,8 +774,7 @@
 			"ph",
 			"@",
 			"changeDate",
-			"datepick",
-			"attr("
+			"datepick"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -867,13 +891,76 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								393,
+								393
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 576.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 1,
+					"file": "assets/css/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1207,
+								1207
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -896,21 +983,21 @@
 				1
 			],
 			[
-				1,
 				0,
-				2,
-				1
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.5,
 			1.0
 		]
 	},
@@ -930,6 +1017,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"style",
+				"assets\\css\\styles.css"
+			],
 			[
 				"formvalidator",
 				"ixjirs\\app\\models\\Validation\\FormValidator.php"
@@ -1061,10 +1152,6 @@
 			[
 				"960",
 				"public\\css\\960_16_col.css"
-			],
-			[
-				"style",
-				"public\\css\\style.css"
 			],
 			[
 				"routes",
@@ -1275,7 +1362,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 266.0,
 	"status_bar_visible": true,
 	"template_settings":
