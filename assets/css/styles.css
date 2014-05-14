@@ -5,6 +5,7 @@
 	display: inline-block;
 	padding:.5em 1em;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 @media screen and (min-width:45em) {
@@ -31,7 +32,7 @@ h1 {
 	line-height:1;
 }
 
-h2, .call-to-action, nav {
+h2, .btn, nav {
 	font-family: "Pontano Sans", Sans-serif;
 }
 
@@ -101,14 +102,23 @@ h2, .call-to-action, nav {
 	}
 }
 
-.call-to-action {
-	font-weight: bold;
+.btn-dark {
+	border: 1px solid #000;
+	color:#000;	
+}
+
+.btn-dark:hover {
+	background:#000;
+	color:#fff;	
+}
+
+.btn-light {
 	border: 1px solid #fff;
 	color:#fff;
 }
 
 
-.call-to-action:hover {
+.btn-light:hover {
 	background: #fff;
 	color: #000;
 }
