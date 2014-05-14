@@ -171,7 +171,6 @@ h2, .call-to-action, nav {
 
 .overlay ul li a {
 	font-weight: 300;
-	display: block;
 	color: #fff;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
@@ -223,7 +222,6 @@ h2, .call-to-action, nav {
 
 @media screen and (max-height: 30.5em) {
 	.overlay nav {
-		height: 70%;
 		font-size: 1em;
 	}
 }
