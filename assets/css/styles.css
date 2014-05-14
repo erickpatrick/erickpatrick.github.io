@@ -26,12 +26,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 {
-	font-family: "Open Sans Condensed", Sans-serif;
+	font-family: "Lato", Sans-serif;
 	line-height:1;
 }
 
 h2, .call-to-action {
-	font-family: "Roboto", Sans-serif;
+	font-family: "Pontano Sans", Sans-serif;
 }
 
 /*layout*/
