@@ -114,7 +114,6 @@ h2, .call-to-action, nav {
 }
 
 
-/*overlay*/
 /* Overlay style */
 .overlay {
 	position: fixed;
@@ -143,7 +142,6 @@ h2, .call-to-action, nav {
 
 /* Menu style */
 .overlay nav {
-	text-align: center;
 	position: relative;
 	top: 50%;
 	height: 60%;
@@ -154,7 +152,7 @@ h2, .call-to-action, nav {
 
 .overlay ul {
 	list-style: none;
-	padding: 0;
+	padding: 0 2em;
 	margin: 0 auto;
 	display: inline-block;
 	height: 100%;
@@ -166,6 +164,8 @@ h2, .call-to-action, nav {
 	height: 20%;
 	height: calc(100% / 5);
 	min-height: 3.375em;
+	color:#fff;
+	margin-bottom:0.5em;
 }
 
 .overlay ul li a {
