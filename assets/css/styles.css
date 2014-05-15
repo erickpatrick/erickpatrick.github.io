@@ -32,7 +32,7 @@ h1 {
 	line-height:1;
 }
 
-h2, .btn, nav {
+h2, nav, .btn {
 	font-family: "Pontano Sans", Sans-serif;
 }
 
@@ -48,6 +48,11 @@ h2, .btn, nav {
 	background-size: cover;
 	color: #fff;
 	position:relative;
+}
+
+.listing-dark {
+	background: #000;
+	color:#fff;
 }
 
 .listing-content {
@@ -108,12 +113,12 @@ h2, .btn, nav {
 
 .btn-dark {
 	border: 1px solid #000;
-	color:#000;	
+	color:#000;
 }
 
 .btn-dark:hover {
 	background:#000;
-	color:#fff;	
+	color:#fff;
 }
 
 .btn-light {
