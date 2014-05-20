@@ -6,4 +6,8 @@ Home of my portfolio/site. From time to time, things go wild and everything chan
 TODO
 ----
 - [x] Use this modal effect: [FullScreenOverlayStyles](http://tympanus.net/Development/FullscreenOverlayStyles/)
-- [ ] Use this menu: [SidebarTransitions](http://tympanus.net/Development/SidebarTransitions/)
+- [ ] Page for projects I've worked on
+- [ ] Page for personal projects
+- [-] i18n
+	- [ ] English version (<url>/en)
+	- [ ] Spanish version (<url>/es)
