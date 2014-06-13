@@ -7,10 +7,19 @@
   <meta name="description" content="Porfolio de Erick Patrick">
   <meta name="author" content="Erick Patrick">
 
+  <link href='http://fonts.googleapis.com/css?family=Lato:300|Pontano+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <style type="text/css" media="screen">
-    * {padding:0; margin:0;}
+    * {padding:0; margin:0;box-sizing: border-box;}
+
+    h2 {font:normal 300 3.5em/1.25 "Pontano Sans", Arial, sans-serif;}
+
     .box {height:100%;}
+    .box-main {background:transparent url(assets/img/bg-alternative-2-dark.jpg) center center no-repeat; background-size:cover}
+
+    .box-fixed {max-width:90%; width:90%; margin:0 auto; padding:5% 0;}
+    .box-fluid {overflow:hidden;}
+    .box-item {width:25%; height:400px; padding:1%; float:left; background-size: cover; background-position: center center; background-repeat: no-repeat}
   </style>
 
   <!--[if lt IE 9]>
@@ -19,17 +28,40 @@
 </head>
 
 <body>
-  <div class="box" style="background:transparent url(assets/img/bg-alternative-2-dark.jpg) center center no-repeat; background-size:cover"></div>
-  <div class="box" style="background:#333"></div>
-  <div class="box" style="background:#666"></div>
-  <div class="box" style="background:#999"></div>
+  <div class="box box-main"></div>
+  <div class="box">
+    <div class="box-fixed">
+      <h2>Trabalhos já realizados</h2>
+    </div>
+    <div class="box-fluid">
+      <div class="box-item" style="background:url(http://lorempixel.com/500/500/city/1);">x</div>
+      <div class="box-item" style="background:url(http://lorempixel.com/500/500/sports/1);">x</div>
+      <div class="box-item" style="background:url(http://lorempixel.com/500/500/people/1);">x</div>
+      <div class="box-item" style="background:url(http://lorempixel.com/500/500/nature/1);">x</div>
+      <div class="box-item" style="background:url(http://lorempixel.com/500/500/city/2);">x</div>
+      <div class="box-item" style="background:url(http://lorempixel.com/500/500/sports/2);">x</div>
+      <div class="box-item" style="background:url(http://lorempixel.com/500/500/people/2);">x</div>
+      <div class="box-item" style="background:url(http://lorempixel.com/500/500/nature/2);">x</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-content">
+      <h2>Principais projetos</h2>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-content">
+      <h2>Blog pessoal</h2>
+    </div>
+  </div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script charset="utf-8">
     jQuery(document).ready(function(){
       jQuery('html').css({height:'auto'}); // Is this really needed
-      jQuery('.box').css({height:jQuery(window).height()});
+      jQuery('.box').css({minHeight:jQuery(window).height()});
       jQuery(window).on('resize',function(){
-        jQuery('.box').css({height:jQuery(window).height()});
+        jQuery('.box').css({minHeight:jQuery(window).height()});
       });
     });
   </script>
