@@ -1,33 +1,38 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio de Erick Patrick</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="assets/css/styles.css?v=1.1">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto:100' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+
+  <title>Portfolio de Erick Patrick</title>
+  <meta name="description" content="Porfolio de Erick Patrick">
+  <meta name="author" content="Erick Patrick">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <style type="text/css" media="screen">
+    * {padding:0; margin:0;}
+    .box {height:100%;}
+  </style>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
+
 <body>
-  
-    <div class="listing header">
-      <div class="listing-content">
-        <h1 class="listing-title">Bem vindo ao portfolio de Erick Patrick</h1>
-        <h2 class="listing-description"> Programador Web, Designer de Experiência do Usuário e Consultor Web</h2>
-        <a href="#" class="btn call-to-action">Entre em contato</a>
-      </div>
-    </div>
-
-
-  
-  <!--<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-50843686-1', 'erickpatrick.net');
-    ga('send', 'pageview');
-
-  </script>-->
+  <div class="box" style="background:transparent url(assets/img/bg-alternative-2-dark.jpg) center center no-repeat; background-size:cover"></div>
+  <div class="box" style="background:#333"></div>
+  <div class="box" style="background:#666"></div>
+  <div class="box" style="background:#999"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script charset="utf-8">
+    jQuery(document).ready(function(){
+      jQuery('html').css({height:'auto'}); // Is this really needed
+      jQuery('.box').css({height:jQuery(window).height()});
+      jQuery(window).on('resize',function(){
+        jQuery('.box').css({height:jQuery(window).height()});
+      });
+    });
+  </script>
+  <!--<script src="js/scripts.js"></script>-->
 </body>
 </html>
