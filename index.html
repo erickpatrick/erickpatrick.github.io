@@ -13,11 +13,16 @@
     * {padding:0; margin:0;box-sizing: border-box;}
 
     body {font:normal normal 1em/1.65em Helvetica, Arial, sans-serif;}
-    h2 {font:normal 300 3.5em/1.5 "Pontano Sans", Arial, sans-serif; color:#34495E;}
+
+    h1, h2, h3 {font:normal 300 3.5em/1.5 "Pontano Sans", Arial, sans-serif; color:#34495E;}
+    h1 {font-size:12em;line-height: 1.25}
+    h3 {font-size:3em;}
     h4 {font:normal 500 1.75em/1.25 "Lato", Arial, sans-serif; margin-bottom:.5em; color:#34495E;}
     h2 + p {color:#555; font-style: oblique;}
     h4 + p {color:#666;}
     a, a:hover {color:#34495E; font-weight: bold}
+    .centerize {text-align:center;}
+    .to-right {text-align:right;}
 
     .box {clear:both;}
     .box-main {background:#E7ECF0; margin-bottom: 5%}
@@ -29,7 +34,7 @@
     .box-item-half-quarter {width:50%;}
     .box-item-two-thirds {width:66.666666666666%;}
     .box-item-three-quarters {width:75%;}
-    .box-reversed {float:right; text-align:right;}
+    .box-reversed {float:right;}
 
     .jobs .box-item {
       height:200px;
@@ -43,7 +48,11 @@
 
 <body>
   <div class="box box-main">
-    <div class="box-fixed"></div>
+    <div class="box-fixed centerize">
+      <h2>Olá! Bem vindo ao portfolio de</h2>
+      <h1>Erick Patrick</h1>
+      <h3>Sou projetista de experiência do usuário, consultor e programador Web</h3>
+    </div>
   </div>
   <div class="box box-fixed services">
     <div class="box-item box-item-one-quarter">
@@ -72,7 +81,7 @@
     </div>
   </div>
   <div class="box box-fixed jobs">
-    <div class="box-item box-item-one-quarter box-reversed">
+    <div class="box-item box-item-one-quarter box-reversed to-right">
       <h2>Trabalhos</h2>
       <p>Os trabalhos mais importantes que realizei, com estudos de caso.</p>
     </div>
