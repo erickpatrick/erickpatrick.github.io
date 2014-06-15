@@ -1,5 +1,6 @@
-body {font:normal normal 1em/1.65em Helvetica, Arial, sans-serif;}
+* {padding:0; margin:0;box-sizing: border-box;}
 
+body {font:normal normal 1em/1.65em Helvetica, Arial, sans-serif;}
 
 h1, h2, h3 {font:normal 300 3.5em/1.5 "Pontano Sans", Arial, sans-serif; color:#34495E;}
 h1 {font-size:12em;line-height: 1.25}
