@@ -1,0 +1,226 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box
+}
+
+body {
+  font:normal normal 1em/1.35em Helvetica, Arial, sans-serif
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Pontano Sans", Arial, sans-serif;
+  color:#34495E
+}
+h2 + p {
+  color:#555;
+  font-style: oblique
+}
+a,
+a:hover {
+  color:#34495E;
+  font-weight: bold
+}
+.centerize {
+  text-align:center
+}
+
+.box.box-main {
+  margin-bottom: 2em;
+  padding-bottom:1em;
+  border-bottom: 1px solid #9abfbF
+}
+
+.main-greeting,
+.main-title,
+.main-description {
+  line-height:1.15;
+  margin:.75em;
+}
+
+.main-title,
+.main-description {
+  margin:.75em 0;
+}
+
+.main-greeting {
+  font-size:2em;
+}
+.main-title {
+  font-size:3.25em;
+}
+.main-description {
+  font-size:1.5em;
+}
+
+.btn,
+.btn:active,
+.btn:visited {
+  border: 1px solid #34495E;
+  display: inline-block;
+  padding:1em;
+  margin:1em 0;
+  text-decoration: none
+}
+.btn:hover {
+  background: #34495E;
+  color: #fff;
+}
+
+.box-title {
+  font-size:2em;
+  line-height:1.5;
+}
+.box-item-title {
+  font-size:1.25em;
+  line-height:1.5;
+  color:#666
+}
+.box-title + p,
+.box-item-title + p {
+  margin-bottom: 1em
+}
+
+.box {
+  width:90%;
+  margin:0 auto;
+  text-align:left;
+}
+.box .box {
+  width:100%;
+}
+
+.box-services .box-item {
+  margin:0.75em 0;
+}
+
+.box-job {
+  display:inline-block;
+  width:100%;
+  height:200px;
+  background-size: cover
+}
+
+@media only screen and (min-width:30em) {
+  .main-greeting,
+  .main-title,
+  .main-description {
+    line-height:1.15;
+    margin:.5em 0;
+  }
+
+  .main-title,
+  .main-description {
+    margin:.5em 0;
+  }
+
+  .main-greeting {
+    font-size:2.5em;
+  }
+  .main-title {
+    font-size:4em;
+  }
+  .main-description {
+    font-size:2em;
+  }
+  .btn {
+    font-size:1.5em;
+  }
+
+  .box {
+    overflow: hidden;
+    margin: 1em auto
+  }
+  .box-services .box-item-one-quarter,
+  .box-projects .box-item-one-quarter,
+  .box-job {
+    float:left
+  }
+  .box-services .box-item-one-quarter,
+  .box-projects .box-item-one-quarter {
+    width:48%;
+    margin:0 1%;
+    min-height:7em;
+  }
+  .box-job {
+    width:50%;
+  }
+}
+
+@media only screen and (min-width:48em) {
+  .main-greeting,
+  .main-title,
+  .main-description {
+    line-height:1.15;
+    margin:.5em 0;
+  }
+
+  .main-title,
+  .main-description {
+    margin:.5em 0;
+  }
+
+  .main-greeting {
+    font-size:2.5em;
+  }
+  .main-title {
+    font-size:4em;
+  }
+  .main-description {
+    font-size:2em;
+  }
+  .btn {
+    font-size:1.5em;
+  }
+}
+
+@media only screen and (min-width:64em) {
+  .box-item-title {
+    font-size:1.5em;
+    line-height: 1.25em;
+    margin-bottom: .5em
+  }
+  .box-item {
+    float:left;
+  }
+  .box-item-one-quarter {
+    width:25%;
+  }
+  .jobs .box-reversed {
+    float:right;
+    text-align: right
+  }
+  .box-services .box-item-one-quarter,
+  .box-projects .box-item-one-quarter {
+    width:23%;
+    margin:0 1%;
+  }
+  .box-item-three-quarters {
+    width:75%;
+  }
+
+}
+
+/* Overlay style */
+.overlay {position: fixed;width: 100%;height: 100%;top: 0;left: 0;background: rgba(0,0,0,0.9)}
+
+/* Overlay closing cross */
+.overlay .overlay-close {width: 2em;height: 2em;position: absolute;right: 1.25em;top: 1.25em;overflow: hidden;border: none;background: url(../img/cross.png) no-repeat center center;text-indent: 200%;color: transparent;outline: none;z-index: 100}
+
+/* Menu style */
+.overlay nav {position: relative;top: 50%;font-size: 1em;-webkit-transform: translateY(-50%);transform: translateY(-50%);max-width:48em;margin:0 auto}
+.overlay ul {list-style: none;padding: 0 2em;margin: 0 auto;display: inline-block;height: 100%;position: relative}
+.overlay ul li {display: block;height: 20%;height: calc(100% / 5);min-height: 3.375em;color:#fff;margin-bottom:0.5em}
+.overlay ul li a {font-weight: 300;color: #fff;-webkit-transition: color 0.2s;transition: color 0.2s}
+.overlay ul li a:hover,.overlay ul li a:focus {color: #e3fcb1}
+
+/* Effects */
+.overlay-hugeinc {opacity: 0;visibility: hidden;-webkit-transition: opacity 0.5s, visibility 0s 0.5s;transition: opacity 0.5s, visibility 0s 0.5s}
+.overlay-hugeinc.open {opacity: 1;visibility: visible;-webkit-transition: opacity 0.5s;transition: opacity 0.5s}
+.overlay-hugeinc nav {-webkit-perspective: 75em;perspective: 75em}
+.overlay-hugeinc nav ul {opacity: 0.4;-webkit-transform: translateY(-25%) rotateX(35deg);transform: translateY(-25%) rotateX(35deg);-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;transition: transform 0.5s, opacity 0.5s}
+.overlay-hugeinc.open nav ul {opacity: 1;-webkit-transform: rotateX(0deg);transform: rotateX(0deg)}
+.overlay-hugeinc.close nav ul {-webkit-transform: translateY(25%) rotateX(-35deg);transform: translateY(25%) rotateX(-35deg)}
+@media screen and (max-height: 30.5em) {.overlay nav {font-size: 1em}}
