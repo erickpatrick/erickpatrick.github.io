@@ -9,5 +9,5 @@ TODO
 - [ ] Page for projects I've worked on
 - [ ] Page for personal projects
 - [-] i18n
-	- [ ] English version (<url>/en)
+	- [x] English version (<url>/en)
 	- [ ] Spanish version (<url>/es)
