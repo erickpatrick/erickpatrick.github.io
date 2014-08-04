@@ -10,4 +10,3 @@ TODO
 - [ ] Page for personal projects
 - [-] i18n
 	- [x] English version (<url>/en)
-	- [ ] Spanish version (<url>/es)
