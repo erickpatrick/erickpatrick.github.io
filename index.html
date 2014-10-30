@@ -36,11 +36,11 @@
 
   <style>
     * {padding:0;margin:0;box-sizing: border-box}
-    body {font:normal normal 1em/1.35 Helvetica, Arial, sans-serif;}
+    body {font:normal normal 1em/1.35 Helvetica, Arial, sans-serif; background:#34495e;}
     h1,h2,h3 {font-family: Helvetica, Arial, sans-serif;color:#fff}
 
 
-    .wrapper {border-top:3px solid #fc0; background:#34495e; color:#fff;}
+    .wrapper {border-top:3px solid #fc0; background:#34495e; color:#fff; }
     .wrapper > * {padding:1em;}
 
 
@@ -51,11 +51,24 @@
 
     .about {background: #fc0; color:#000; padding:2rem 1em; text-align:center}
     .about__description {font-size:1.25em; margin-bottom: 1rem; font-style: oblique;}
-    .about__cta {font-size:1em; color:#fff; padding:.5em 1em; display:inline-block; background:#34495E;text-decoration: none}
-    .about__cta:hover {background:#12273c;}
+    .about__cta, .about__cta--hire {font-size:1em; color:#fff; padding:.5em 1em; display:block; border:2px solid #34495e;text-decoration: none; color: #34495e; font-weight: bold; margin:.5em;}
+    .about__cta--hire {background:#34495e; color:#fff;}
+    .about__cta:hover, .about__cta--hire:hover {background:#12273c; color:#fff; border-color:#12273c;}
 
+    .writing {
+      overflow: hidden
+    }
+    .writing__book {
+      text-align: center;
+    }
+    .writing__sectionTitle {
+      text-align: center;
+      font-size:2em;
+      color: #fc0;
+    }
     .writing__post__list {
       padding-left:1.5em;
+      margin-bottom:1em;
     }
     .writing__post__list a {
       color:white;
@@ -67,6 +80,33 @@
 
     @media only screen and (min-width:30em) {
       body {font-size:1.35em;}
+    }
+
+    @media only screen and (min-width:40em) {
+      .about__cta {display:inline-block;}
+    }
+
+    @media only screen and (max-width:40em) {
+      .writing__book__cover {
+        width:100%;
+        height:auto;
+      }
+    }
+
+    @media only screen and (min-width:60em) {
+      body {padding-top:1em;font-size:1.75em;}
+      .wrapper {width:90%; max-width:1280px; margin:0 auto;}
+
+      .writing__book, .writing__posts {float:left; width: 48%; }
+      .writing__posts {margin-left:4%;}
+      .writing__book > .writing__sectionTitle {
+        text-align: left
+      }
+      .writing__book__cover {
+        width:100%;
+        max-width:400px;
+        margin:0 auto;
+      }
     }
   </style>
 
@@ -86,26 +126,31 @@
 
     <section class="about">
       <p class="about__description">Olá, sou <strong>Erick Patrick</strong>. Presto consultoria especializada em programação para web. Também traduzo e escrevo sobre desenvolvimento web.</p>
-      <a href="#" class="about__cta">Saiba Mais</a>
+      <p class="about__description"><a href="#" class="about__cta">Saiba Mais</a> ou <a href="#" class="about__cta about__cta--hire">Contrate-me</a></p>
     </section>
 
     <section class="writing">
       <div class="writing__book">
-        <h2>Livro do Iniciante em Node</h2>
+        <!-- <h2 class="writing__sectionTitle">Livro do Iniciante em Node</h2> -->
+        <a href="books/iniciante-node/">
+          <img class="writing__book__cover" src="books/iniciante-node/img/cover-thumb.jpg" alt="Livro do Iniciante em Node">
+        </a>
       </div>
-      <div class="writing__post--articles">
-        <h2>Artigos</h2>
-        <ul class="writing__post__list">
-          <li><a href="https://medium.com/ericks-blog/shared-folders-node-and-symlinks-512e73abd38b">Shared Folders, Node and Symlinks on Homestead</a></li>
-          <li><a href="https://medium.com/ericks-blog/resenha-universal-principles-of-design-8a8823081204">Resenha: Universal Principles of Design</a></li>
-        </ul>
-      </div>
-      <div class="writing__post--translations">
-        <h2>Traduções</h2>
-        <ul class="writing__post__list">
-          <li><a href="http://webdesign.tutsplus.com/pt/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281">Observações D'Além da Barreira: O Estado da Arte do Web Design Chinês</a></li>
-          <li><a href="http://code.tutsplus.com/pt/tutorials/single-page-todo-application-with-backbonejs--cms-21417">Um Aplicativo Lista de Tarefas de Página Única Usando Backbone.js</a></li>
-        </ul>
+      <div class="writing__posts">
+        <div class="writing__post--articles">
+          <h2 class="writing__sectionTitle">Artigos</h2>
+          <ul class="writing__post__list">
+            <li><a href="https://medium.com/ericks-blog/shared-folders-node-and-symlinks-512e73abd38b">Shared Folders, Node and Symlinks on Homestead</a></li>
+            <li><a href="https://medium.com/ericks-blog/resenha-universal-principles-of-design-8a8823081204">Resenha: Universal Principles of Design</a></li>
+          </ul>
+        </div>
+        <div class="writing__post--translations">
+          <h2 class="writing__sectionTitle">Traduções</h2>
+          <ul class="writing__post__list">
+            <li><a href="http://webdesign.tutsplus.com/pt/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281">Observações D'Além da Barreira: O Estado da Arte do Web Design Chinês</a></li>
+            <li><a href="http://code.tutsplus.com/pt/tutorials/single-page-todo-application-with-backbonejs--cms-21417">Um Aplicativo Lista de Tarefas de Página Única Usando Backbone.js</a></li>
+          </ul>
+        </div>
       </div>
     </section>
   </div>
