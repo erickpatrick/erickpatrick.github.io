@@ -38,6 +38,7 @@
     * {padding:0;margin:0;box-sizing: border-box}
     body {font:normal normal 1em/1.35 Helvetica, Arial, sans-serif; }
     h1,h2,h3 {font-family: Helvetica, Arial, sans-serif;color:#fff}
+    ul {padding-left:2em;}
 
     .alignRight {text-align: right}
 
@@ -73,12 +74,9 @@
 
       .books > div, .books > footer {padding:1em;}
       .books__column {float:left; padding:0;}
-      .books__column--right {float:right;}
       .books__column--full {float:none;}
-      .books__column--quarter {width:25%;}
-      .books__column--half {width:50%;}
-      .books__column--three-quarters {width:75%;}
-      .books__title--right {text-align: right}
+      .books__column--quarter {width:23%; margin-right:4%;}
+      .books__column--three-quarters {width:73%;}
     }
 
     @media only screen and (min-width:86em) {
@@ -108,7 +106,33 @@
         <h2 class="books__title">Livro do Iniciante em Node</h2>
       </div>
       <div>
-
+        <div class="books__column books__column--quarter">
+          <img src="http://www.erickpatrick.net/books/iniciante-node/img/cover-thumb.jpg" alt="Capa: Livro do Iniciante em Node" width="100%">
+        </div>
+        <div class="books__column books__column--three-quarters">
+          <p class="books__description">O <strong>Livro do Iniciante em Node</strong> é a versão traduzida para o Português (Brasileiro) do famoso livro <a href="https://leanpub.com/nodebeginner">The Node Beginner Book</a>, do autor <a href="https://leanpub.com/u/manuelkiessling">Manuel Kiessling</a>. A versão original já conta com mais de 16 mil leitores. Aproveite para ser um dos leitores dessa versão e descubra o porque de tantas pessoas já terem lido a versão original!</p>
+          <p class="books__description">O objetivo do Livro do Iniciante em Node é iniciar você no desenvolvimento de aplicações em Node.js, ensinando tudo que você precisa saber sobre JavaScript avançado.</p>
+          <a href="http://samples.leanpub.com/iniciante-node-sample.pdf" class="books__cta" style="float:left; margin-right:1em">Amostra grátis</a>
+          <p class="books__description">
+            <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+            <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="093AA3F89A9AE2A444545F9FFA74FE11" />
+            <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/95x45-comprar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+            </form>
+            <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+          </p>
+        </div>
+      </div>
+      <div class="books__column books__column--full">
+        <h3 class="books__title--subtitle">Nesse livro você aprenderá:</h3>
+        <ul>
+          <li>Alguns tópicos avançados de JavaScript</li>
+          <li>Como criar um servidor em Node.js</li>
+          <li>Como fazer <em>uplaod</em> de arquivos</li>
+          <li>Como autenticar usuários</li>
+          <li>Como criar uma aplicação simples, porém completa</li>
+        </ul>
       </div>
       <footer class="books__column">
         <p class="books__description books__description--alt">No momento, estou disponível um ou dois projetos novos. Caso esteja interessado em meus serviços, <a href="http://erickpatrick.net/pages/hire/">entre em contato</a> para tirar suas dúvidas.</p>
