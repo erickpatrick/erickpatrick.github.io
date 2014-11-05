@@ -43,6 +43,10 @@
     .header__title {font-size:3em; line-height:1; color:#fff; }
     .header__title a {color:#fff; text-decoration:none;}
 
+    .breadcumbs {color:#34495e;}
+    .breadcumbs a {color:#34495e; text-decoration: none;}
+    .breadcumbs a:hover {text-decoration: underline}
+
     .articles {overflow: hidden; padding:0; margin-bottom:1em;}
     .articles > div {border-bottom: 1px solid #efefef; margin-bottom:1.5em; overflow:hidden;}
     .articles__title {color:#fc0; font-size:2em; margin-bottom:1rem; text-shadow: 1px 1px 1px #666;}
@@ -105,6 +109,9 @@
 
   <div class="wrapper">
     <section class="articles">
+      <div class="articles__column articles__column--full breadcumbs">
+        <a href="http://erickpatrick.net">Página Inicial</a> &raquo; <a href="http://erickpatrick.net/articles">Artigos</a>
+      </div>
       <div class="articles__column articles__column--full">
         <h2 class="articles__title">Diretórios compartilhados, Node e Symlinks no Homestead</h2>
         <h5 class="articles__title articles__title--meta">Em 23 de Julho de 2014</h5>
