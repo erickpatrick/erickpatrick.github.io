@@ -1,7 +1,0 @@
-<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-<form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
-<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-<input type="hidden" name="code" value="093AA3F89A9AE2A444545F9FFA74FE11" />
-<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/95x45-comprar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-</form>
-<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
