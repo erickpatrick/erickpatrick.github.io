@@ -46,13 +46,9 @@
 
     html, body {height: 100%;}
 
-    .wrapper {padding:1em;}
-    .column {display: inline-block;}
-    .column--quarter {width:25%;}
-
     .btn {display: block; padding:.75em; margin:1em 0; text-decoration:none; color:#fff; font-size:1.25em;}
 
-    .header {position:relative; display: table;height:100%;width:100%;min-height: 100%;background:#34495e url(background.jpg) center center no-repeat; background-size: cover;}
+    .header {position:relative; display: table;height:100%;width:100%;min-height: 100%;background:#34495e url(img/background.jpg) center center no-repeat; background-size: cover; /* border-bottom:5px #694d6f solid; */}
     .header__wrapper {display: table-cell;vertical-align:middle;text-align:center;width:100%; color:#fff; padding:1em;}
     .header__title,.header__subtitle {text-shadow:0 0 50px #342735;}
     .header__title {font-size:4.5em;line-height:1;}
@@ -60,17 +56,43 @@
     .header__cta {background:#694d6f;}
     .header__cta:hover {background:#472b4d;}
 
-    .main__title {color:#694d6f;}
+    .column {display: inline-block; width:100%; vertical-align: top}
 
+    .main {color:#472b4d;}
+    .main a {color:#472b4d;}
+    .shoutbox {padding:1em; font-size:1.15em; text-align: center; border-bottom:1px #efefef solid; margin-bottom:1em;}
+    .info {padding:1em;}
+    .info p {margin-bottom:1em;}
+    .info__sections {margin:1em 0; }
+    .info__sections__title,
+    .info__sections__feature {text-align:center;}
+    .info__sections__image {max-width:300px;}
+    .info__sections__text {font-size:1.25em;}
+
+    /*480*/
     @media only screen and (min-width:30em) {
       .btn {display:inline-block;}
     }
 
+    /*640*/
     @media only screen and (min-width:40em) {
       .header {font-size:1.375em;}
+      .column {width:50%;}
+      .shoutbox {font-size:1.25em;}
     }
 
+    /*1024*/
+    @media only screen and (min-width:64em) {
+      .column {width:25%;}
+      .column--34 {width:75%;}
+      .shoutbox {font-size:1.5em;}
+      .info__sections__title {text-align: left}
+      .info__sections__text {padding:0 1em; font-size:1.5em;}
+    }
+
+    /*1120*/
     @media only screen and (min-width:70em) {
+      .wrapper {width:90%; max-width:1140px; margin:0 auto;}
       .header {font-size:1.5em;}
     }
 
@@ -85,18 +107,22 @@
     </div>
   </header>
   <div class="wrapper main">
-    <div class="column column--quarter">
-      <h3 class="main__title">Projetos</h3>
-    </div><!--
-     --><div class="column column--quarter">
-      <h3 class="main__title">Artigos</h3>
-    </div><!--
-     --><div class="column column--quarter">
-      <h3 class="main__title">Traduções</h3>
-    </div><!--
-     --><div class="column column--quarter">
-      <h3 class="main__title">Livros</h3>
-    </div>
+    <section class="shoutbox">
+      <p>No momento, estou disponível para <strong><em>até dois projetos novos</em></strong>. Caso esteja interessado em meus serviços, <a href="/contato">entre em contato</a> para tirar suas dúvidas.</p>
+    </section>
+
+    <section class="info">
+      <div class="info__sections">
+        <div class="column info__sections__feature">
+          <img class="info__sections__image" src="img/programming.jpg" alt="" width="100%" height="auto" alt="Programação">
+        </div><!--
+         --><div class="column column--34 info__sections__text">
+          <h4 class="info__sections__title">Consultoria Web</h4>
+          <p>Não importa se seu projeto é grande ou pequeno, se é uma causa nobre ou não, um site ou sistema empresarial. Ajudarei você a alcançar seus objetivos.</p>
+          <p>Buscaremos a melhor solução para seu projeto, lançando do mão do mais alto padrão que a tecnologia oferecer, claro, dentro das suas verdadeiras necessidades.</p>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 </html>
