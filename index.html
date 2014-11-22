@@ -60,13 +60,18 @@
     .main {color:#694d6f;}
     .main a {color:#694d6f;}
     .main a:hover {color:#472b4d;}
+
     .shoutbox {padding:1em; font-size:1.15em; text-align: center; border-bottom:1px #efefef solid; margin-bottom:1em;}
+    .shoutbox--testimonials {margin-top:1em; border-top:1px #efefef solid;}
+    .shoutbox__title {margin-bottom:.5em;}
+    .shoutbox__testimonial {font-style: oblique; margin:1em 2em;}
+
     .info {padding:1em;}
     .info p {margin-bottom:1em;}
     .info__sections {margin:1em 0; }
     .info__sections__title,
     .info__sections__feature {text-align:center;}
-    .info__sections__title {margin:0.25em 0; overflow: hidden; }
+    .info__sections__title {margin:0.25em 0; }
     .info__sections__image {max-width:300px;}
     .info__sections__text {font-size:1.25em;}
 
@@ -83,10 +88,12 @@
 
     @media only screen and (min-width:60em) {
       .column {width:25%;}
-      .column--34 {width:75%;}
+      .column--2 {width:50%;}
+      .column--3 {width:75%;}
       .info__sections__title {text-align: left;}
       .info__sections__text {padding:1.5em 1em;font-size:1.5em;}
 
+      .info__sections--inverted {overflow:hidden;}
       .info__sections--inverted .info__sections__title {text-align:right;}
       .info__sections--inverted .column {float:right; text-align:right;}
     }
@@ -115,34 +122,39 @@
     <div class="header__wrapper">
       <h1 class="header__title">Erick Patrick</h1>
       <p class="header__subtitle">Consultor especializado em programação para web e tradutor com experiência internacional.</p>
-      <a href="#" class="btn header__cta">Saiba Mais</a>
+      <a href="#" class="btn header__cta" title="Saiba um pouco mais sobre os meus serviços">Saiba Mais</a>
     </div>
   </header>
   <div class="wrapper main">
     <section class="shoutbox">
-      <p>No momento, estou disponível para <strong><em>até dois projetos novos</em></strong>. Caso esteja interessado em meus serviços, <a href="/contato">entre em contato</a> para tirar suas dúvidas.</p>
+      <p>No momento, estou disponível para <strong><em>até dois projetos novos</em></strong>. Caso esteja interessado em meus serviços, <a href="pages/contact/" title="Página com meios para entrar em contato comigo">entre em contato</a> para tirar suas dúvidas.</p>
     </section>
 
     <section class="info">
       <div class="info__sections">
-        <h3 class="info__sections__title">Consultoria Web</h3>
+        <h3 class="info__sections__title"><a href="pages/services/consultancy/" title="Página dos meus serviços de consultoria">Consultoria Web</a></h3>
         <div class="column info__sections__feature">
           <img class="info__sections__image" src="img/programming.jpg" alt="" width="100%" height="auto" alt="Programação">
         </div><!--
-         --><div class="column column--34 info__sections__text">
+         --><div class="column column--3 info__sections__text">
           <p>Juntos, buscaremos a melhor solução para seu projeto, lançando mão das melhores ferramentas e das técnicas mais modernas de criação de sites e sistemas. Faremos tudo para que seu projeto seja um verdadeiro sucesso e sempre dentro das suas verdadeiras necessidades.</p>
         </div>
       </div>
 
       <div class="info__sections info__sections--inverted">
-        <h3 class="info__sections__title">Tradução &amp; Revisão</h3>
+        <h3 class="info__sections__title"><a href="pages/services/translation/" title="Página dos meus serviços de tradução">Tradução &amp; Revisão</a></h3>
         <div class="column info__sections__feature">
           <img class="info__sections__image" src="img/programming.jpg" alt="" width="100%" height="auto" alt="Programação">
         </div><!--
-         --><div class="column column--34 info__sections__text">
+         --><div class="column column--3 info__sections__text">
           <p>Os seus textos nas mãos de um tradutor e revisor com experiência internacional, com mais de 80 traduções técnicas para sites de tutoriais internacionais. Traduções técnicas e revisões de textos em Português para o Inglês e de textos em Inglês para o Português, com rapidez e pontualidade.</p>
         </div>
       </div>
+    </section>
+    <section class="shoutbox shoutbox--testimonials">
+      <h3 class="shoutbox__title">Depoimentos</h3>
+      <blockquote class="shoutbox__testimonial">[...] é o nosso tradutor mais prolífico até hoje, com mais de 50 traduções publicadas (e contando!). &mdash; Ian Yates, <a href="http://code.tutsplus.com/articles/meet-erick-patrick-who-has-translated-50-tutorials-for-tuts--cms-22500" title="Entrevista comigo para o site Tuts+">Tuts+</a></blockquote>
+      <blockquote class="shoutbox__testimonial">[...] Correto, exigente, confiável, atento aos detalhes e às novidades do mercado, perfeccionista. Recomendo! &mdash; Marcelo Ronald, <a href="http://msweb.com.br/" title="Site da MSWeb Soluções Criativas">MSWeb</a></blockquote>
     </section>
   </div>
 </body>
