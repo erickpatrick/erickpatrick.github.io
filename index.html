@@ -64,9 +64,9 @@
     .main a:hover {color:#472b4d;}
 
     .shoutbox {padding:1em; font-size:1.15em; text-align: center; border-bottom:1px #efefef solid; margin-bottom:1em;}
-    .shoutbox--testimonials {background: #f3f3f3; margin-top:1em; border:none;}
+    .shoutbox--testimonials {background: #f3f3f3; margin-top:1em; border:none; display: table; width:100%; height:250px;}
     .shoutbox__title {margin-bottom:.5em;}
-    .shoutbox__testimonial {font-style: oblique; margin:1em 2em;}
+    .shoutbox__testimonial {display:table-cell; vertical-align:middle; font-style: oblique; margin:1em 2em;}
     .shoutbox__person {color:#694d6f;}
 
     .info {padding:1em;}
@@ -79,19 +79,27 @@
     .info__sections__text {font-size:1.25em;}
 
     .writing {padding:1em;}
-    .writing__title {font-weight: normal; color:#694d6f;}
+    .writing__title {font-weight: normal; color:#694d6f; margin-bottom:.5em;}
+    .writing__item {padding:1em 0; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5;}
+    .writing__item p {margin-bottom:1em;font-size:1.15em;}
+    .writing__item--featured {border:none;}
+    .writing__item--featured img { width:100%; border:1px solid #694d6f; }
+    .writing__readmore {background:#694d6f;}
 
     .copyright {text-align: center; padding-bottom: 1em; color:#694d6f;}
 
     /*480*/
     @media only screen and (min-width:30em) {
       .btn {display:inline-block;}
+      .writing__item--featured {overflow: hidden;}
+      .writing__item--featured img { max-width:200px; float:left; margin-right:1em;}
     }
 
     /*640*/
     @media only screen and (min-width:40em) {
       .header {font-size:1.375em;}
       .shoutbox {font-size:1.25em;}
+      .shoutbox__testimonial {font-size:1.1em;}
     }
 
     @media only screen and (min-width:60em) {
@@ -105,7 +113,10 @@
       .info__sections--inverted .info__sections__title {text-align:right;}
       .info__sections--inverted .column {float:right; text-align:right;}
 
+      .shoutbox__testimonial {font-size:1.3em;}
+
       .writing {overflow: hidden;}
+      .writing__item p {font-size:1.25em;}
     }
 
     /*1024*/
@@ -123,6 +134,7 @@
     @media only screen and (min-width:80em) {
       .header__subtitle {font-size:2em;}
       .info__sections__text {font-size:1.75em;}
+      .shoutbox__testimonial {font-size:1.6em;}
     }
 
   </style>
@@ -137,7 +149,7 @@
   </header>
   <div class="wrapper main">
     <section class="shoutbox">
-      <p>No momento, estou disponível para <strong><em>até dois projetos novos</em></strong>. Caso esteja interessado em meus serviços, <a href="pages/contact/" title="Página com meios para entrar em contato comigo">entre em contato</a> para tirar suas dúvidas.</p>
+      <p>No momento, somente tenho disponibilidade para <strong><em>projetos no começo do ano de 2015</em></strong>. Caso esteja interessado em meus serviços, <a href="pages/contact/" title="Página com meios para entrar em contato comigo">entre em contato</a> para tirar suas dúvidas.</p>
     </section>
 
     <section class="info">
@@ -167,7 +179,7 @@
       <p>[...] nosso tradutor mais prolífico até hoje, com mais de 50 traduções publicadas (e contando!).</p>
       <p class="shoutbox__person"><strong>Ian Yates, <a href="http://code.tutsplus.com/articles/meet-erick-patrick-who-has-translated-50-tutorials-for-tuts--cms-22500" title="Entrevista comigo para o site Tuts+">Tuts+</a></strong></p>
     </blockquote>
-    <blockquote class="shoutbox__testimonial">
+    <blockquote class="shoutbox__testimonial" style="display:none">
       <p>Correto, exigente, confiável, atento aos detalhes e às novidades do mercado, perfeccionista. Recomendo!</p>
       <p class="shoutbox__person"><strong>Marcelo Ronald, <a href="http://msweb.com.br/" title="Site da MSWeb Soluções Criativas">MSWeb</a></strong></p>
     </blockquote>
@@ -175,9 +187,21 @@
   <section class="wrapper writing">
     <div class="column column--2 writing__articles">
       <h4 class="writing__title">Artigos</h4>
+      <a href="articles/" class="btn writing__readmore">Ver todos os artigos</a>
     </div><!--
      --><div class="column column--2 writing__translations">
       <h4 class="writing__title">Traduções</h4>
+      <div class="writing__item writing__item--featured">
+        <img src="http://www.erickpatrick.net/books/iniciante-node/img/cover-thumb.jpg" alt="Capa d'O Livro do Iniciante em Node">
+        <h5><a href="books/iniciante-node/" title="Livro do Iniciante em Node">Livro do Iniciante em Node</a></h5>
+        <p>O Livro do Iniciante em Node é a versão traduzida para o Português (Brasileiro) do famoso livro The Node Beginner Book, do autor Manuel Kiessling. A versão original já conta com mais de 16 mil leitores. Aproveite para ser um dos leitores dessa versão e descubra o porque de tantas pessoas já terem lido a versão original!</p>
+        <p>O objetivo do Livro do Iniciante em Node é iniciar você no desenvolvimento de aplicações em Node.js, ensinando tudo que você precisa saber sobre JavaScript avançado.</p>
+      </div>
+      <div class="writing__item writing__item--featured">
+        <span class="writing__date">Em 23 de Novembro de 2014</span>
+        <h5><a href="#" title="Diretórios compartilhados, Node e Symlinks no Homestead">Diretórios compartilhados, Node e Symlinks no Homestead</a></h5>
+      </div>
+      <a href="articles/" class="btn writing__readmore">Ver todas as traduções</a>
     </div>
   </section>
   <footer class="footer wrapper copyright">
@@ -185,10 +209,10 @@
   </footer>
 
   <script>
-  (function() {
-    var cy = document.getElementById('copyright_year');
-    cy.appendChild(document.createTextNode((new Date).getFullYear()));
-  })();
+    window.onload = function() {
+      var cy = document.getElementById('copyright_year');
+      cy.appendChild(document.createTextNode((new Date).getFullYear()));
+    }
   </script>
 </body>
 </html>
