@@ -153,34 +153,19 @@
   <div class="wrapper main main--inner">
     <section class="column column--3 content">
       <div class="content__header">
-        <span class="content__meta">12 de Agosto de 2014</span>
-        <h3>Estudo de Caso — Rede Social Solidária</h3>
-        <h5>Identidade visual e desenvolvimento web</h5>
+        <span class="content__meta">23 de Julho de 2014</span>
+        <h3>Diretórios compartilhados, Node e Symlinks no Homestead</h3>
+        <h5>Um grande problema se estiver no Windows</h5>
       </div>
       <div class="content__text">
-        <h4>Sobre o cliente</h4>
-        <p>A Rede Social Solidária é, como o próprio nome diz, uma rede social. Ela, porém, leva o lado social muito mais a sério que a simples interação entre pessoas. O papel social dela é o de solidariedade. A partir do envolvimento de empresários e pessoas engajadas, o projeto ajuda pessoas humildes com doações de todos os tipos. Alimentos, vestuário e tempo são só algumas das doações diárias. Para maiores informações, acesse o site do projeto.</p>
-        <h4>Sobre o projeto</h4>
-        <p>Apesar de projetos sociais e solidários não serem novidade, a proposta, acontecendo a partir de uma rede social, foi o que me chamou a atenção. Em conversa com o responsável, chegamos à conclusão que o projeto seria melhor trabalhado <em>in loco</em>. Todos os dias, passava a manhã na sede do projeto, discutindo sobre os rumos que a rede tomaria.</p>
-        <p>Primeiramente, buscamos criar uma identidade visual para o projeto. No <em>briefing</em> com relação à criação da logo, foi pedida algo que lembrasse comunidade, união e interelação. Após pesquisa em bancos de imagens, de logos de empresas, bem como nos próprios buscadores de imagens tradicionais (Google, Bing e Yahoo!), chegamos a um rascunho: Uma mão vazada, somente o contorno.</p>
-        <img src="http://erickpatrick.net/img/articles/2014/12/08/estudo-caso-rede-social-solidaria/logo-rss.jpeg" alt="Logo Rede Social Solidaria">
-        <p>Cada dedo da mão representa uma pessoa, que está ligada a outra, formando uma espécie de círculo (de pessoas) em três dimensões. Além disso, é sabido que a mão, o ato de estender a mão, mais precisamente, é um ato de solidariedade. Então, nada melhor que uma mão para representar a Rede Social Solidária.</p>
-        <p>Essa logo tem sido usada em diversos formatos, desde a versão preto-e-branco até uma versão colorida, com os “dedos” com preenchimento de cores sólidas diferentes (numa tentativa de representar a diversidade). Além da Web, é possível encontrar a logo sendo usadas em cartazes, outdoors, camisas, bonés, crachás, cartões e um sem número de outros lugares.</p>
-        <p>Em um segundo momento, começaram as conversas com relação ao layout e funcionalidades da rede social em si. Para o layout, buscou-se um misto do layout do Facebook à época, com Twitter e Google+. O layout lembra o que o Twitter usa para o perfil, hoje em dia.</p>
-        <img src="http://erickpatrick.net/img/articles/2014/12/08/estudo-caso-rede-social-solidaria/layout-rss.jpeg" alt=" Layout Rede Social Solidária">
-        <p>Esse resultado foi alcançado após testes com três layouts diferentes, com um grupo de participantes do projeto social e com alguns empresários engajados em projetos sociais na cidade de Teresina/PI, os quais seriam os principais públicos alvo da rede social. Um dos layouts sobresaiu-se e foram feitos ajustes a partir dos comentários dos usuários. Percebeu-se que eles queriam algo com uma cara nova, porém, que lembra-se funcionalidades de outras redes sociais, por isso a mescla dos layouts, da época, do Facebook, Twitter e Google+.</p>
-        <p>Com os layouts das principais páginas decididos, focou-se na programação, tanto <em>front-end</em> quanto <em>back-end</em>. Para esse parte, tive o auxílio de um outro programador que, também, realizou o trabalho de desenvolvedor <em>front-end</em> e <em>back-end</em>.</p>
-        <h4>Tecnologias Utilizadas</h4>
-        <ul>
-          <li>PHP (com o framework CodeIgniter)</li>
-          <li>PostgreSQL</li>
-          <li>Servidor Apache</li>
-          <li>HTML5 (novas tags, basicamente)</li>
-          <li>CSS 3 (rounded-corners, gradients e animations)</li>
-          <li>JavaScript (algumas animações e Ajax)</li>
-        </ul>
-        <p>Decidi lançar mão dessas tecnologias porque elas são <em>Open Source</em>, de fácil aprendizado, amplamente disponíveis em servidores de aplicações e nos clientes, além da <em>expertise</em> da dupla (minha e do outro programador), que já contava com experiência considerável em relação às ferramentas.</p>
-        <p>O projeto levou, aproximadamente, seis meses para finalizar a versão inicial e ainda tomou mais um ano e meio de testes A/B e novas funcionalidades. Embora não encabece mais o desenvolvimento do projeto, ele continua a existir. Para maiores informações, acesse a página da <a href="http://www.redesocialsolidaria.com.br/">Rede Social Solidária</a> ou o <a href="http://www.netpiaui.com.br/">Net Piauí</a>.</p>
+        <p>Algumas vezes, ser desenvolvedor web e trabalhar com Windows é penoso, tortuoso. Uma dessas vezes é quando você trabalha com máquinas virtuais com sistemas *NIX e ter uma pasta compartilhada entre a máquina hospedeira e a visitante. Adicione, agora, uma pitada de Node e PHP, e saberá do que estou falando.</p>
+        <p>Nesse artigo, falo sobre os problema que enfreitei ao tentar usar Node e o Gulp dentro da box para Vagrant, Homestead, que é própria para desenvolvimento com PHP, embora já venha com Node instalado.</p>
+        <p>No momento desse post, estou de férias e tentando colocar para frente alguns projetos paralelos. Neles, quero por em prática o máximo das melhores práticas possível, bem como aprimorar meu fluxo de trabalho.</p>
+        <p>No meu trabalho diário, do qual estou de férias, uso C#.net, MS MVC Framework, Visual Studio e SQL Server. Contudo, sou bom mesmo é em PHP, principalmente, por programar com a linguagem desde os meus 12 anos (tenho 26 anos, hoje).</p>
+        <p>Para esse projeto, escolhi usar o Virtual Box, o Vagrant e o Laravel Homestead como minha ambiente de trabalho, pela facilidade de instalação e configuração.. Taylor Otwell, o criador do Laravel, fez um excelente trabalho com a box Laravel Homestead, colocando tudo que é necessário para um desenvolvedor de Larvel trabalhar em uma máquina de desenvolvimento.</p>
+        <p>Contudo, apesar de ser anunciado que já vem com Node, NPM, Grunt e Gulp instalados, eles não funcionam nas versões da VM que estão em pasta compartilhadas, gerando erros (error: enotempty and error: etxtbsy, unlink, in my case).</p>
+        <p>Após pesquisar um pouco, descobri que esse problema é porque o Node não consegue fazer symlink funcionar em pastas compartilhadas com a VM. Alguns conseguiram fazer funcionar maravilhosamente bem (como o Jeffrey Way fez <a href="https://laracasts.com/series/build-a-laravel-app-from-scratch/episodes/6">em seu tutorial</a> — ele usa Mac, mas não tenho certeza que sistema *Nix permitam isso, mas…), entretanto, aconselho instalar e executar todos os comandos relacionados ao Node dentro da máquina hospedeira, ao invés da máquina convidada.</p>
+        <p>Passei algumas horas procurando sobre isso e descobri que essa é a melhor coisa a se fazer quando se está nessa situação. Espero que tenha curtido essa dica.</p>
       </div>
     </section><!--
      --><aside class="column column aside">
