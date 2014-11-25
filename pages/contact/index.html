@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>Página Inicial | Erick Patrick</title>
+  <title>Artigos | Erick Patrick</title>
   <meta name="description" content="Olá, sou Erick Patrick. Presto consultoria especializada em programação para web. Também traduzo e escrevo sobre desenvolvimento web.">
   <meta name="author" content="Erick Patrick">
 
@@ -13,13 +13,13 @@
   <meta name="twitter:title" content="Página Inicial | Erick Patrick">
   <meta name="twitter:description" content="Olá, sou Erick Patrick. Presto consultoria especializada em programação para web. Também traduzo e escrevo sobre desenvolvimento web.">
   <meta name="twitter:creator" content="@erickpatrick">
-  <meta name="twitter:image:src" content="http://erickpatrick.net/assets/img/me.jpg">
+  <meta name="twitter:image:src" content="http://erickpatrick.net/img/me.jpg">
   <meta name="twitter:domain" content="http://erickpatrick.net">
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="http://www.erickpatrick.net"/>
   <meta property="og:title" content="Página Inicial | Erick Patrick"/>
-  <meta property="og:image" content="http://erickpatrick.net/assets/img/me.jpg"/>
+  <meta property="og:image" content="http://erickpatrick.net/img/me.jpg"/>
   <meta property="og:site_name" content="Erick Patrick - Desenvolvimento para Web"/>
   <meta property="og:description" content="Olá, sou Erick Patrick. Presto consultoria especializada em programação para web. Também traduzo e escrevo sobre desenvolvimento web."/>
 
@@ -29,7 +29,7 @@
   <!-- Google+ Meta Tags -->
   <meta itemprop="name" content="Página Inicial | Erick Patrick">
   <meta itemprop="description" content="Olá, sou Erick Patrick. Presto consultoria especializada em programação para web. Também traduzo e escrevo sobre desenvolvimento web.">
-  <meta itemprop="image" content="http://erickpatrick.net/assets/img/me.jpg">
+  <meta itemprop="image" content="http://erickpatrick.net/img/me.jpg">
 
   <link rel="author" href="http://google.com/+ErickPatrick1988" />
   <link rel="publisher" href="https://plus.google.com/b/106544148188542649191/106544148188542649191/posts">
@@ -50,12 +50,21 @@
     .btn {display: block; padding:.75em; margin:1em 0; text-decoration:none; color:#fff; font-size:1.25em;}
 
     .header {position:relative; display: table;height:100%;width:100%;min-height: 100%;background:#34495e url(img/background.jpg) center center no-repeat; background-size: cover; }
+    .header__small {position:relative; display: table;height:300px%;width:100%;background:#34495e url(../img/background.jpg) center center no-repeat; padding:2em;}
     .header__wrapper {display: table-cell;vertical-align:middle;text-align:center;width:100%; color:#fff; padding:1em;}
-    .header__title,.header__subtitle {text-shadow:0 0 50px #342735;}
+    .header__small .header__wrapper {text-align: left; overflow: hidden}
+    .header__title,.header__subtitle,.header__menu__item a {text-shadow:0 0 50px #342735;}
     .header__title {font-size:4.5em;line-height:1;}
     .header__subtitle {font-size:1.25em;}
     .header__cta {background:#694d6f;}
     .header__cta:hover {background:#472b4d;}
+    /**inner pages**/
+    .header__menu {list-style: none; overflow: hidden; padding:1em 0;}
+    .header__menu__item {display: block;}
+    .header__menu__item a,
+    .header__menu__item a:visited {color:#fff; font-size:2em; margin-left:-.5em; padding:.5em; text-decoration:none; }
+    .header__menu__item a:hover {text-decoration: underline;}
+
 
     .column {display: inline-block; width:100%; vertical-align: top;}
 
@@ -94,6 +103,8 @@
     /*480*/
     @media only screen and (min-width:30em) {
       .btn {display:inline-block;}
+      .header__menu__item {display: inline-block;}
+
       .writing__item--featured {overflow: hidden;}
       .writing__item--featured img { max-width:200px; float:left; margin-right:1em;}
     }
@@ -145,11 +156,16 @@
   </style>
 </head>
 <body>
-  <header class="header">
+  <header class="header__small">
     <div class="header__wrapper">
       <h1 class="header__title">Erick Patrick</h1>
-      <p class="header__subtitle">Consultor especializado em programação para web e tradutor com experiência internacional.</p>
-      <a href="#" class="btn header__cta" title="Saiba um pouco mais sobre os meus serviços">Saiba Mais</a>
+      <ul class="header__menu">
+        <li class="header__menu__item"><a href="http://erickpatrick.net">Inicial</a></li>
+        <li class="header__menu__item"><a href="http://erickpatrick.net/pages/services/">Serviços</a></li>
+        <li class="header__menu__item"><a href="http://erickpatrick.net/articles/">Artigos</a></li>
+        <li class="header__menu__item"><a href="http://erickpatrick.net/books/">Livros</a></li>
+        <li class="header__menu__item"><a href="http://erickpatrick.net/pages/contact/">Contato</a></li>
+      </ul>
     </div>
   </header>
   <div class="wrapper main">
