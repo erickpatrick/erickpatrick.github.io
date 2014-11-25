@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>Artigos | Erick Patrick</title>
+  <title>Livro do Iniciante em Node | Erick Patrick</title>
   <meta name="description" content="Olá, sou Erick Patrick. Presto consultoria especializada em programação para web. Também traduzo e escrevo sobre desenvolvimento web.">
   <meta name="author" content="Erick Patrick">
 
@@ -50,7 +50,7 @@
     .btn {display: block; padding:.75em; margin:1em 0; text-decoration:none; color:#fff; font-size:1.25em;}
 
     .header {position:relative; display: table;height:100%;width:100%;min-height: 100%;background:#34495e url(http://erickpatrick.net/img/background.jpg) center center no-repeat; background-size: cover; }
-    .header__small {position:relative; display: table;height:300px%;width:100%;background:#34495e url(http://erickpatrick.net/img/background.jpg) center center no-repeat; padding:2em;}
+    .header__small {position:relative; display: table;height:300px%;width:100%;background:#34495e url(http://erickpatrick.net/img/background.jpg) center center no-repeat; padding:2em; margin-bottom:1em;}
     .header__wrapper {display: table-cell;vertical-align:middle;text-align:center;width:100%; color:#fff; padding:1em;}
     .header__small .header__wrapper {text-align: left; overflow: hidden}
     .header__title,.header__subtitle,.header__menu__item a {text-shadow:0 0 50px #342735;}
@@ -65,38 +65,32 @@
     .header__menu__item a:visited {color:#fff; font-size:2em; margin-left:-.5em; padding:.5em; text-decoration:none; }
     .header__menu__item a:hover {text-decoration: underline;}
 
-
     .column {display: inline-block; width:100%; vertical-align: top;}
 
     .main {color:#694d6f;}
+    .main--inner {padding:1em;}
     .main a {color:#694d6f;}
     .main a:hover {color:#472b4d;}
 
-    .shoutbox {padding:1em; font-size:1.15em; text-align: center; border-bottom:1px #efefef solid; margin-bottom:1em;}
-    .shoutbox--testimonials {background: #f3f3f3; margin-top:1em; border:none; display: table; width:100%; height:250px;}
-    .shoutbox__title {margin-bottom:.5em;}
-    .shoutbox__testimonial {display:table-cell; vertical-align:middle; font-style: oblique; margin:1em 2em;}
-    .shoutbox__person {color:#694d6f;}
+    .content__header {padding-bottom:1em; border-bottom: 1px #efefef solid; margin-bottom:1em;}
+    .content__header h5 {color:#a68eab;}
+    .content__text p,
+    .content__text img,
+    .content__text ul,
+    .content__text blockquote,
+    .content__text h4,
+    .content__text h5,
+    .content__text h6 {margin-bottom: 1em;}
+    .content__text p,
+    .content__text ul,
+    .content__text blockquote { color:#111;}
+    .content__text ul {margin-left:1em;}
+    .content__text li {margin:.5em 0;}
+    .content__text img {max-width:100%;}
 
-    .info {padding:1em;}
-    .info p {margin-bottom:1em;}
-    .info__sections {margin:1em 0; }
-    .info__sections__title,
-    .info__sections__feature {text-align:center;}
-    .info__sections__title {margin:0.25em 0; }
-    .info__sections__image {max-width:300px;}
-    .info__sections__text {font-size:1.25em;}
-
-    .writing {padding:1em;}
-    .writing__title {font-weight: normal; color:#694d6f; margin-bottom:.5em;}
-    .writing__item {padding:1em 0; border-bottom:1px solid #e5e5e5;}
-    .writing__item a {color:#694d6f;}
-    .writing__item a:hover {color:#472b4d;}
-    .writing__item p {margin-bottom:1em;font-size:1.15em;}
-    .writing__item--featured {border:none; padding:1em; background: #f3f3f3;}
-    .writing__item--featured img { width:100%; border:1px solid #694d6f; }
-    .writing__readmore {background:#694d6f;}
-    .writing__readmore:hover {background:#472b4d;}
+    .aside {}
+    .aside__featured {padding:1em; background:#efefef;}
+    .aside__featured img {max-width:100%;}
 
     .copyright {text-align: center; padding-bottom: 1em; color:#694d6f;}
 
@@ -104,41 +98,32 @@
     @media only screen and (min-width:30em) {
       .btn {display:inline-block;}
       .header__menu__item {display: inline-block;}
-
-      .writing__item--featured {overflow: hidden;}
-      .writing__item--featured img { max-width:200px; float:left; margin-right:1em;}
     }
 
     /*640*/
     @media only screen and (min-width:40em) {
       .header {font-size:1.375em;}
-      .shoutbox {font-size:1.25em;}
-      .shoutbox__testimonial {font-size:1.1em;}
+      .content__text p,
+      .content__text ul {font-size:1.15em;}
     }
 
     @media only screen and (min-width:60em) {
+      .clearfix {clear:both;}
       .column {width:25%;}
       .column--2 {width:50%;}
       .column--3 {width:75%;}
-      .info__sections__title {text-align: left;}
-      .info__sections__text {padding:1.5em 1em;font-size:1.5em;}
 
-      .info__sections--inverted {overflow:hidden;}
-      .info__sections--inverted .info__sections__title {text-align:right;}
-      .info__sections--inverted .column {float:right; text-align:right;}
+      .content {padding-right:3em;}
+      .content__text p,
+      .content__text ul {font-size:1.35em;}
 
-      .shoutbox__testimonial {font-size:1.3em;}
-
-      .writing {overflow: hidden;}
-      .writing__articles {padding-right:.5em;}
-      .writing__translations {padding-left:.5em;}
-      .writing__item p {font-size:1.25em;}
+      .content__text {overflow: hidden}
+      .content__img__left {float:left; padding-right:2em;}
     }
 
     /*1024*/
     @media only screen and (min-width:64em) {
       .header__subtitle {font-size:1.5em;}
-      .shoutbox {font-size:1.5em;}
     }
 
     /*1120*/
@@ -149,8 +134,6 @@
 
     @media only screen and (min-width:80em) {
       .header__subtitle {font-size:2em;}
-      .info__sections__text {font-size:1.75em;}
-      .shoutbox__testimonial {font-size:1.6em;}
     }
 
   </style>
@@ -168,8 +151,40 @@
       </ul>
     </div>
   </header>
-  <div class="wrapper main">
-
+  <div class="wrapper main main--inner">
+    <section class="content">
+      <div class="content__header">
+        <h3>Livro do Iniciante em Node</h3>
+        <h5>Um extenso tutorial sobre Node.js</h5>
+      </div>
+      <div class="content__text">
+        <div class="column">
+          <img class="content__img__left" src="http://www.erickpatrick.net/books/iniciante-node/img/cover-thumb.jpg" alt="Capa: Livro Iniciante em Node">
+        </div><!--
+         --><div class="column column--3">
+          <p>O <strong>Livro do Iniciante em Node</strong> é a versão traduzida para o Português (Brasileiro) do famoso livro <a href="https://leanpub.com/nodebeginner">The Node Beginner Book</a>, do autor <a href="https://leanpub.com/u/manuelkiessling">Manuel Kiessling</a>. A versão original já conta com mais de 16 mil leitores. Aproveite para ser um dos leitores dessa versão e descubra o porque de tantas pessoas já terem lido a versão original!</p>
+          <p>O objetivo do Livro do Iniciante em Node é iniciar você no desenvolvimento de aplicações em Node.js, ensinando tudo que você precisa saber sobre JavaScript avançado.</p>
+          <p><a href="http://samples.leanpub.com/iniciante-node-sample.pdf" class="books__cta" style="float:left; margin-right:1em">Amostra grátis</a></p>
+          <p>
+            <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+            <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
+            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+            <input type="hidden" name="code" value="093AA3F89A9AE2A444545F9FFA74FE11" />
+            <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/95x45-comprar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+            </form>
+            <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+          </p>
+          <h5>Nesse livro você aprenderá:</h5>
+          <ul>
+            <li>Alguns tópicos avançados de JavaScript</li>
+            <li>Como criar um servidor em Node.js</li>
+            <li>Como fazer <em>upload</em> de arquivos</li>
+            <li>Como autenticar usuários</li>
+            <li>Como criar uma aplicação simples, porém completa</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </div>
 
   <footer class="footer wrapper copyright">
