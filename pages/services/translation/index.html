@@ -50,7 +50,7 @@
     .btn {display: block; padding:.75em; margin:1em 0; text-decoration:none; color:#fff; font-size:1.25em;}
 
     .header {position:relative; display: table;height:100%;width:100%;min-height: 100%;background:#34495e url(http://erickpatrick.net/img/background.jpg) center center no-repeat; background-size: cover; }
-    .header__small {position:relative; display: table;height:300px%;width:100%;background:#34495e url(http://erickpatrick.net/img/background.jpg) center center no-repeat; padding:2em;}
+    .header__small {position:relative; display: table;height:300px%;width:100%;background:#34495e url(http://erickpatrick.net/img/background.jpg) center center no-repeat; padding:2em; margin-bottom:1em;}
     .header__wrapper {display: table-cell;vertical-align:middle;text-align:center;width:100%; color:#fff; padding:1em;}
     .header__small .header__wrapper {text-align: left; overflow: hidden}
     .header__title,.header__subtitle,.header__menu__item a {text-shadow:0 0 50px #342735;}
@@ -65,38 +65,32 @@
     .header__menu__item a:visited {color:#fff; font-size:2em; margin-left:-.5em; padding:.5em; text-decoration:none; }
     .header__menu__item a:hover {text-decoration: underline;}
 
-
     .column {display: inline-block; width:100%; vertical-align: top;}
 
     .main {color:#694d6f;}
+    .main--inner {padding:1em;}
     .main a {color:#694d6f;}
     .main a:hover {color:#472b4d;}
 
-    .shoutbox {padding:1em; font-size:1.15em; text-align: center; border-bottom:1px #efefef solid; margin-bottom:1em;}
-    .shoutbox--testimonials {background: #f3f3f3; margin-top:1em; border:none; display: table; width:100%; height:250px;}
-    .shoutbox__title {margin-bottom:.5em;}
-    .shoutbox__testimonial {display:table-cell; vertical-align:middle; font-style: oblique; margin:1em 2em;}
-    .shoutbox__person {color:#694d6f;}
+    .content__header {padding-bottom:1em; border-bottom: 1px #efefef solid; margin-bottom:1em;}
+    .content__header h5 {color:#a68eab;}
+    .content__text p,
+    .content__text img,
+    .content__text ul,
+    .content__text blockquote,
+    .content__text h4,
+    .content__text h5,
+    .content__text h6 {margin-bottom: 1em;}
+    .content__text p,
+    .content__text ul,
+    .content__text blockquote { color:#111;}
+    .content__text ul {margin-left:1em;}
+    .content__text li {margin:.5em 0;}
+    .content__text img {max-width:100%;}
 
-    .info {padding:1em;}
-    .info p {margin-bottom:1em;}
-    .info__sections {margin:1em 0; }
-    .info__sections__title,
-    .info__sections__feature {text-align:center;}
-    .info__sections__title {margin:0.25em 0; }
-    .info__sections__image {max-width:300px;}
-    .info__sections__text {font-size:1.25em;}
-
-    .writing {padding:1em;}
-    .writing__title {font-weight: normal; color:#694d6f; margin-bottom:.5em;}
-    .writing__item {padding:1em 0; border-bottom:1px solid #e5e5e5;}
-    .writing__item a {color:#694d6f;}
-    .writing__item a:hover {color:#472b4d;}
-    .writing__item p {margin-bottom:1em;font-size:1.15em;}
-    .writing__item--featured {border:none; padding:1em; background: #f3f3f3;}
-    .writing__item--featured img { width:100%; border:1px solid #694d6f; }
-    .writing__readmore {background:#694d6f;}
-    .writing__readmore:hover {background:#472b4d;}
+    .aside {}
+    .aside__featured {padding:1em; background:#efefef;}
+    .aside__featured img {max-width:100%;}
 
     .copyright {text-align: center; padding-bottom: 1em; color:#694d6f;}
 
@@ -104,41 +98,31 @@
     @media only screen and (min-width:30em) {
       .btn {display:inline-block;}
       .header__menu__item {display: inline-block;}
-
-      .writing__item--featured {overflow: hidden;}
-      .writing__item--featured img { max-width:200px; float:left; margin-right:1em;}
     }
 
     /*640*/
     @media only screen and (min-width:40em) {
       .header {font-size:1.375em;}
-      .shoutbox {font-size:1.25em;}
-      .shoutbox__testimonial {font-size:1.1em;}
+      .content__text p,
+      .content__text ul {font-size:1.15em;}
     }
 
     @media only screen and (min-width:60em) {
       .column {width:25%;}
       .column--2 {width:50%;}
       .column--3 {width:75%;}
-      .info__sections__title {text-align: left;}
-      .info__sections__text {padding:1.5em 1em;font-size:1.5em;}
 
-      .info__sections--inverted {overflow:hidden;}
-      .info__sections--inverted .info__sections__title {text-align:right;}
-      .info__sections--inverted .column {float:right; text-align:right;}
+      .content {padding-right:3em;}
+      .content__text p,
+      .content__text ul {font-size:1.35em;}
 
-      .shoutbox__testimonial {font-size:1.3em;}
-
-      .writing {overflow: hidden;}
-      .writing__articles {padding-right:.5em;}
-      .writing__translations {padding-left:.5em;}
-      .writing__item p {font-size:1.25em;}
+      .content__text {overflow: hidden}
+      .content__img__left {float:left; padding-right:2em;}
     }
 
     /*1024*/
     @media only screen and (min-width:64em) {
       .header__subtitle {font-size:1.5em;}
-      .shoutbox {font-size:1.5em;}
     }
 
     /*1120*/
@@ -149,8 +133,6 @@
 
     @media only screen and (min-width:80em) {
       .header__subtitle {font-size:2em;}
-      .info__sections__text {font-size:1.75em;}
-      .shoutbox__testimonial {font-size:1.6em;}
     }
 
   </style>
@@ -169,8 +151,48 @@
       </ul>
     </div>
   </header>
-  <div class="wrapper main">
-
+  <div class="wrapper main main--inner">
+    <section class="column column--3 content">
+      <div class="content__header">
+        <h3>Tradução</h3>
+      </div>
+      <div class="content__text">
+        <p>Sou formado em inglês avançado pela escola de idiomas Yázigi Internexus, em Teresina/PI, há 12 anos. Já participei de projetos informais de tradução de legendas, livros de jogos de RPG e de documentação de projetos de código de aberto (<em>open source</em>).</p
+        >
+        <p>Embora não seja formado, cheguei ao 6º (sexto) período de Comunicação Social &mdash; Habilitação em Jornalismo, onde aprendi diversas técnicas textuais que facilitarão a criação de uma tradução mais proveitosa.</p>
+        <p>Os seus textos estarão nas mãos de um tradutor e revisor com experiência internacional, com mais de 80 traduções técnicas para sites de tutoriais internacionais. Traduções técnicas e revisões de textos em Português para o Inglês e de textos em Inglês para o Português, com rapidez e pontualidade.</p>
+        <h4>Método de Trabalho</h4>
+        <p>A primeira etapa é dividida da seguinte forma:</p>
+        é saber sobre o que se trata o texto, a qual área de conhecimento ele pertence, quantidade de palavras que o texto possui e o razo
+        <ul>
+          <li>Saber sobre o que se trata o texto;</li>
+          <li>Em qual área do conhecimento ela pertence;</li>
+          <li>Quantidade de palavras que o texto possui;</li>
+          <li>Prazos para entrega;</li>
+        </ul>
+        <p>Com isso em mãos, poderei analisar melhor minhas capacidades de tradução. Considerando que eu tenha conhecimentos suficientes para traduzir os termos de acordo com a área, procedo com a criação de um orçamento e um contrato de trabalho para que possamos entrar em acordo.</p>
+        <h4>Método de Cobrança</h4>
+        <p>Meu sistema de cobrança se dá da seguinte forma:</p>
+        <ul>
+          <li>Área do Conhecimento</li>
+          <li>Dificuldade técnica do texto</li>
+          <li>Prazo de entrega</li>
+        </ul>
+        <p>Levando em consideração esses três pontos, gero um valor a ser cobrado <strong>por palavra</strong>. Uma vez aceito e o contrato assinado, procedo com o início da tradução e podemos conversar sobre o pagamento.</p>
+        <h4>Métodos de Pagamento</h4>
+        <p>Trabalho com dois métodos de pagamento, dependendo do valor do projeto:</p>
+        <ul>
+          <li>Em até 4 vezes iguais no dinheiro</li>
+          <li>Em até 10 vezes no cartão pelo PagSeguro</li>
+        </ul>
+        <p>Vale notar que o PagSeguro aplica taxas de juros sobre pagamentos parcelados. Assim, os valores finais que você pagará serão diferentes dos valores em contrato.</p>
+      </div>
+    </section><!--
+     --><aside class="column column aside">
+      <div class="aside__featured">
+        <a href="http://www.erickpatrick.net/books/iniciante-node/" title="Livro do Iniciante em Node"><img src="http://www.erickpatrick.net/books/iniciante-node/img/cover-thumb.jpg" alt="Capa d'O Livro do Iniciante em Node"></a>
+      </div>
+    </aside>
   </div>
 
   <footer class="footer wrapper copyright">
