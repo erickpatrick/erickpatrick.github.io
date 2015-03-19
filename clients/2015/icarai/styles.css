@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6 {color:#096;}
+.top { background: #bfe594 url(img/background.jpg) top center; }
+
+.header {background: #fff}
+.header .navbar { border-radius: 0; }
+.navbar-default { background-color: #fff; border-color: #fff; margin-bottom:0;}
+.navbar-default .navbar-nav > li > a:hover { background-color: #f8f8f8; }
+
+.carousel-home {background: #fff; }
+
+.main-content { background:#fff; padding-top:1.5em;}
+
+.main-features {font-size:1.15em; margin-bottom:2em;}
+.main-features h2 { text-align: center; }
+.main-features h2 > .glyphicon { display: block; font-size:4em; margin-bottom:.25em;}
+
+.main-contact, .main-news {background:#ececec; padding:1em;}
+.main-contact h3 {margin-top:10px;}
+.main-contact-btn {text-align: center}
+
+.main-clients {text-align:center; margin-top:2em;}
+.main-clients p {margin-bottom:1em;font-size:1.15em;}
+
+.main-news {text-align: center; margin-top:2em;}
+
+.footer {text-align:center; margin-top:2em;}
+.footer img {margin-bottom:1em;}
