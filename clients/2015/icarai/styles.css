@@ -1,4 +1,6 @@
 h1, h2, h3, h4, h5, h6 {color:#096;}
+a, a:visited {color:#096; text-decoration: none;}
+a:hover {color:#096;text-decoration: underline;}
 .top { background: #bfe594 url(img/background.jpg) top center; }
 
 .header {background: #fff}
@@ -14,11 +16,17 @@ h1, h2, h3, h4, h5, h6 {color:#096;}
 .main-features h2 { text-align: center; }
 .main-features h2 > .glyphicon { display: block; font-size:4em; margin-bottom:.25em;}
 
-.main-contact {background:#ececec; padding:1em;}
-.main-contact h3 {margin-top:10px;}
+.main-contact, .main-network {background:#ececec; padding:1em;}
+.main-contact h3, .main-network h3 {margin-top:10px;}
 .main-contact-btn {text-align: center}
+.main-contact a,
+.main-news a.btn-success {color:white;}
 
-.main-news {margin-top:2em;}
+.main-network { background: #4763b3; margin-top:3em;}
+.main-network h3 { color: #fff; }
+.main-network a {color: #333;}
+
+.main-news {margin-top:4em;}
 .main-news p {margin-bottom:1em;font-size:1.15em;}
 
 .footer {text-align:center; margin-top:2em;}
