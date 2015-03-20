@@ -14,14 +14,12 @@ h1, h2, h3, h4, h5, h6 {color:#096;}
 .main-features h2 { text-align: center; }
 .main-features h2 > .glyphicon { display: block; font-size:4em; margin-bottom:.25em;}
 
-.main-contact, .main-news {background:#ececec; padding:1em;}
+.main-contact {background:#ececec; padding:1em;}
 .main-contact h3 {margin-top:10px;}
 .main-contact-btn {text-align: center}
 
-.main-clients {text-align:center; margin-top:2em;}
-.main-clients p {margin-bottom:1em;font-size:1.15em;}
-
-.main-news {text-align: center; margin-top:2em;}
+.main-news {margin-top:2em;}
+.main-news p {margin-bottom:1em;font-size:1.15em;}
 
 .footer {text-align:center; margin-top:2em;}
 .footer img {margin-bottom:1em;}
