@@ -48,3 +48,6 @@ a:hover {color:#096;text-decoration: underline;}
 .all-news-pagination {
   text-align: center;
 }
+.all-news img {
+  border:3px #096 solid;
+}
