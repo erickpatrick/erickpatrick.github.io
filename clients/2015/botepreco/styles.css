@@ -1,0 +1,321 @@
+body {
+	background: transparent url(img/bg-logo.png);
+}
+
+h1, h2, h3, h4, h5, h6,
+input, select,
+.btn, 
+.nav-tabs,
+.pagination,
+.form-group label {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+	background: #b8201b;
+}
+
+.main-navigation {
+	background: #ececec;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.nav-tabs.nav-justified {
+	border-bottom: 1px #cecece solid;
+}
+
+.nav-tabs.nav-justified > li > a,
+.nav-tabs.nav-justified > li > a.active,
+.nav-tabs.nav-justified > li > a:hover {
+	border-radius: 0;
+	border:0;
+	color:#333;
+	font-size:.825em;
+	text-transform: uppercase;
+}
+.nav-tabs.nav-justified > li.active > a,
+.nav-tabs.nav-justified > li > a:hover {
+	background: #ffe766;
+}
+
+.main-content {
+	background: #fff;
+}
+
+.inner-content {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.inner-content a,
+.inner-content a:hover {
+	color: #b8201b;
+}
+
+.inner-content a:visited {
+	color: #c9312c;
+}
+
+.inner-content-title,
+.list-group-item.disabled .list-group-item-heading {
+	color: #b8201b;	
+}
+
+a.list-group-item:hover {
+	background: #ffe766;
+	border-color: #ffe766; 	
+}
+
+.list-group-item.active, 
+.list-group-item.active:hover {
+	background: #b8201b;
+	border-color: #b8201b; 	
+}
+
+.inner-content-title-main {
+	padding-bottom: .5em;
+	border-bottom: 1px solid #dedede;
+}
+
+.inner-content-title-vehicle {
+	font-size:3.5em;
+}
+
+.inner-content-title-vehicle > small {
+	display: block;
+}
+
+.how-to-steps {
+	margin-bottom:1.5em;
+}
+
+.store-front-image,
+.store-map {
+	margin-bottom:1em;
+}
+
+.featured-content {
+	background: #555;
+}
+
+.search-form-advanced {
+	background: #ececec;	
+}
+
+.search-form-advanced > .form {
+	background: #ececec;
+	padding:1em;
+}
+
+.search-form-advanced .form-group-sm {
+	margin-bottom:.5em;
+}
+
+.search-form-advanced__button-wrapper {
+	margin-top:1em;
+}
+
+.home-carousel {
+	background: #ececec;
+}
+
+.listing-item {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.listing-item:hover {
+	background: #ffe766;
+}
+
+.listing-car-value,
+.listing-car-name {
+	margin-top: .5em;
+	margin-bottom: .25em;
+}
+
+.listing-car-value {
+	color:#b8201b;
+}
+
+.listing-item-image {
+	position: relative;
+	display: block;
+}
+
+.listing-item-label,
+.advertising-label {
+	position:absolute;
+	border-radius: 0;
+	top:0;
+}
+
+.listing-item-label {
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: .5em;
+}
+
+.listing-negotiation-pagination {
+	text-align: center;
+}
+
+.pagination > li > a,
+.pagination > li > a:hover {
+	color: #c9302c;
+}
+
+.pagination > li > a:hover {
+	background: #ffe766;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover {
+	background: #c9302c;
+	border-color: #c9302c;
+}
+
+.advertising-full-width,
+.search-form-quick > .row {
+	padding:1em 0;
+}
+
+.search-form-quick {
+	padding-bottom:1em;
+}
+
+.advertising-full-width > .row {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background: #ececec;
+}
+
+.advertising-image-wrapper {
+	position:relative;
+}
+
+.advertising-label {
+	z-index:10px;
+}
+
+.form-proposal {
+	margin: 1.5em 0;
+}
+
+.slider-vehicle-thumbs {
+	margin-top: 1em;
+}
+
+.slider-vehicle-thumb {
+	margin-top: 1em;
+}
+
+.clearfix-vehicle-page {
+	margin:2em 0;
+}
+
+.form-installments {
+	background-color: #ffe766;
+}
+
+.advertising-insurance {
+	margin-top:1em;
+}
+
+.table > tbody > tr > td {
+	vertical-align: middle;
+}
+
+.main-network { background: #4763b3; margin-top:3em; padding:1em; }
+.main-network h3 {margin-top:10px; color: #fff; }
+.main-network a {color: #333;}
+
+.footer {
+	color: #fff;
+	background: #333;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.footer-title {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.footer-links {
+	list-style: none;
+	padding-left: 1em;
+}
+.footer-links li:before {
+	content: "» ";
+}
+.footer-links a {
+	color: #fff;
+}
+
+.copyright {
+	text-align: center;
+}
+.copyright a {
+	color: #c9302c;
+}
+
+
+/* dropdown login plugin */
+#login-dp {
+    min-width: 250px;
+    padding: 1em 1em 0;
+    overflow:hidden;
+    background-color: #ffe766;
+    color: #000;
+}
+#login-dp .help-block {
+    font-size: .85em;    
+}
+
+#login-dp .bottom {
+    background-color: #ffe766;
+    border-top: 1px solid #c9302c;
+    clear: both;
+    padding: 1em;
+}
+
+#login-dp .form-group {
+    margin-bottom: .625em;
+}
+
+/*extra small grid*/
+@media only screen and (max-width: 47.99999999999999999em) {
+	#login-dp {
+		width: 100%;
+	}
+}
+
+/*small grid*/
+@media only screen and (min-width: 48em) {
+}
+
+/*medium grid*/
+@media only screen and (min-width: 62em) {
+	.nav-tabs.nav-justified > li:first-child > a,
+	.nav-tabs.nav-justified > li.active:first-child > a,
+	.nav-tabs.nav-justified > li:first-child > a:hover {
+		border-top-left-radius: 10px;
+		border:0;
+	}
+	.nav-tabs.nav-justified > li:last-child > a,
+	.nav-tabs.nav-justified > li.active:last-child > a,
+	.nav-tabs.nav-justified > li:last-child > a:hover {
+		border-top-right-radius: 10px;
+		border:0;
+	}
+
+	.inner-content-title > small {
+		display: block;
+		margin: .5em 0;
+	}
+}
+
+/*large grid*/
+@media only screen and (min-width:75em) {
+
+}
