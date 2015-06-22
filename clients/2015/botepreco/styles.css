@@ -16,6 +16,7 @@ input, select,
 }
 
 .choice-bar {
+	width: 100%;
 	background: #ffe766;
 	z-index:999;
 }
