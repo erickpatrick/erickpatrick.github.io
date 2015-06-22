@@ -15,10 +15,51 @@ input, select,
 	background: #b8201b;
 }
 
+.choice-bar {
+	background: #ffe766;
+	z-index:999;
+}
+
+.choice-bar .checkbox {
+	padding-top: 0;
+	padding-bottom:7px;
+}
+
+.select-store-mobile,
+.select-store-mobile option {
+	width: 100%;
+}
+
+.show-cars-from-select {
+	text-align: right;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.header-title,
+.header-title small {
+	text-align: right;
+	color:white;
+}
+
+.header-title small {
+	display: block;
+}
+
+.banner {
+	padding-top: 1em;
+}
+
 .main-navigation {
 	background: #ececec;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+}
+
+.main-navigation-mobile {
+	border-radius: 0;
 }
 
 .nav-tabs.nav-justified {
@@ -41,6 +82,10 @@ input, select,
 
 .main-content {
 	background: #fff;
+}
+
+.page-header-index {
+	color: #b8201b;
 }
 
 .inner-content {
@@ -285,6 +330,9 @@ a.list-group-item:hover {
 
 /*extra small grid*/
 @media only screen and (max-width: 47.99999999999999999em) {
+	.header-title {
+		text-align: center;
+	}
 	#login-dp {
 		width: 100%;
 	}
@@ -292,10 +340,6 @@ a.list-group-item:hover {
 
 /*small grid*/
 @media only screen and (min-width: 48em) {
-}
-
-/*medium grid*/
-@media only screen and (min-width: 62em) {
 	.nav-tabs.nav-justified > li:first-child > a,
 	.nav-tabs.nav-justified > li.active:first-child > a,
 	.nav-tabs.nav-justified > li:first-child > a:hover {
@@ -309,6 +353,22 @@ a.list-group-item:hover {
 		border:0;
 	}
 
+	.nav-tabs.nav-justified > li,
+	.nav-tabs.nav-justified > li.active {
+		height: 100%;
+	}
+
+	.nav-tabs.nav-justified > li > a,
+	.nav-tabs.nav-justified > li.active > a {
+		height: 100%;
+		display: table;
+		vertical-align: middle;
+		width: 100%;
+	}
+}
+
+/*medium grid*/
+@media only screen and (min-width: 62em) {
 	.inner-content-title > small {
 		display: block;
 		margin: .5em 0;

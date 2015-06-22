@@ -74,6 +74,68 @@
 </head>
 <body>
 	<div class="header">
+		<div class="choice-bar container" data-spy="affix" data-offset-top="0">
+	        <div class="row">
+        		<div class="hidden-md hidden-lg">
+        			<form action="/">
+        				<select class="select-store-mobile" name="" id="">
+        					<option>Você está na loja: Teresina - PI</option>
+    					  	<option>Você está na loja: São Luís - MA</option>
+    					  	<option>Você está na loja: Fortelza - CE</option>
+    					  	<option>Você está na loja: Belém - PA</option>
+        				</select>
+        			</form>
+        			<div class="col-xs-12">
+						<label class="col-xs-6">
+							<input type="checkbox" id="inlineCheckbox1" value="option1"> Teresina - PI
+						</label>
+						<label class="col-xs-6">
+							<input type="checkbox" id="inlineCheckbox2" value="option2"> São Luís - MA
+						</label>
+						<label class="col-xs-6">
+						 	<input type="checkbox" id="inlineCheckbox3" value="option3"> Fortaleza - CE
+						</label>
+						<label class="col-xs-6">
+						 	<input type="checkbox" id="inlineCheckbox3" value="option3"> Belém - PA
+						</label>
+    				</div>
+        		</div>
+        		<div class="col-sm-3 hidden-xs hidden-sm">
+        			<form action="/" class="form form-horizontal">
+        				<label class="checkbox-inline">
+        					<span class="">Loja de</span>
+        					<select class="">
+        					  	<option>Teresina - PI</option>
+        					  	<option>São Luís - MA</option>
+        					  	<option>Fortelza - CE</option>
+        					  	<option>Belém - PA</option>
+        					</select>
+        				</label>
+        			</form>
+        		</div>
+        		<div class="show-cars-from-select col-sm-9 hidden-xs hidden-sm">
+        			<form action="/" class="form form-horizontal">
+        				<div class="checkbox">
+        					<label class="checkbox-inline">
+        						Também ver carros de
+        					</label>
+        					<label class="checkbox-inline">
+        						<input type="checkbox" id="inlineCheckbox1" value="option1"> Teresina - PI
+        					</label>
+        					<label class="checkbox-inline">
+        						<input type="checkbox" id="inlineCheckbox2" value="option2"> São Luís - MA
+        					</label>
+        					<label class="checkbox-inline">
+        					 	<input type="checkbox" id="inlineCheckbox3" value="option3"> Fortaleza - CE
+        					</label>
+        					<label class="checkbox-inline">
+        					 	<input type="checkbox" id="inlineCheckbox3" value="option3"> Belém - PA
+        					</label>
+        				</div>
+        			</form>
+        		</div>
+	        </div>
+	    </div>
 		<div class="container">
 			<div class="banner row">
 				<div class="col-sm-4">
@@ -81,9 +143,26 @@
 						<img src="img/logo.png" alt="" width="100%">
 					</a>
 				</div>
+				<div class="col-sm-8">
+					<h2 class="header-title">Você compra! Você vende! <small>(86) 3303-3651 / (86) 9810-0203</small></h2>
+				</div>
 			</div>
 			<div class="row">
-				<ul class="main-navigation nav nav-tabs nav-justified">
+				<form action="/" class="form hidden-sm hidden-md hidden-lg">
+					<div class="form-group">
+						<select name="" id="" class="main-navigation-mobile col-xs-12 form-control">
+							<option value="http://www.erickpatrick.net/clients/2015/botepreco/">Início</option>
+							<option value="http://www.erickpatrick.net/clients/2015/botepreco/veiculo.html">Ofertas do dia</option>
+							<option value="http://www.erickpatrick.net/clients/2015/botepreco/veiculo.html">Escolha seu 0Km</option>
+							<option value="http://www.erickpatrick.net/clients/2015/botepreco/veiculo.html">Quer vender</option>
+							<option value="http://www.erickpatrick.net/clients/2015/botepreco/veiculo.html">Outro carro?</option>
+							<option value="http://www.erickpatrick.net/clients/2015/botepreco/como-funciona.html">Como funciona</option>
+							<option value="http://www.erickpatrick.net/clients/2015/botepreco/como-funciona.html">Contato funciona</option>
+							<option value="http://www.erickpatrick.net/clients/2015/botepreco/minha-conta.html">Minha conta</option>
+						</select>
+					</div>
+				</form>
+				<ul class="main-navigation nav nav-tabs nav-justified hidden-xs">
 					<li class="active"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Bem vindo ao Botepreco.com. Você compra! Você vende!">Início</a></li>
 					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Conheça nossas ofertas do dia. Todo dia são vários veículos com preços incríveis">Ofertas do dia</a></li>
 					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="No Botepreco.com, você também pode comprar seu 0km. Clique e confira nossas ofertas">Escolha seu 0Km</a></li>
@@ -256,7 +335,7 @@
 		<div class="listing listing-offers">
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="page-header">
+					<div class="page-header page-header-index">
 						<h1>Conheça nossas ofertas em destaque. <small>Bote Preço!</small></h1>
 					</div>
 				</div>
@@ -338,11 +417,11 @@
 		<div class="listing listing-negotiation">
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="page-header">
+					<div class="page-header page-header-index">
 						<h1>Negociamos sua proposta. <small>Bote Preço!</small></h1>
 					</div>
 				</div>
-				<div class="clearfix row">
+				<div class="clearfix">
 					<div class="search-form-negotiation col-md-6">
 						<form class="form" action="/" method="post">
 							<div class="form-group form-group-sm col-md-6">
@@ -617,12 +696,17 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script>
 		$(function () {
-		  	var likeCounter = $( '#likeCounter' );
-			$.get( "https://graph.facebook.com/v2.3/botepreco?fields=likes&access_token=138346436263156|3cc7396b4ca62ac37947525906695c94", function( data ) {
-				likeCounter.html( data.likes );
-			});
+		  	var likeCounter = $('#likeCounter');
+		  	var cy = $('#thisYear');
+
+			$.get("https://graph.facebook.com/v2.3/botepreco?fields=likes&access_token=138346436263156|3cc7396b4ca62ac37947525906695c94", 
+				function(data) {
+					likeCounter.html(data.likes);
+				}
+			);
 
 			$('[data-toggle="tooltip"]').tooltip();
+		    cy.append(document.createTextNode((new Date).getFullYear()));
 		});
 	</script>
 </body>
