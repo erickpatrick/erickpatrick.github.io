@@ -70,6 +70,7 @@
 	<!-- acredito que essa fonte tenha ficado interessante para o site, além de ser bem leve -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.5/css/bootstrap-select.min.css">
 	<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -77,61 +78,27 @@
 		<div class="choice-bar" data-spy="affix" data-offset-top="35">
 			<div class="container">
 		        <div class="row">
-	        		<div class="hidden-md hidden-lg">
-	        			<form action="/">
-	        				<select class="select-store-mobile" name="" id="">
-	        					<option>Você está na loja: Teresina - PI</option>
-	    					  	<option>Você está na loja: São Luís - MA</option>
-	    					  	<option>Você está na loja: Fortelza - CE</option>
-	    					  	<option>Você está na loja: Belém - PA</option>
-	        				</select>
-	        			</form>
-	        			<div class="col-xs-12">
-							<label class="col-xs-6">
-								<input type="checkbox" id="inlineCheckbox1" value="option1"> Teresina - PI
-							</label>
-							<label class="col-xs-6">
-								<input type="checkbox" id="inlineCheckbox2" value="option2"> São Luís - MA
-							</label>
-							<label class="col-xs-6">
-							 	<input type="checkbox" id="inlineCheckbox3" value="option3"> Fortaleza - CE
-							</label>
-							<label class="col-xs-6">
-							 	<input type="checkbox" id="inlineCheckbox3" value="option3"> Belém - PA
-							</label>
-	    				</div>
-	        		</div>
-	        		<div class="col-sm-3 hidden-xs hidden-sm">
+	        		<div class="col-xs-6">
 	        			<form action="/" class="form form-horizontal">
-	        				<label class="checkbox-inline">
-	        					<span class="">Loja de</span>
-	        					<select class="">
-	        					  	<option>Teresina - PI</option>
-	        					  	<option>São Luís - MA</option>
-	        					  	<option>Fortelza - CE</option>
-	        					  	<option>Belém - PA</option>
-	        					</select>
-	        				</label>
+	        				<div class="form-group row choice-store">
+	        					<select class="selectpicker col-xs-12" data-show-subtext="true">
+									<option selected="selected" data-subtext="Piauí">Você está na loja Teresina</option>
+									<option data-subtext="Maranhão">Vá para a loja São Luís</option>
+									<option data-subtext="Ceará">Vá para a loja Fortaleza</option>
+									<option data-subtext="Pará">Vá para a loja Belém</option>
+								</select>
+	        				</div>
 	        			</form>
 	        		</div>
-	        		<div class="show-cars-from-select col-sm-9 hidden-xs hidden-sm">
+	        		<div class="col-xs-6">
 	        			<form action="/" class="form form-horizontal">
-	        				<div class="checkbox">
-	        					<label class="checkbox-inline">
-	        						Também ver carros de
-	        					</label>
-	        					<label class="checkbox-inline">
-	        						<input type="checkbox" id="inlineCheckbox1" value="option1"> Teresina - PI
-	        					</label>
-	        					<label class="checkbox-inline">
-	        						<input type="checkbox" id="inlineCheckbox2" value="option2"> São Luís - MA
-	        					</label>
-	        					<label class="checkbox-inline">
-	        					 	<input type="checkbox" id="inlineCheckbox3" value="option3"> Fortaleza - CE
-	        					</label>
-	        					<label class="checkbox-inline">
-	        					 	<input type="checkbox" id="inlineCheckbox3" value="option3"> Belém - PA
-	        					</label>
+	        				<div class="form-group row choice-cars">
+	        					<select class="selectpicker col-xs-12" title="Também ver carros de:" multiple="1">
+									<option data-content="<span class='label label-danger'>Teresina</span>">Teresina</option>
+									<option data-content="<span class='label label-danger'>São Luís</span>">São Luís</option>
+									<option data-content="<span class='label label-danger'>Fortaleza</span>">Fortaleza</option>
+									<option data-content="<span class='label label-danger'>Belém</span>">Belém</option>
+								</select>
 	        				</div>
 	        			</form>
 	        		</div>
@@ -145,31 +112,21 @@
 						<img src="img/logo.png" alt="" width="100%">
 					</a>
 				</div>
+				<div class="col-sm-8">
+					<h2 class="header-title"><p>Você compra!</p> <p>Você vende!</p> <small>(86) 3303-3651 / (86) 9810-0203</small></h2>
+				</div>
 			</div>
 			<div class="row">
-				<form action="/" class="form hidden-sm hidden-md hidden-lg">
-					<div class="form-group">
-						<select name="" id="" class="main-navifation-mobile col-xs-12 form-control">
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/">Início</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/veiculo.html">Ofertas do dia</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/veiculo.html">Escolha seu 0Km</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/veiculo.html">Quer vender</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/veiculo.html">Outro carro?</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/como-funciona.html">Como funciona</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/como-funciona.html">Contato funciona</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/minha-conta.html">Minha conta</option>
-						</select>
-					</div>
-				</form>
-				<ul class="main-navigation nav nav-tabs nav-justified hidden-xs">
-					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Bem vindo ao Botepreco.com. Você compra! Você vende!">Início</a></li>
+				<ul class="main-navigation nav nav-tabs nav-justified">
+					<li class="active"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Bem vindo ao Botepreco.com. Você compra! Você vende!">Início</a></li>
 					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Conheça nossas ofertas do dia. Todo dia são vários veículos com preços incríveis">Ofertas do dia</a></li>
 					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="No Botepreco.com, você também pode comprar seu 0km. Clique e confira nossas ofertas">Escolha seu 0Km</a></li>
 					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Quer vender? Clique e monte seu carro. Nossos consultores vão achar a proposta certa para você.">Quer vender</a></li>
 					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Não encontrou o veículo que queria? Clique e nos informe qual carro deseja adquirir">Outro carro?</a></li>
-					<li class="active"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Não encontrou o veículo que queria? Clique e nos informe qual carro deseja adquirir">Como funciona</a></li>
+					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Não encontrou o veículo que queria? Clique e nos informe qual carro deseja adquirir">Como funciona</a></li>
 					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Entre em contato conosco e tire todas as suas dúvidas. Sugestões também são bem vindas">Contato</a></li>
-					<li class="dropdown">
+					<li class="hidden-lg main-navigation-account"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Entre em contato conosco e tire todas as suas dúvidas. Sugestões também são bem vindas">Minha conta</a></li>
+					<li class="hidden-xs hidden-sm hidden-md dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Minha conta</b> <span class="caret"></span></a>
 						<ul id="login-dp" class="dropdown-menu">
 							<li>
@@ -303,11 +260,11 @@
 		</div>
 
 		<div class="main-network row">
-		    <div class="col-sm-6 col-md-9">
+		    <div class="col-sm-6 col-md-8">
 		        <h3><span id="likeCounter">00000</span> pessoas já curtiram nossa página! O que está esperando?</h3>
 		    </div>
-		    <div class="col-sm-6 col-md-3">
-		        <a href="https://www.facebook.com/botepreco" class="btn btn-lg btn-default btn-block"  title="Botepreço.com no Facebook">Curta você também!</a>
+		    <div class="col-sm-6 col-md-4">
+		        <a href="https://www.facebook.com/botepreco" class="btn btn-lg btn-default btn-block"  title="Botepreço.com no Facebook">Curta nossa página do Facebook!</a>
 		    </div>
 		</div><!-- main network -->
 		<div class="footer row">
@@ -365,10 +322,13 @@
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.5/js/bootstrap-select.min.js"></script>
 	<script>
 		$(function () {
 		  	var likeCounter = $('#likeCounter');
 		  	var cy = $('#thisYear');
+		  	var choiceCarsSelect = $('.choice-cars ');
+		  	var selectPicker = $('.selectpicker');
 
 			$.get("https://graph.facebook.com/v2.3/botepreco?fields=likes&access_token=138346436263156|3cc7396b4ca62ac37947525906695c94", 
 				function(data) {
@@ -378,6 +338,9 @@
 
 			$('[data-toggle="tooltip"]').tooltip();
 		    cy.append(document.createTextNode((new Date).getFullYear()));
+
+		    choiceCarsSelect.attr('multiple', 'multiple');
+		    selectPicker.selectpicker('refresh');
 		});
 	</script>
 </body>

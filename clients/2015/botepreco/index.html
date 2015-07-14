@@ -70,6 +70,7 @@
 	<!-- acredito que essa fonte tenha ficado interessante para o site, além de ser bem leve -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.5/css/bootstrap-select.min.css">
 	<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -77,61 +78,27 @@
 		<div class="choice-bar" data-spy="affix" data-offset-top="35">
 			<div class="container">
 		        <div class="row">
-	        		<div class="hidden-md hidden-lg">
-	        			<form action="/">
-	        				<select class="select-store-mobile" name="" id="">
-	        					<option>Você está na loja: Teresina - PI</option>
-	    					  	<option>Você está na loja: São Luís - MA</option>
-	    					  	<option>Você está na loja: Fortelza - CE</option>
-	    					  	<option>Você está na loja: Belém - PA</option>
-	        				</select>
-	        			</form>
-	        			<div class="col-xs-12">
-							<label class="col-xs-6">
-								<input type="checkbox" id="inlineCheckbox1" value="option1"> Teresina - PI
-							</label>
-							<label class="col-xs-6">
-								<input type="checkbox" id="inlineCheckbox2" value="option2"> São Luís - MA
-							</label>
-							<label class="col-xs-6">
-							 	<input type="checkbox" id="inlineCheckbox3" value="option3"> Fortaleza - CE
-							</label>
-							<label class="col-xs-6">
-							 	<input type="checkbox" id="inlineCheckbox3" value="option3"> Belém - PA
-							</label>
-	    				</div>
-	        		</div>
-	        		<div class="col-sm-3 hidden-xs hidden-sm">
+	        		<div class="col-xs-6">
 	        			<form action="/" class="form form-horizontal">
-	        				<label class="checkbox-inline">
-	        					<span class="">Loja de</span>
-	        					<select class="">
-	        					  	<option>Teresina - PI</option>
-	        					  	<option>São Luís - MA</option>
-	        					  	<option>Fortelza - CE</option>
-	        					  	<option>Belém - PA</option>
-	        					</select>
-	        				</label>
+	        				<div class="form-group row choice-store">
+	        					<select class="selectpicker col-xs-12" data-show-subtext="true">
+									<option selected="selected" data-subtext="Piauí">Você está na loja Teresina</option>
+									<option data-subtext="Maranhão">Vá para a loja São Luís</option>
+									<option data-subtext="Ceará">Vá para a loja Fortaleza</option>
+									<option data-subtext="Pará">Vá para a loja Belém</option>
+								</select>
+	        				</div>
 	        			</form>
 	        		</div>
-	        		<div class="show-cars-from-select col-sm-9 hidden-xs hidden-sm">
+	        		<div class="col-xs-6">
 	        			<form action="/" class="form form-horizontal">
-	        				<div class="checkbox">
-	        					<label class="checkbox-inline">
-	        						Também ver carros de
-	        					</label>
-	        					<label class="checkbox-inline">
-	        						<input type="checkbox" id="inlineCheckbox1" value="option1"> Teresina - PI
-	        					</label>
-	        					<label class="checkbox-inline">
-	        						<input type="checkbox" id="inlineCheckbox2" value="option2"> São Luís - MA
-	        					</label>
-	        					<label class="checkbox-inline">
-	        					 	<input type="checkbox" id="inlineCheckbox3" value="option3"> Fortaleza - CE
-	        					</label>
-	        					<label class="checkbox-inline">
-	        					 	<input type="checkbox" id="inlineCheckbox3" value="option3"> Belém - PA
-	        					</label>
+	        				<div class="form-group row choice-cars">
+	        					<select class="selectpicker col-xs-12" title="Também ver carros de:" multiple="1">
+									<option data-content="<span class='label label-danger'>Teresina</span>">Teresina</option>
+									<option data-content="<span class='label label-danger'>São Luís</span>">São Luís</option>
+									<option data-content="<span class='label label-danger'>Fortaleza</span>">Fortaleza</option>
+									<option data-content="<span class='label label-danger'>Belém</span>">Belém</option>
+								</select>
 	        				</div>
 	        			</form>
 	        		</div>
@@ -146,25 +113,11 @@
 					</a>
 				</div>
 				<div class="col-sm-8">
-					<h2 class="header-title">Você compra! Você vende! <small>(86) 3303-3651 / (86) 9810-0203</small></h2>
+					<h2 class="header-title"><p>Você compra!</p> <p>Você vende!</p> <small>(86) 3303-3651 / (86) 9810-0203</small></h2>
 				</div>
 			</div>
 			<div class="row">
-				<form action="/" class="form hidden-sm hidden-md hidden-lg">
-					<div class="form-group">
-						<select name="" id="" class="main-navigation-mobile col-xs-12 form-control">
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/">Início</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/veiculo.html">Ofertas do dia</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/veiculo.html">Escolha seu 0Km</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/veiculo.html">Quer vender</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/veiculo.html">Outro carro?</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/como-funciona.html">Como funciona</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/como-funciona.html">Contato funciona</option>
-							<option value="http://www.erickpatrick.net/clients/2015/botepreco/minha-conta.html">Minha conta</option>
-						</select>
-					</div>
-				</form>
-				<ul class="main-navigation nav nav-tabs nav-justified hidden-xs">
+				<ul class="main-navigation nav nav-tabs nav-justified">
 					<li class="active"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Bem vindo ao Botepreco.com. Você compra! Você vende!">Início</a></li>
 					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Conheça nossas ofertas do dia. Todo dia são vários veículos com preços incríveis">Ofertas do dia</a></li>
 					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="No Botepreco.com, você também pode comprar seu 0km. Clique e confira nossas ofertas">Escolha seu 0Km</a></li>
@@ -172,7 +125,8 @@
 					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Não encontrou o veículo que queria? Clique e nos informe qual carro deseja adquirir">Outro carro?</a></li>
 					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Não encontrou o veículo que queria? Clique e nos informe qual carro deseja adquirir">Como funciona</a></li>
 					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Entre em contato conosco e tire todas as suas dúvidas. Sugestões também são bem vindas">Contato</a></li>
-					<li class="dropdown">
+					<li class="hidden-lg main-navigation-account"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Entre em contato conosco e tire todas as suas dúvidas. Sugestões também são bem vindas">Minha conta</a></li>
+					<li class="hidden-xs hidden-sm hidden-md dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Minha conta</b> <span class="caret"></span></a>
 						<ul id="login-dp" class="dropdown-menu">
 							<li>
@@ -213,7 +167,7 @@
 	</div>
 	<div class="main-content container">
 		<div class="featured-content row">
-			<div class="search-form-advanced col-md-4 col-md-push-8">
+			<div class="search-form-advanced col-md-4 col-md-push-8 hidden-xs hidden-sm">
 				<form class="form" action="/" method="post">
 					<div class="form-group form-group-sm">
 					    <label for="carMaker">Marca</label>
@@ -334,6 +288,17 @@
 				</div>
 			</div><!-- home carousel -->
 		</div><!-- featured content -->
+		<div class="search-form-quick row">
+			<form class="form col-xs-12" action="">
+				<div class="input-group">
+					<span class="input-group-addon">Busca rápida</span>
+				    <input type="text" class="form-control" id="searchFormQuick" aria-describedby="searchFormQuick" placeholder="Marca, Modelo, Ano, Cor">
+				    <span class="input-group-btn">
+						<button class="btn btn-danger" type="button">Pesquisar</button>
+					</span>
+				</div>
+			</form>
+		</div>
 		<div class="listing listing-offers">
 			<div class="row">
 				<div class="col-xs-12">
@@ -359,7 +324,7 @@
 					<p><em>1.8 XEI 16V FLEX 4P AUTOMÁTICO - 2009/2010</em></p>
 					<a href="#" class="btn btn-danger btn-block" title="">Clique e Bote o Preço!</a>
 				</div>
-				<div class="clearfix visible-sm-block"></div>
+				<div class="clearfix visible-xs-block visible-sm-block"></div>
 				<div class="listing-item col-sm-6 col-md-3">
 					<a class="listing-item-image" href="#" title=""><img src="http://loremflickr.com/200/150/car?random=3" alt="" width="100%" class="img-thumbnail"></a>
 					<h2 class="listing-car-value">R$ 35.900,00</h2>
@@ -374,7 +339,7 @@
 					<p><em>1.7 LX SEDAN 16V GASOLINA 4P MANUAL - 2004/2005</em></p>
 					<a href="#" class="btn btn-danger btn-block" title="">Clique e Bote o Preço!</a>
 				</div>
-				<div class="clearfix visible-sm-block"></div>
+				<div class="clearfix visible-xs-block visible-sm-block"></div>
 				<div class="listing-item col-sm-6 col-md-3">
 					<a class="listing-item-image" href="#" title=""><img src="http://loremflickr.com/200/150/car?random=8" alt="" width="100%" class="img-thumbnail"></a>
 					<h2 class="listing-car-value">R$ 35.900,00</h2>
@@ -389,7 +354,7 @@
 					<p><em>1.7 LX SEDAN 16V GASOLINA 4P MANUAL - 2004/2005</em></p>
 					<a href="#" class="btn btn-danger btn-block" title="">Clique e Bote o Preço!</a>
 				</div>
-				<div class="clearfix visible-sm-block"></div>
+				<div class="clearfix visible-xs-block visible-sm-block"></div>
 				<div class="listing-item col-sm-6 col-md-3">
 					<a class="listing-item-image" href="#" title=""><img src="http://loremflickr.com/200/150/car?random=6" alt="" width="100%" class="img-thumbnail"></a>
 					<h2 class="listing-car-value">R$ 55.900,00</h2>
@@ -426,7 +391,7 @@
 				<div class="clearfix">
 					<div class="search-form-negotiation col-md-6">
 						<form class="form" action="/" method="post">
-							<div class="form-group form-group-sm col-md-6">
+							<div class="form-group form-group-sm col-sm-4 col-md-6">
 							    <label for="order">Ordenação</label>
 								<select class="form-control" id="order" name="order">
 								 	<option value="0" selected="selected">Aleatório</option>
@@ -439,14 +404,14 @@
 								 	<option value="7">Marca / Modelo</option>
 								</select>
 							</div><!-- Order -->
-							<div class="form-group form-group-sm col-md-3">
+							<div class="form-group form-group-sm col-sm-4 col-md-3">
 							    <label for="show">Exibição</label>
 								<select class="form-control" id="show" name="show">
 								 	<option value="0" selected="selected">grade</option>
 									<option value="1">lista</option>
 								</select>
 							</div><!-- Order -->
-							<div class="form-group form-group-sm col-md-3">
+							<div class="form-group form-group-sm col-sm-4 col-md-3">
 							    <label for="order">Paginação</label>
 								<select class="form-control" id="order" name="order">
 									<option value="12" selected="selected">12</option>
@@ -496,7 +461,7 @@
 					<p><em>1.8 XEI 16V FLEX 4P AUTOMÁTICO - 2009/2010</em></p>
 					<a href="#" class="btn btn-danger btn-block" title="">Clique e Bote o Preço!</a>
 				</div>
-				<div class="clearfix visible-sm-block"></div>
+				<div class="clearfix visible-xs-block visible-sm-block"></div>
 				<div class="listing-item col-sm-6 col-md-3">
 					<a class="listing-item-image" href="#" title=""><img src="http://loremflickr.com/200/150/car?random=22" alt="" width="100%" class="img-thumbnail"></a>
 					<h2 class="listing-car-value">R$ 35.900,00</h2>
@@ -511,7 +476,7 @@
 					<p><em>1.7 LX SEDAN 16V GASOLINA 4P MANUAL - 2004/2005</em></p>
 					<a href="#" class="btn btn-danger btn-block" title="">Clique e Bote o Preço!</a>
 				</div>
-				<div class="clearfix visible-sm-block"></div>
+				<div class="clearfix visible-xs-block visible-sm-block"></div>
 				<div class="listing-item col-sm-6 col-md-3">
 					<a class="listing-item-image" href="#" title=""><img src="http://loremflickr.com/200/150/car?random=24" alt="" width="100%" class="img-thumbnail"></a>
 					<h2 class="listing-car-value">R$ 35.900,00</h2>
@@ -526,7 +491,7 @@
 					<p><em>1.7 LX SEDAN 16V GASOLINA 4P MANUAL - 2004/2005</em></p>
 					<a href="#" class="btn btn-danger btn-block" title="">Clique e Bote o Preço!</a>
 				</div>
-				<div class="clearfix visible-sm-block"></div>
+				<div class="clearfix visible-xs-block visible-sm-block"></div>
 				<div class="listing-item col-sm-6 col-md-3">
 					<a class="listing-item-image" href="#" title=""><img src="http://loremflickr.com/200/150/car?random=26" alt="" width="100%" class="img-thumbnail"></a>
 					<h2 class="listing-car-value">R$ 55.900,00</h2>
@@ -541,7 +506,7 @@
 					<p><em>1.8 XEI 16V FLEX 4P AUTOMÁTICO - 2009/2010</em></p>
 					<a href="#" class="btn btn-danger btn-block" title="">Clique e Bote o Preço!</a>
 				</div>
-				<div class="clearfix visible-sm-block"></div>
+				<div class="clearfix visible-xs-block visible-sm-block"></div>
 				<div class="listing-item col-sm-6 col-md-3">
 					<a class="listing-item-image" href="#" title=""><img src="http://loremflickr.com/200/150/car?random=12" alt="" width="100%" class="img-thumbnail"></a>
 					<h2 class="listing-car-value">R$ 55.900,00</h2>
@@ -556,7 +521,7 @@
 					<p><em>1.8 XEI 16V FLEX 4P AUTOMÁTICO - 2009/2010</em></p>
 					<a href="#" class="btn btn-danger btn-block" title="">Clique e Bote o Preço!</a>
 				</div>
-				<div class="clearfix visible-sm-block"></div>
+				<div class="clearfix visible-xs-block visible-sm-block"></div>
 				<div class="listing-item col-sm-6 col-md-3">
 					<a class="listing-item-image" href="#" title=""><img src="http://loremflickr.com/200/150/car?random=14" alt="" width="100%" class="img-thumbnail"></a>
 					<h2 class="listing-car-value">R$ 35.900,00</h2>
@@ -571,7 +536,7 @@
 					<p><em>1.7 LX SEDAN 16V GASOLINA 4P MANUAL - 2004/2005</em></p>
 					<a href="#" class="btn btn-danger btn-block" title="">Clique e Bote o Preço!</a>
 				</div>
-				<div class="clearfix visible-sm-block"></div>
+				<div class="clearfix visible-xs-block visible-sm-block"></div>
 				<div class="listing-item col-sm-6 col-md-3">
 					<a class="listing-item-image" href="#" title=""><img src="http://loremflickr.com/200/150/car?random=16" alt="" width="100%" class="img-thumbnail"></a>
 					<h2 class="listing-car-value">R$ 35.900,00</h2>
@@ -586,7 +551,7 @@
 					<p><em>1.7 LX SEDAN 16V GASOLINA 4P MANUAL - 2004/2005</em></p>
 					<a href="#" class="btn btn-danger btn-block" title="">Clique e Bote o Preço!</a>
 				</div>
-				<div class="clearfix visible-sm-block"></div>
+				<div class="clearfix visible-xs-block visible-sm-block"></div>
 				<div class="listing-item col-sm-6 col-md-3">
 					<a class="listing-item-image" href="#" title=""><img src="http://loremflickr.com/200/150/car?random=18" alt="" width="100%" class="img-thumbnail"></a>
 					<h2 class="listing-car-value">R$ 55.900,00</h2>
@@ -634,11 +599,11 @@
 			</div>
 		</div><!-- listing listing-negotiation -->
 		<div class="main-network row">
-		    <div class="col-sm-6 col-md-9">
+		    <div class="col-sm-6 col-md-8">
 		        <h3><span id="likeCounter">00000</span> pessoas já curtiram nossa página! O que está esperando?</h3>
 		    </div>
-		    <div class="col-sm-6 col-md-3">
-		        <a href="https://www.facebook.com/botepreco" class="btn btn-lg btn-default btn-block"  title="Botepreço.com no Facebook">Curta você também!</a>
+		    <div class="col-sm-6 col-md-4">
+		        <a href="https://www.facebook.com/botepreco" class="btn btn-lg btn-default btn-block"  title="Botepreço.com no Facebook">Curta nossa página do Facebook!</a>
 		    </div>
 		</div><!-- main network -->
 		<div class="footer row">
@@ -662,7 +627,7 @@
 					<li><a href="#" title="Minha conta">Minha conta</a></li>
 				</ul>
 			</div>
-			<div class="clearfix visible-sm-block"></div>
+			<div class="clearfix visible-xs-block visible-sm-block"></div>
 			<div class="col-sm-6 col-md-3">
 				<h5 class="footer-title">Institucional</h5>
 				<ul class="footer-links">
@@ -696,10 +661,13 @@
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.5/js/bootstrap-select.min.js"></script>
 	<script>
 		$(function () {
 		  	var likeCounter = $('#likeCounter');
 		  	var cy = $('#thisYear');
+		  	var choiceCarsSelect = $('.choice-cars ');
+		  	var selectPicker = $('.selectpicker');
 
 			$.get("https://graph.facebook.com/v2.3/botepreco?fields=likes&access_token=138346436263156|3cc7396b4ca62ac37947525906695c94", 
 				function(data) {
@@ -709,6 +677,9 @@
 
 			$('[data-toggle="tooltip"]').tooltip();
 		    cy.append(document.createTextNode((new Date).getFullYear()));
+
+		    choiceCarsSelect.attr('multiple', 'multiple');
+		    selectPicker.selectpicker('refresh');
 		});
 	</script>
 </body>
