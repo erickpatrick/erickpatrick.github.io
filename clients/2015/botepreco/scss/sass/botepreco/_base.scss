@@ -1,0 +1,350 @@
+body {
+	background: transparent url(bg-logo.png);
+}
+
+h1, h2, h3, h4, h5, h6,
+input, select,
+.btn, 
+.nav-tabs,
+.pagination,
+.form-group label {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+	background: $main-red;
+}
+
+.choice-bar {
+	width: 100%;
+	background: $main-yellow;
+	z-index:999;
+	padding: $padding-quarter $padding-blank;
+}
+
+.choice-bar .checkbox {
+	padding-top: $padding-blank;
+}
+
+.choice-store, .choice-cars {
+	margin-bottom: $margin-blank;
+}
+
+.navbar {
+	margin-bottom: $margin-blank;
+}
+
+.header-title,
+.header-title small {
+	text-align: center;
+	color:white;
+}
+
+.header-title {
+	padding-top: $padding-half;
+}
+
+.header-title small {
+	display: block;
+	margin-top:$margin-half;
+}
+
+.banner {
+	padding-top: $padding-normal;
+	text-align: center;
+}
+
+.banner-logo {
+	max-width:400px;
+}
+
+.main-navigation {
+	background: $light-gray;
+}
+
+.main-navigation-mobile {
+	border-radius: 0;
+}
+
+.nav-tabs.nav-justified > li {
+	width:50%;
+	float:left;
+	height:45px;
+}
+
+.nav-tabs.nav-justified {
+	border-bottom: 1px #cecece solid;
+}
+
+.nav-tabs.nav-justified > li > a,
+.nav-tabs.nav-justified > li > a.active,
+.nav-tabs.nav-justified > li > a:hover {
+	border-radius: 0;
+	border:0;
+	color:$dark-gray;
+	font-size:.75em;
+	text-transform: uppercase;
+}
+.nav-tabs.nav-justified > li.active > a,
+.nav-tabs.nav-justified > li > a:hover {
+	background: $main-yellow;
+}
+
+.main-content {
+	background: $white;
+}
+
+.page-header-index {
+	color: $main-red;
+}
+
+.inner-content {
+	padding-top: $padding-normal;
+	padding-bottom: $padding-normal;
+}
+
+.inner-content a,
+.inner-content a:hover {
+	color: $main-red;
+}
+
+.inner-content a:visited {
+	color: #c9312c;
+}
+
+.inner-content-title,
+.list-group-item.disabled .list-group-item-heading {
+	color: $main-red;	
+}
+
+a.list-group-item:hover {
+	background: $main-yellow;
+	border-color: $main-yellow; 	
+}
+
+.list-group-item.active, 
+.list-group-item.active:hover {
+	background: $main-red;
+	border-color: $main-red; 	
+}
+
+.inner-content-title-main {
+	padding-bottom: $padding-half;
+	border-bottom: 1px solid #dedede;
+}
+
+.inner-content-title-vehicle {
+	font-size:3.5em;
+}
+
+.inner-content-title-vehicle > small {
+	display: block;
+}
+
+.how-to-steps {
+	margin-bottom: $margin-big;
+}
+
+.store-front-image,
+.store-map {
+	margin-bottom: $margin-normal;
+}
+
+.featured-content {
+	background: #555;
+}
+
+.search-form-advanced {
+	background: $light-gray;	
+}
+
+.search-form-advanced > .form {
+	background: $light-gray;
+	padding: $padding-normal;
+}
+
+.search-form-advanced .form-group-sm {
+	margin-bottom: $margin-half;
+}
+
+.search-form-advanced__button-wrapper {
+	margin-top: $margin-normal;
+}
+
+.home-carousel {
+	background: $light-gray;
+}
+
+.home-carousel .item img {
+	height: 100%;
+}
+
+
+.search-form-quick {
+	margin-top: $margin-huge;
+	padding-top: $padding-normal;
+	padding-bottom: $padding-normal;
+	overflow: hidden;
+	background: #444;
+}
+
+.search-form-quick-sidebar-title {
+	color:$white;
+}
+
+.login-help-buttons {
+	margin-top: $margin-colossal;
+}
+
+.listing-item {
+	padding-top: $padding-normal;
+	padding-bottom: $padding-normal;
+	min-height:$list-item-small-size;
+}
+
+.listing-item:hover {
+	background: $main-yellow;
+}
+
+.listing-car-value,
+.listing-car-name {
+	margin-top: $margin-half;
+	margin-bottom: $margin-half;
+}
+
+.listing-car-value {
+	color:$main-red;
+}
+
+.listing-item-image {
+	position: relative;
+	display: block;
+}
+
+.listing-item-label,
+.advertising-label {
+	position:absolute;
+	border-radius: 0;
+	top: 0;
+}
+
+.listing-item-label {
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: $padding-half;
+}
+
+.listing-item-label--super {
+	font-size:1.5em;
+}
+
+.listing-negotiation-pagination {
+	text-align: center;
+}
+
+.pagination > li > a,
+.pagination > li > a:hover {
+	color: $hover-red;
+}
+
+.pagination > li > a:hover {
+	background: $main-yellow;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover {
+	background: $hover-red;
+	border-color: $hover-red;
+}
+
+.advertising-full-width,
+.search-form-quick > .row {
+	padding: $padding-normal $padding-blank;
+}
+
+.search-form-quick {
+	padding-bottom: $padding-normal;
+}
+
+.advertising-full-width > .row {
+	padding-top: $padding-normal;
+	padding-bottom: $padding-normal;
+	background: $light-gray;
+}
+
+.advertising-image-wrapper {
+	position: relative;
+}
+
+.advertising-label {
+	z-index:10px;
+}
+
+.form-proposal {
+	margin: $margin-big $margin-blank;
+	padding: $padding-odd $padding-normal $padding-normal $padding-normal;
+	background: $gray;
+}
+
+.form-group,
+.form-proposal .help-block {
+	margin-bottom: $margin-blank;
+}
+
+.slider-vehicle-thumbs {
+	margin-top: $margin-normal;
+}
+
+.slider-vehicle-thumb {
+	margin-top: $margin-normal;
+}
+
+.clearfix-vehicle-page {
+	margin: $margin-huge $margin-blank;
+}
+
+.form-installments {
+	background-color: $main-yellow;
+}
+
+.advertising-insurance {
+	padding: $padding-blank;
+	margin-top: $margin-normal;
+	text-align: center;
+}
+
+.table > tbody > tr > td {
+	vertical-align: middle;
+}
+
+.main-network { background: #4763b3; margin-top: $margin-humongous; padding: $padding-normal; text-align: center;}
+.main-network h3 { margin-top: $margin-main-network; color: $white; }
+.main-network a {color: $dark-gray;}
+
+.footer {
+	color: $white;
+	background: $dark-gray;
+	padding-top: $padding-normal;
+	padding-bottom: $padding-normal;
+}
+.footer-title {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.footer-links {
+	list-style: none;
+	padding-left: $padding-normal;
+}
+.footer-links li:before {
+	content: "\00BB ";
+}
+.footer-links a {
+	color: $white;
+}
+
+.copyright {
+	text-align: center;
+}
+.copyright a {
+	color: $hover-red;
+}
