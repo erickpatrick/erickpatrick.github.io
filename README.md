@@ -5,7 +5,4 @@ Home of my portfolio/site. From time to time, things go wild and everything chan
 
 TODO
 ----
-- [ ] English Version
-- [ ] RSS Feed
-- [ ] Breadcumbs
-- [x] Main Menu
+- [ ] Refactor to use some Jigsaw PHP static site generator
