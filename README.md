@@ -8,4 +8,4 @@ TODO
 - [ ] English Version
 - [ ] RSS Feed
 - [ ] Breadcumbs
-- [ ] Main Menu
+- [x] Main Menu
