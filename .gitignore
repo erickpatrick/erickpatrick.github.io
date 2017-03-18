@@ -220,4 +220,7 @@ pip-log.txt
 
 *.sublime-workspace
 
+
+/build_local/
+/node_modules/
 /vendor/
