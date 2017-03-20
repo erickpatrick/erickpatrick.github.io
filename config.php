@@ -37,6 +37,10 @@ return [
         'translations' => [
             'path' => '{collection}/{data|Y/m/d}/{-title}',
             'sort' => '-date'
+        ],
+        'books' => [
+            'path' => '{collection}/{-title}',
+            'sort' => '-title'
         ]
     ]
 ];
