@@ -1,15 +1,17 @@
 <!doctype html>
-<html lang="@yield('lang', $page->site->lang)" itemscope itemtype="https://schema.org/Person">
+<html lang="@yield('lang', $page->site->lang->main)" itemscope itemtype="https://schema.org/Person">
     <head>
         <meta charset="utf-8">
         <meta name=viewport content="width=device-width, initial-scale=1">
         <title>@yield('page-title', 'Homepage') @ {{ $page->site->title }}</title>
         <meta name="description" content="@yield('description', $page->site->description)">
-        <meta name="author" content="{{ $page->site->author }}">
+        <meta name="author" lang="@yield('lang', $page->site->lang->main)" content="{{ $page->site->author }}">
+        <meta name="keywords" lang="{{ $page->site->lang->main }}" contet="erick patrick, web developer, web programming, web architecture, ecommerce, backend, frontend, php, javascript, magento">
+        <meta name="keywords" lang="{{ $page->site->lang->secondary }}" contet="erick patrick, desenvolvedor web, programação web, arquitetura web, ecommerce, backend, frontend, php, javascript, magento">
 
         <!-- Twitter card -->
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="{{ $page->site->social->twitter }}">
+        <meta name="twitter:site" content="{{ $page->site->social->twitter->handle }}">
         <meta name="twitter:title" content="@yield('page-title', 'Homepage') @ {{ $page->site->title }}">
         <meta name="twitter:description" content="@yield('description', $page->site->description)">
         <meta name="twitter:creator" content="{{ $page->site->social->twitter }}">
@@ -33,8 +35,15 @@
 
         <link rel="author" href="{{ $page->site->social->gplus->author }}" />
         <link rel="publisher" href="{{ $page->site->social->gplus->publisher }}">
+        
+        @include('_partials.styles')
     </head>
     <body>
+        @yield('header')
+        @yield('breadcrumb')
+        @yield('right-sidebar')
         @yield('body')
+        @yield('left-sidebar')
+        @yield('footer')
     </body>
 </html>
