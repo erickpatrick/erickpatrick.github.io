@@ -3,16 +3,20 @@
     <head>
         <meta charset="utf-8">
 
-        <!-- amp page -->
+        <!-- amp/pwa data -->
         <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+        <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
         <link rel="canonical" href="{{ $page->getUrl() }}" />
+        <link rel="manifest" href="/manifest.json">
 
         <meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
         <title>@yield('page-title', 'Homepage') @ {{ $page->site->title }}</title>
+
         <meta name="description" content="@yield('description', $page->site->description)">
         <meta name="author" lang="@yield('lang', $page->site->lang->main)" content="{{ $page->site->author }}">
-        <meta name="keywords" lang="{{ $page->site->lang->main }}" contet="erick patrick, web developer, web programming, web architecture, ecommerce, backend, frontend, php, javascript, magento">
-        <meta name="keywords" lang="{{ $page->site->lang->secondary }}" contet="erick patrick, desenvolvedor web, programação web, arquitetura web, ecommerce, backend, frontend, php, javascript, magento">
+        <meta name="keywords" lang="{{ $page->site->lang->main }}" content="erick patrick, web developer, web programming, web architecture, ecommerce, backend, frontend, php, javascript, magento">
+        <meta name="keywords" lang="{{ $page->site->lang->secondary }}" content="erick patrick, desenvolvedor web, programação web, arquitetura web, ecommerce, backend, frontend, php, javascript, magento">
 
         <!-- Twitter card -->
         <meta name="twitter:card" content="summary">
@@ -52,5 +56,22 @@
         @yield('body')
         @yield('left-sidebar')
         @yield('footer')
+
+        <amp-install-serviceworker src="/sw.js" data-iframe-src="{{ $page->baseUrl }}/sw" layout="nodisplay">
+        </amp-install-serviceworker>
+        <amp-analytics type="googleanalytics" id="analytics"><script type="application/json">{
+          "vars": {
+            "account": "{{ $page->site->analytics }}"
+          },
+          "triggers": {
+            "default pageview": {
+              "on": "visible",
+              "request": "pageview",
+              "vars": {
+                "title": "@yield('page-title', 'Homepage') @ {{ $page->site->title }}"
+              }
+            }
+          }
+        }</script></amp-analytics>
     </body>
 </html>

@@ -2,10 +2,9 @@
 
 return [
     'production' => false,
-    'baseUrl' => 'https://www.erickpatrick.net',
+    'baseUrl' => 'http://localhost:8000',
     'site' => [
-        'domain' => 'https://www.erickpatrick.net',
-        'blog' => 'https://blog.erickpatrick.net',
+        'domain' => 'localhost',
         'lang' => [
             'main' => 'en',
             'secondary' => 'pt-br'
@@ -27,6 +26,15 @@ return [
                 'author' => 'https://google.com/+ErickPatrick1988',
                 'publisher' => 'https://plus.google.com/b/106544148188542649191/106544148188542649191/posts'
             ]
+        ],
+        'analytics' => 'UA-50843686-1',
+    ],
+    'collections' => [
+        'articles' => [
+            'sort' => '-date'
+        ],
+        'translations' => [
+            'sort' => '-date'
         ]
     ]
 ];
