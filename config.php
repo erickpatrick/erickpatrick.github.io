@@ -42,5 +42,8 @@ return [
             'path' => '{collection}/{-title}',
             'sort' => '-title'
         ]
-    ]
+    ],
+    'excerpt' => function ($page, string $content, int $characters = 100) : string {
+        return substr(strip_tags($content), 0, $characters);
+    }
 ];

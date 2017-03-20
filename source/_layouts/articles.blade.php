@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('page-title')
-Articles listing
+All articles
 @endsection
 
 @section('header')
