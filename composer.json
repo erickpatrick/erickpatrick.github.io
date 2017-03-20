@@ -12,5 +12,8 @@
             "email": "contato@erickpatrick.net"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require-dev": {
+        "laravel/homestead": "^5.1"
+    }
 }
