@@ -2,9 +2,9 @@
 
 return [
     'production' => false,
-    'baseUrl' => 'http://erickpatrick.app',
+    'baseUrl' => 'http://www.erickpatrick.app',
     'site' => [
-        'domain' => 'http://erickpatrick.app',
+        'domain' => 'http://www.erickpatrick.app',
         'lang' => [
             'main' => 'en',
             'secondary' => 'pt-br'
