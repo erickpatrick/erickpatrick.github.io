@@ -40,6 +40,12 @@ footer.container::after {
     color: #1e3760;
 }
 
+h2 small {
+    display: block;
+    font-size: 1.4rem;
+    color: #999;
+}
+
 .brazil {
     padding: 0px 10px;
     display: inline-block;

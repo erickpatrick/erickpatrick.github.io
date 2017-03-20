@@ -1,1 +1,1 @@
-<h1>Erick Patrick</h1>
+<h1 class="salutation"><em>Erick Patrick</em></h1>

@@ -2,9 +2,9 @@
 
 return [
     'production' => false,
-    'baseUrl' => 'http://localhost:8000',
+    'baseUrl' => 'http://erickpatrick.app',
     'site' => [
-        'domain' => 'localhost',
+        'domain' => 'http://erickpatrick.app',
         'lang' => [
             'main' => 'en',
             'secondary' => 'pt-br'
@@ -31,9 +31,11 @@ return [
     ],
     'collections' => [
         'articles' => [
+            'path' => '{collection}/{data|Y/m/d}/{-title}',
             'sort' => '-date'
         ],
         'translations' => [
+            'path' => '{collection}/{data|Y/m/d}/{-title}',
             'sort' => '-date'
         ]
     ]
