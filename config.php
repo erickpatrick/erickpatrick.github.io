@@ -2,7 +2,7 @@
 
 return [
     'production' => false,
-    'bla' => 'erick',
+    'baseUrl' => 'https://www.erickpatrick.net',
     'site' => [
         'domain' => 'https://www.erickpatrick.net',
         'blog' => 'https://blog.erickpatrick.net',

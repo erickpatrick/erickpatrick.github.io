@@ -1,4 +1,4 @@
-<style>
+<style amp-custom>
 body {
     margin: 0;
     border-top: 5px #1e3760 solid;

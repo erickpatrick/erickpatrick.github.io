@@ -1,8 +1,13 @@
 <!doctype html>
-<html lang="@yield('lang', $page->site->lang->main)" itemscope itemtype="https://schema.org/Person">
+<html amp lang="@yield('lang', $page->site->lang->main)" itemscope itemtype="https://schema.org/Person">
     <head>
         <meta charset="utf-8">
-        <meta name=viewport content="width=device-width, initial-scale=1">
+
+        <!-- amp page -->
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <link rel="canonical" href="{{ $page->getUrl() }}" />
+
+        <meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
         <title>@yield('page-title', 'Homepage') @ {{ $page->site->title }}</title>
         <meta name="description" content="@yield('description', $page->site->description)">
         <meta name="author" lang="@yield('lang', $page->site->lang->main)" content="{{ $page->site->author }}">
@@ -35,6 +40,8 @@
 
         <link rel="author" href="{{ $page->site->social->gplus->author }}" />
         <link rel="publisher" href="{{ $page->site->social->gplus->publisher }}">
+
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
         @include('_partials.styles')
     </head>
