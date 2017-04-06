@@ -2,9 +2,9 @@
 
 return [
     'production' => false,
-    'baseUrl' => 'http://www.erickpatrick.app',
+    'baseUrl' => 'https://local.erickpatrick.app',
     'site' => [
-        'domain' => 'http://www.erickpatrick.app',
+        'domain' => 'https://local.erickpatrick.app',
         'lang' => [
             'main' => 'en',
             'secondary' => 'pt-br'
@@ -44,6 +44,6 @@ return [
         ]
     ],
     'excerpt' => function ($page, string $content, int $characters = 100) : string {
-        return substr(strip_tags($content), 0, $characters);
+        return substr(strip_tags($content), 0, $characters) . '...';
     }
 ];

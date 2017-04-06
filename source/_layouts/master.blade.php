@@ -51,10 +51,7 @@
     </head>
     <body>
         @yield('header')
-        @yield('breadcrumb')
-        @yield('right-sidebar')
         @yield('body')
-        @yield('left-sidebar')
         @yield('footer')
 
         <amp-install-serviceworker src="/sw.js" data-iframe-src="{{ $page->baseUrl }}/sw" layout="nodisplay">

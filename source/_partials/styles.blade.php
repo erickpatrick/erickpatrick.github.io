@@ -12,6 +12,58 @@ body {
     width: 90%;
 }
 
+.link-back {
+    padding: 5px;
+    display: inline-block;
+    background-color: #1e3760;
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-back:visited,
+.link-back:active {
+    background-color: #2f4871;
+}
+
+.link-back:hover {
+    background-color: #0d2650;
+}
+
+.articles {
+    font-size: 1.3rem;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem 2rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.article {
+    border-bottom: 1px #efefef solid;
+}
+
+.service {
+    justify-self: center;
+    align-self: center;
+}
+
+.article__date,
+.article__title {
+    margin-bottom: 0px;
+}
+
+.article__title,
+.article__excerpt {
+    margin-top: 0px;
+}
+
+.article__date {
+    font-size: 1rem;
+}
+
 footer.container {
     padding-top: 50px;
     text-align: center;
@@ -81,11 +133,19 @@ h2 small {
     .container {
         width: 75%;
     }
+    
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (min-width: 1024px) {
     .container {
         font-size: 1.4rem;
+    }
+
+    .services {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
