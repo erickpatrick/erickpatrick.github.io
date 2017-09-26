@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
 body {
     background-color: #fff;
     position: relative;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
 }
 @media only screen and (min-width: 992px) {
     body:before {
@@ -45,7 +49,8 @@ body {
     }
 }
 .header {
-    background-color: #2e2e25
+    background-color: #2e2e25;
+    position: relative;
 }
 .header .bg-dark {
     background-color: #2e2e25 !important
@@ -92,10 +97,41 @@ body {
     color: #fff
 }
 .nav__logos {
+    position: relative;
     margin-top: 20px;
     padding: 10px 0;
     list-style: none;
     text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+    .body--news .nav__logos:before {
+        content: '';
+        height: 300px;
+        width: 100%;
+        border-right: 5px #46c1bd dashed;
+        border-bottom: 5px #46c1bd dashed;
+        border-bottom-right-radius: 70px;
+        position: absolute;
+        top: -20px;
+        left: -105%;
+        z-index: 10;
+    }
+    .body--news .footer .nav__logos:before {
+        display: none;
+    }
+    .nav__logos:after {
+        content: '';
+        height: 100px;
+        width: 100%;
+        border-left: 5px rgb(250, 186, 31) dashed;
+        border-bottom: 5px rgb(250, 186, 31) dashed;
+        border-bottom-left-radius: 70px;
+        position: absolute;
+        top: -20px;
+        left: 100%;
+        z-index: 10;
+    }
 }
 .nav__logo {
     display: inline-block;
@@ -144,7 +180,7 @@ body {
         height: 150px;
         width: 30%;
         border-top: 5px dashed #46c1bd;
-        border-right: 3px dashed #46c1bd;
+        border-right: 5px dashed #46c1bd;
         position: absolute;
         bottom: -200px;
         z-index: -5;
@@ -171,13 +207,12 @@ body {
 }
 @media only screen and (min-width: 768px) {
     .slider__description--wrapper {
-        width: 250px;
+        width: 300px;
         bottom: 20px;
         right: 20px;
         position: absolute;
     }
     .slider__overlay {
-        overflow: hidden;
         position: absolute;
         height: 90%;
         width: 100%;
@@ -191,6 +226,28 @@ body {
         border-bottom-left-radius: 80px;
         border-top-right-radius: 80px;
     }
+    .slider__overlay:before {
+        content: '';
+        top: -135px;
+        left: -100%;
+        width: 100%;
+        height: 135px;
+        border-top: 5px dashed #46c1bd;
+        border-right: 5px dashed #46c1bd;
+        border-bottom: 5px dashed #fff;
+        border-top-right-radius: 80px;
+        position: absolute;
+    }
+    .slider__overlay:after {
+        content: '';
+        right: -100%;
+        bottom: -40px;
+        width: 100%;
+        height: 40px;
+        border-top: 5px dashed #46c1bd;
+        border-left: 5px dashed #fff;
+        position: absolute;
+    }
 }
 .slider__description {
     padding: 20px;
@@ -203,9 +260,10 @@ body {
 }
 .slider__description__title {
     text-transform: uppercase;
+    color: #4b3d6f;
 }
 .slider__description__text {
-    font-size: .85rem
+    font-size: 1rem
 }
 .slider__bullets {
     margin-bottom: 0;
@@ -217,6 +275,8 @@ body {
     padding: 5px 10px;
     font-size: 1.5rem;
     line-height: 1;
+    height: 45px;
+    vertical-align: top;
     position: relative;
     display: inline-block;
     color: #ccc;
@@ -226,7 +286,8 @@ body {
     color: #333
 }
 .slider__bullets-item--arrow {
-    font-size: 2rem
+    font-size: 4rem;
+    line-height: 1rem;
 }
 .about {
     margin-top: 50px;
@@ -240,19 +301,19 @@ body {
     }
 }
 .about__title {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
     line-height: 1.5;
     margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) /*large breakpoint*/ {
     .about__title {
-        font-size: 60px;
+        font-size: 3.75rem;
     }
 }
 @media only screen and (min-width: 992px) /*large breakpoint*/ {
     .about__title {
-        font-size: 80px;
+        font-size: 5rem;
     }
 }
 .about__title--primary {
@@ -285,7 +346,7 @@ body {
     border-bottom: 5px #46c1bd dashed;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.15;
     position: relative;
     color: #5c5b4f;
@@ -299,14 +360,14 @@ body {
 }
 @media only screen and (min-width: 768px) /*sm breakpoint*/ {
     .about__description {
-        font-size: 22px;
+        font-size: 1.375rem;
         padding: 0 0 30px 90px;
         border-bottom-left-radius: 48px;
     }
 }
 @media only screen and (min-width: 992px) /*md breakpoint*/ {
     .about__description {
-        font-size: 28px;
+        font-size: 1.75rem;
         padding: 0 0 50px 150px;
         border-bottom-left-radius: 80px;
     }
@@ -464,6 +525,7 @@ body {
     background-color: #efefef;
 }
 .references__car {
+    margin-bottom: 50px;
     padding: 25px 0;
     position: relative
 }
@@ -493,18 +555,18 @@ body {
     }
 }
 .references__quote {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1;
     color: #4b3d6f
 }
 @media only screen and (min-width: 564px) /*xs breakpoint*/ {
     .references__quote {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 }
 @media only screen and (min-width: 768px) /*sm breakpoint*/ {
     .references__quote {
-        font-size: 48px;
+        font-size: 3rem;
     }
 }
 .references__quote:after {
@@ -518,7 +580,7 @@ body {
 .footer__nav {
     padding: 50px 0;
     background-color: rgb(222,221,219);
-    font-size: .75rem;
+    font-size: 1rem;
     text-align: center;
 }
 .footer__nav p {
@@ -542,7 +604,7 @@ body {
 }
 .footer__copyright {
     text-align: center;
-    font-size: .675rem;
+    font-size: 1rem;
 }
 .footer .nav__logos {
     text-align: center;
@@ -556,10 +618,10 @@ body {
 }
 .page-title__text {
     margin-bottom: 40px;
-    border-bottom: 2px solid rgb(69, 192, 190);
+    border-bottom: 2px solid #fabb21;
     padding-bottom: 10px;
     text-transform: uppercase;
-    color: rgb(69, 192, 190);
+    color: #fabb21;
     position: relative
 }
 .page-title__text:before,
@@ -578,7 +640,7 @@ body {
 }
 .page-title__text .breadcrumb {
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: 1rem;
     display: inline-block;
     text-transform: capitalize;
     background-color: #fff;
@@ -667,7 +729,7 @@ body {
     text-transform: uppercase;
 }
 .news-article__comments-action {
-    font-size: 14px;
+    font-size: 1rem;
     padding-top: 10px;
 }
 .news-article__comments-body > .media {
@@ -682,13 +744,13 @@ body {
     margin-bottom: 0;
 }
 .news-article__comments-body time {
-    font-size: 14px;
+    font-size: 1rem;
     color: #888
 }
 .news-article__comment-actions a,
 .news-article__comment-actions a:hover {
     margin-right: 20px;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: bold;
     display: inline-block;
     text-transform: uppercase;
@@ -711,7 +773,7 @@ body {
     color: darkred;
 }
 .news-article__comments-form-explanation {
-    font-size: 12px;
+    font-size: .75rem;
     color: #999
 }
 .news-article__comments-form button {
