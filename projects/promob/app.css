@@ -658,7 +658,8 @@ body {
 .page-title__text .breadcrumb-item a:hover {
     color: #999;
 }
-.news-article {
+.news-article,
+.contact {
     padding-bottom: 100px;
 }
 .body--news-listing .news-article .figure-img {
@@ -793,28 +794,43 @@ body {
     margin: 20px 0;
     color: #888;
 }
-.news-article__comments-form legend {
+.news-article__comments-form legend,
+.contact__comments-form legend {
     text-transform: uppercase;
 }
-.news-article__comments-form label {
+.news-article__comments-form label,
+.contact__comments-form label {
+    display: block;
     color: #444;
     text-transform: uppercase;
 }
-.news-article__comments-form label span {
+.news-article__comments-form label span,
+.contact__comments-form label span {
     margin-left: 5px;
     color: darkred;
 }
-.news-article__comments-form-explanation {
+.news-article__comments-form-explanation,
+.contact__comments-form-explanation {
     font-size: .75rem;
     color: #999
 }
-.news-article__comments-form button {
+.news-article__comments-form button,
+.contact__comments-form button {
         padding-right: 30px;
         padding-left: 30px;
         background-color: rgb(69, 192, 190);
         text-transform: uppercase;
         border-radius: 30px;
         border-color: rgb(69, 192, 190);
+}
+.contact__comments-form {
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px #cdcdcd solid;
+    border-radius: 10px;
+}
+.contact__comments-form .col-12 {
+    margin-bottom: 20px;
 }
 .card {
     margin-bottom: 40px
