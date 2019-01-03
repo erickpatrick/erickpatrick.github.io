@@ -215,3 +215,8 @@ pip-log.txt
 .mr.developer.cfg
 
 *.sublime-workspace
+
+vendor
+node_modules
+build*
+.idea
