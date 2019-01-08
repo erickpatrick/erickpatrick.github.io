@@ -29,7 +29,7 @@ With RPG do Mestre I am using Tighten Co's [Jigsaw](https://jigsaw.tighten.co/) 
 
 For the admin area (yes, a static site generator with an admin panel!!!), I'm using [Netlify CMS](http://netlifycms.org). It is really easy to deploy, has a login system built-in that leverages GitHub OAuth capabilities and has a workflow system that uses GitHub's Pull Requests to set as _in review_ and _published_ posts.
 
-![](/assets/images/uploads/captura-de-tela-erickpatrick.net.png)
+![Screenshot of this own website using Netlify CMS panel](/assets/images/uploads/captura-de-tela-erickpatrick.net.png "Screenshot of this own website using Netlify CMS panel")
 
 For infrastructure, I'm leveraging [Netlify's main offering, it's SaaS static site hosting](https://www.netlify.com/). It is really, really nice. It gives us free SSL/HTTPS via Lets Encrypt. We also have a nice way to create forms for our static page without using a third party script/service (which soon will also be present on this own website), allow collaborators to work with us, add extra HTTP headers, Lambda Functions... Check them out, they're really amazing =D
 
