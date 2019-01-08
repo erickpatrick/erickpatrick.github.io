@@ -35,6 +35,6 @@ collections:
         widget: "select"
         multiple: true
         options: ["programming", "design", "games", "miscellanea"]
-      - { name: "Is featured", widget: "boolean", required: true, default: false }
+      - { name: "featured", widget: "boolean", default: false }
       - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
       - { name: "section", widget: "hidden", required: true, default: "content" }
