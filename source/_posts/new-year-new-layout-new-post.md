@@ -7,7 +7,7 @@ description: >-
 categories:
   - miscellanea
   - programming
-Is featured: true
+featured: true
 extends: _layouts.post
 section: content
 ---
