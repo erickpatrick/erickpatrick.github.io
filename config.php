@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'http://localhost:3000',
     'production' => false,
     'siteName' => 'Erick',
     'siteDescription' => "I'm a Brazilian Software Architect, living in Germany. I mainly create sites, web systems and mobile apps. Also, I'm a proud husband, father and son.",
