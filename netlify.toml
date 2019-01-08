@@ -1,0 +1,13 @@
+[build]
+  environment = { PHP_VERSION = "7.2", AWS_LAMBDA_JS_RUNTIME = "nodejs8.10" }
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Upgrade-Insecure-Requests = "1"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    Feature-Policy = "geolocation 'none'; midi 'none'; notifications 'self'; push 'self'; sync-xhr 'self'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'self'; vibrate 'self'; fullscreen 'self'; payment 'self'"
