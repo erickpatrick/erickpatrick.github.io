@@ -35,6 +35,6 @@ collections:
         widget: "select"
         multiple: true
         options: ["programming", "design", "games", "miscellanea"]
-      - { name: "featured", widget: "boolean", default: false }
+      - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be featured on the home page?" }
       - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
       - { name: "section", widget: "hidden", required: true, default: "content" }
