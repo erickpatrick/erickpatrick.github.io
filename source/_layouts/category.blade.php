@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.mini')
 
 @push('meta')
     <meta property="og:title" content="{{ $page->title }}" />

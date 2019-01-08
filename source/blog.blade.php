@@ -3,7 +3,7 @@ pagination:
     collection: posts
     perPage: 4
 ---
-@extends('_layouts.master')
+@extends('_layouts.mini')
 
 @push('meta')
     <meta property="og:title" content="{{ $page->siteName }} Blog" />
@@ -13,16 +13,10 @@ pagination:
 @endpush
 
 @section('body')
-    <h1>Blog</h1>
-
-    <hr>
+    <h2>Publications on this blog</h2>
 
     @foreach ($pagination->items as $post)
         @include('_components.post-preview-inline')
-
-        @if ($post != $pagination->items->last())
-            <hr>
-        @endif
     @endforeach
 
     @if ($pagination->pages->count() > 1)

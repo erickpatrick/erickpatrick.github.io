@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.mini')
 
 @push('meta')
     <meta property="og:title" content="{{ $page->title }}" />
@@ -12,25 +12,27 @@
         <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
     @endif
 
-    <h1>{{ $page->title }}</h1>
+    <h1 class="post__title">{{ $page->title }}</h1>
 
-    <p>{{ $page->author }}  •  {{ date('F j, Y', $page->date) }}</p>
+    <p class="post__meta">
+        {{ date('F j, Y', $page->date) }}, in
 
-    @if ($page->categories)
-        @foreach ($page->categories as $i => $category)
-            <a
-                href="{{ '/blog/categories/' . $category }}"
-                title="View posts in {{ $category }}"
+        @if ($page->categories)
+            @foreach ($page->categories as $i => $category)
+                <a
+                    href="{{ '/blog/categories/' . $category }}"
+                    title="View posts in {{ $category }}"
+                    class="post__meta--category"
+                >{{ $category }}</a>
+            @endforeach
+        @endif
+    </p>
 
-            >{{ $category }}</a>
-        @endforeach
-    @endif
-
-    <div v-pre>
+    <div class="post__content">
         @yield('content')
     </div>
 
-    <nav>
+    <div class="post__navigation">
         <div>
             @if ($next = $page->getNext())
                 <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">
@@ -46,5 +48,5 @@
                 </a>
             @endif
         </div>
-    </nav>
+    </div>
 @endsection

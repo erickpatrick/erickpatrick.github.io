@@ -1,4 +1,4 @@
-@extends('_layouts.master')
+@extends('_layouts.mini')
 
 @push('meta')
     <meta property="og:title" content="Contact {{ $page->siteName }}" />
@@ -10,11 +10,11 @@
 @section('body')
 <h1>Contact</h1>
 
-<p>
-    Static sites are unable to handle form submissions. However, there are third-party services, like Tighten’s <a href="https://fieldgoal.io" title="FieldGoal">FieldGoal</a>, which can accept the form submission, email you the result, and redirect back to a thank you page.
-</p>
+<p>Right now, you can contact me via <a href="https://twitter.com/erickpatrick">@erickpatrick (Twitter)</a>. I know it's not much and you may not even have a Twitter account, but I won't make the same mistake of adding my email here again =P</p>
 
-<form name="contact" data-netlify="true" method="POST" netlify-honeypot="catch-this-netlify" action="/pages/thank-you" class="mb-12">
+<p>However, soonish, I'll add the a form where you can contact me directly through this page, which will make things much, much easier =)</p>
+
+<?php /**<form name="contact" data-netlify="true" method="POST" netlify-honeypot="catch-this-netlify" action="/pages/thank-you" class="mb-12">
     <p class="hidden">
         <label>Don’t fill this out if you're human: <input name="catch-this-netlify" /></label>
     </p>
@@ -72,5 +72,5 @@
 
         >
     </div>
-</form>
+</form>**/ ?>
 @stop
