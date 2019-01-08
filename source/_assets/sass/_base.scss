@@ -1,6 +1,7 @@
 html, body {
   background-color: #fff;
   color: #222;
+  font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
 }
 
 body {
@@ -22,7 +23,21 @@ body {
   }
 }
 
+p {
+  line-height: 1.25;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.5;
+  }
+}
+
+.main {
+  margin-bottom: 10rem;
+}
+
 .hero {
+  margin: 5rem 0;
+
   &__title {
     margin: 0;
     font-size: calc(3rem + 10vw);
@@ -46,5 +61,31 @@ body {
 .nav {
   a {
     margin-right: 1rem;
+    
+    &.nav--active {
+      color: black;
+      text-decoration: none;
+    }
   }
+}
+
+.header + .nav {
+  margin-bottom: 5rem;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 7rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 10rem;
+  }
+}
+
+.post__collection-meta {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.footer {
+  text-align: center;
 }
