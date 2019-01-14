@@ -13,7 +13,7 @@ section: content
 ---
 ## Why would I need a new layout?
 
-It's a new year, a new day, and this site was in need of a new layout. The old one was already due as it was not matching my personality anymore. Though it was a simple, sort of minimalist design as well, this one better shows off my true identity so to say.
+It's a new year, a new day, and this site was in need of a new layout. The old one was already due as it was not matching my personality anymore. Though it was a simple, sort of minimalist design as well, this one better shows off my true identity so to say. s
 
 Sure, fully minimalistic seems bland, however, it is also where its true strength shines: focus, first and foremost. Long is the time when I wanted to present a bright and colorful idea of what I am  through this blog. No more. This is who I am, a simple, focused and straight to the point person, just like this blog.
 
