@@ -23,7 +23,7 @@ Not so long ago, the default (and preferred) choice of system to create content 
 
 Static Site Generators, SSG for short, are tools that help people create sites comprised of only static files, like the good old HTML, CSS and JavaScript. They allow the creation of sites from brochure-like ones to SPAs and even some dynamic-like types, such as blogs.
 
-It is said that the use of SSGs helps providing a faster web experience as we are shipping pure static files. What is also said is that it is more secure, as we normally don't have to deal with input from forms and the like. Another remark is that is really cheap to serve these files. Being plain static files, some online services provide free hosting and serving, like Netlify and Github Pages.
+It is said that the use of SSGs helps providing a faster web experience as we are shipping pure static files. What is also said is that it is more secure, as we normally don't have to deal with input from forms and the like. Another remark is that is really cheap to serve these files. Being plain static files, some online services provide free hosting and serving, like Netlify and GitHub Pages.
 
 However, only using HTML, CSS and JavaScript, also brings problems. We normally have many manual work to do like:
 
@@ -71,10 +71,11 @@ These ones can be self hosted: you have your own server and install the applicat
 
 ### Others
 
-* Others
-  * https://www.siteleaf.com/
-  * https://getpublii.com/
-  * https://www.gitbook.com/
+There are others works, like [Siteleaf], that provides an interesting UI to create content and publish to varios places, including GitHub Pages. It is free to experiment, however, the most interesting features are in the paid plans.
+
+Other interesting work is from [Publii], which is an Electron app. It has some interesting functionality, like creation of menus, tags and the like. However, being an installable app may stop you from posting on the go. Unfortunately, you are not going to easily access it via tablet or smartphones.
+
+And the last of this list of alternatives, we have the good old [Gitbook]. It uses GitHub and its GitHub Pages functionality; also provides an interface to write content; however, it is mainly suited for documentation or technical books. It is possible to have a website there, but it is not the best place.
 
 ## System Model
 
@@ -89,4 +90,6 @@ These ones can be self hosted: you have your own server and install the applicat
 
 ## Conclusions
 
-## Bibliography
+[Gitbook]: https://www.gitbook.com/
+[Publii]: https://getpublii.com/
+[Siteleaf]: https://www.siteleaf.com/
