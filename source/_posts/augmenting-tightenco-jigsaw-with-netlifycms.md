@@ -17,7 +17,7 @@ Today, I show how to integrate [NetlifyCMS] to Tighten Co's static site generato
 
 ## Introduction
 
-> [Jigsaw] and Static Sites Generators are and want to read technical part, please refer to the [Solution] section.
+> [Jigsaw] and Static Sites Generators are and want to read technical part, please refer to the [Proposed solution] section.
 
 Not so long ago, the default (and preferred) choice of system to create content online was WordPress. After sometime, some alternatives appeared, like [Tumblr], [Ghost] and [Medium], to name a few. Like said, this was then, now, what we see is a shift towards the use of Static Site Generators.
 
@@ -53,7 +53,7 @@ Here enters [Netlify] and its CMS, [NetlifyCMS]. It is a JavaScript library allo
 
 Before really diving into it, I'll present some related work regarding static site generators and user interfaces explain, presenting some alternatives and their approaches. After that, I'll explaining more of [NetlifyCMS] features and how we can integrate it with [Jigsaw] static site generator.
 
-## Related Works
+## Related works
 
 ### Flat File CMS
 
@@ -77,13 +77,47 @@ Other interesting work is from [Publii], which is an Electron app. It has some i
 
 And the last of this list of alternatives, we have the good old [Gitbook]. It uses GitHub and its GitHub Pages functionality; also provides an interface to write content; however, it is mainly suited for documentation or technical books. It is possible to have a website there, but it is not the best place.
 
-## System Model
+## The problem
 
 When we talk about statically generated websites we now that it does not have a system in the server generating it. It is previously generated and only served to the customer.
 
+As previously shown, the two most common solutions are the use of a backend server or a service. Our content and us rely on the structures and restrictions imposed by those systems:
+
+* installing an app
+* paying to use
+* paying for extras
+* fetch content via AJAX
+* higher hosting costs
+* manage servers
+* lots of manual work
+
+We need a better solution. May not be a perfect one, but one that provides a interface with the good parts of <abbr title="Static Site Generator">SSG</abbr> without having the drawbacks shown above.
+
+## Proposed solution
+
+[NetlifyCMS] is the closest to that solution. Better: it is the best I could find that meets this criteria. Together with a <abbr title="Static Site Generator">SSG</abbr>, Jigsaw in the case of this publication, it is a really powerful tool.
+
+After configuring and opening the [NetlifyCMS] dashboard, we get a nice and simple interface. It can create collection entries, like blog posts, or one off pages, like About, Contact, etc.
+
+The sections to create those entries are defined in a Yaml file. Each section must list all its fields, pointing out which ones are required. It is also possible to order the fields and hide some with static (not configurable) values.
+
+We also get an image uploader that can send images to repository which the <abbr title="Static Site Generator">SSG</abbr> belongs, or to a image upload service, like Cloudinary.
+
+The last section we get is the Workflow area. There we can see:
+
+* publications that are set as draft/pending review (open PRs);
+* publications being reviewed (PRs that may need modifications);
+* publications ready to publish (PRs ready to be merged);
+
+We still have the same old workflow that a <abbr title="Static Site Generator">SSG</abbr> gives us, but a more robust way to work through the publications. Now, there's a proper content management workflow in place.
+
+Another thing that we may get is authentication through email-password or OAuth providers, like GitHub, Google, Facebook, etc. This is really nice as we can invite people to participate into the project as well.
+
+You can have a look into what else is possible to achieve with [NetlifyCMS] by going to their website. Just visit its page by clicking on one of [NetlifyCMS] links throughout this post :) We can see its development openly at GitHub.
+
+### Technicalities
 
 
-## Solution
 
 * clone jigsaw blog template and add the netlifycms file, and put link here after the solution description
 * https://github.com/raniesantos/artisan-static
