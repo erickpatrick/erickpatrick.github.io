@@ -13,17 +13,17 @@ section: content
 ---
 ## Abstract
 
-Today, I show how to integrate NetlifyCMS to Tighten Co's static site generator, Jigsaw, as it gives us a nice interface to manage static content while using the power of Git workflow (commits, branches and PRs).
+Today, I show how to integrate [NetlifyCMS] to Tighten Co's static site generator, [Jigsaw], as it gives us a nice interface to manage static content while using the power of Git workflow (commits, branches and PRs).
 
 ## Introduction
 
-> Jigsaw and Static Sites Generators are and want to directly go to the technical part of this article, please, refer to the \[Solution] section.
+> [Jigsaw] and Static Sites Generators are and want to read technical part, please refer to the [Solution] section.
 
-Not so long ago, the default (and preferred) choice of system to create content online was WordPress. After sometime, some alternatives appeared, like Tumblr, Ghost and Medium, to name a few. Like said, this was then, now, what we see is a shift towards the use of Static Site Generators.
+Not so long ago, the default (and preferred) choice of system to create content online was WordPress. After sometime, some alternatives appeared, like [Tumblr], [Ghost] and [Medium], to name a few. Like said, this was then, now, what we see is a shift towards the use of Static Site Generators.
 
-Static Site Generators, SSG for short, are tools that help people create sites comprised of only static files, like the good old HTML, CSS and JavaScript. They allow the creation of sites from brochure-like ones to SPAs and even some dynamic-like types, such as blogs.
+Static Site Generators, <abbr title="Static Site Generator">SSG</abbr> for short, are tools that help people create sites comprised of only static files, like the good old HTML, CSS and JavaScript. They allow the creation of sites from brochure-like ones to SPAs and even some dynamic-like types, such as blogs.
 
-It is said that the use of SSGs helps providing a faster web experience as we are shipping pure static files. What is also said is that it is more secure, as we normally don't have to deal with input from forms and the like. Another remark is that is really cheap to serve these files. Being plain static files, some online services provide free hosting and serving, like Netlify and GitHub Pages.
+It is said that the use of <abbr title="Static Site Generator">SSG</abbr>s helps providing a faster web experience as we are shipping pure static files. What is also said is that it is more secure, as we normally don't have to deal with input from forms and the like. Another remark is that is really cheap to serve these files. Being plain static files, some online services provide free hosting and serving, like Netlify and GitHub Pages.
 
 However, only using HTML, CSS and JavaScript, also brings problems. We normally have many manual work to do like:
 
@@ -34,7 +34,7 @@ However, only using HTML, CSS and JavaScript, also brings problems. We normally 
 * commit and push the changes
 * approve and merge PR, if using PR
 
-Even using a nice SSG like Tighten Co's Jigsaw, many of those points still applies. If we use the templates mechanisms those tools provide, we still need to write our content in a Markdown (.md), for example, where we need to provide what is called _frontmatter_, metadata used to accomplish some functionality like:
+Even using a nice <abbr title="Static Site Generator">SSG</abbr> like Tighten Co's Jigsaw, many of those points still applies. If we use the templates mechanisms those tools provide, we still need to write our content in a Markdown (.md), for example, where we need to provide what is called _frontmatter_, metadata used to accomplish some functionality like:
 
 * publication title
 * publication date
@@ -49,25 +49,25 @@ And all of these things are normally done by automagically for us by a system su
 
 Or do we?
 
-Here enters Netlify and its CMS, NetlifyCMS. It is a JavaScript library allowing a specific static page (not whole website) to behave like a dashboard interface of CMS for a static website. It provides ways to create dashboard pages to generate most of the content a static site generator can.
+Here enters [Netlify] and its CMS, [NetlifyCMS]. It is a JavaScript library allowing a specific static page (not whole website) to behave like a dashboard interface of CMS for a static website. It provides ways to create dashboard pages to generate most of the content a static site generator can.
 
-Before really diving into it, I'll present some related work regarding static site generators and user interfaces explain, presenting some alternatives and their approaches. After that, I'll explaining more of NetlifyCMS features and how we can integrate it with Jigsaw static site generator.
+Before really diving into it, I'll present some related work regarding static site generators and user interfaces explain, presenting some alternatives and their approaches. After that, I'll explaining more of [NetlifyCMS] features and how we can integrate it with [Jigsaw] static site generator.
 
 ## Related Works
 
 ### Flat File CMS
 
-It is valid to point out some alternatives to the approach NetlifyCMS uses. The first and oldest one is the use of a Flat File CMS. Thoses CMS work much like a hosted WordPress installation would. The difference is that it does not use a Database, instead it uses a Flat File hierarchy to store content and configuration.
+It is valid to point out some alternatives to the approach [NetlifyCMS] uses. The first and oldest one is the use of a Flat File CMS. Those CMS work much like a hosted [WordPress] installation would. The difference is that it does not use a Database, instead it uses a Flat File hierarchy to store content and configuration.
 
 The use of a Flat File hierarchy allows a fast and somewhat secure site as well. The pages are precompiled to be served as fast as possible, much like a static website would. By default, differently from what static websites do, they do have a dashboard for users to access and create content.
 
-Some of the most known Flat File CMS, at least in the PHP world, are: October CMS, Kirby, Statamic and Grav.
+Some of the most known Flat File CMS, at least in the PHP world, are: [October CMS], [Kirby], [Statamic] and [Grav].
 
 ### Content as a Service
 
-A new trend is to generate content through a service and consume it the same. In other words: A Saas application with an interface is used to create the content and then we consume this content through a REST/SOAP/GraphQL API.
+A somewhat new trend is to generate content through a service and consume it the same. In other words: A <abbr title="Software as a Service">SaaS</abbr> application with an interface is used to create the content and then we consume this content through a REST/SOAP/GraphQL API.
 
-These ones can be self hosted: you have your own server and install the application there to be used; or managed: an online service you normally pay to use (add content and consume it via an API). Examples of those services are: WordPress, Contentful and GraphCMS.
+These ones can be self hosted: you have your own server and install the application there to be used; or managed: an online service you normally pay to use (add content and consume it via an API). Examples of those services are: [WordPress], [Contentful] and [GraphCMS].
 
 ### Others
 
@@ -78,6 +78,10 @@ Other interesting work is from [Publii], which is an Electron app. It has some i
 And the last of this list of alternatives, we have the good old [Gitbook]. It uses GitHub and its GitHub Pages functionality; also provides an interface to write content; however, it is mainly suited for documentation or technical books. It is possible to have a website there, but it is not the best place.
 
 ## System Model
+
+When we talk about statically generated websites we now that it does not have a system in the server generating it. It is previously generated and only served to the customer.
+
+
 
 ## Solution
 
@@ -93,3 +97,16 @@ And the last of this list of alternatives, we have the good old [Gitbook]. It us
 [Gitbook]: https://www.gitbook.com/
 [Publii]: https://getpublii.com/
 [Siteleaf]: https://www.siteleaf.com/
+[WordPress]: https://wordpress.org/
+[Contentful]: https://www.contentful.com/
+[GraphCMS]: https://graphcms.com/
+[NetlifyCMS]: https://www.netlifycms.org/
+[Netlify]: https://www.netlify.com/
+[Jigsaw]: http://jigsaw.tighten.co/
+[Tumblr]: https://www.tumblr.com/
+[Ghost]: https://ghost.org/
+[Medium]: https://medium.com/
+[Kirby]: https://getkirby.com/
+[Statamic]: https://statamic.com/
+[Grav]: https://getgrav.org/
+[October CMS]: https://octobercms.com/
