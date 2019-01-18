@@ -77,6 +77,9 @@ Before really diving into it, I'll present some related work regarding static si
 
 ## Solution
 
+- clone jigsaw blog template and add the netlifycms file, and put link here after the solution description
+- https://github.com/raniesantos/artisan-static
+
 ## Analysis
 
 ## Simulation and Experimentation
