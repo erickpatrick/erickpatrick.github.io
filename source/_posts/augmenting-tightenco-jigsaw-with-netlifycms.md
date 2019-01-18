@@ -57,6 +57,22 @@ Before really diving into it, I'll present some related work regarding static si
 
 ## Related Works
 
+- Content as a service
+  - Hosted platforms
+    - WordPress
+  - SaaS platforms
+    - https://www.contentful.com
+    - https://graphcms.com/pricing
+- Flat File CMS
+  - October CMS
+  - Kirby
+  - Statamic
+  - Grav
+- Others
+  - https://www.siteleaf.com/
+  - https://getpublii.com/
+  - https://www.gitbook.com/
+
 ## System Model
 
 ## Solution
