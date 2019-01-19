@@ -17,13 +17,13 @@ Today, I show how to integrate [NetlifyCMS] to Tighten Co's static site generato
 
 ## Introduction
 
-> [Jigsaw] and Static Sites Generators are and want to read technical part, please refer to the [Proposed solution] section.
+> Jigsaw and Static Sites Generators are and want to read technical part, please refer to the [Proposed solution] section.
 
-Not so long ago, the default (and preferred) choice of system to create content online was WordPress. After sometime, some alternatives appeared, like [Tumblr], [Ghost] and [Medium], to name a few. Like said, this was then, now, what we see is a shift towards the use of Static Site Generators.
+Not so long ago, the default (and preferred) choice of system to create content online was [WordPress]. After sometime, some alternatives appeared, like [Tumblr], [Ghost] and [Medium], to name a few. Like said, this was then, now, what we see is a shift towards the use of Static Site Generators.
 
 Static Site Generators, <abbr title="Static Site Generator">SSG</abbr> for short, are tools that help people create sites comprised of only static files, like the good old HTML, CSS and JavaScript. They allow the creation of sites from brochure-like ones to SPAs and even some dynamic-like types, such as blogs.
 
-It is said that the use of <abbr title="Static Site Generator">SSG</abbr>s helps providing a faster web experience as we are shipping pure static files. What is also said is that it is more secure, as we normally don't have to deal with input from forms and the like. Another remark is that is really cheap to serve these files. Being plain static files, some online services provide free hosting and serving, like Netlify and GitHub Pages.
+It is said that the use of <abbr title="Static Site Generator">SSG</abbr>s helps providing a faster web experience as we are shipping pure static files. What is also said is that it is more secure, as we normally don't have to deal with input from forms and the like. Another remark is that is really cheap to serve these files. Being plain static files, some online services provide free hosting and serving, like [Netlify] and [GitHub Pages].
 
 However, only using HTML, CSS and JavaScript, also brings problems. We normally have many manual work to do like:
 
@@ -49,15 +49,15 @@ And all of these things are normally done by automagically for us by a system su
 
 Or do we?
 
-Here enters [Netlify] and its CMS, [NetlifyCMS]. It is a JavaScript library allowing a specific static page (not whole website) to behave like a dashboard interface of CMS for a static website. It provides ways to create dashboard pages to generate most of the content a static site generator can.
+Here enters Netlify and its CMS, NetlifyCMS. It is a JavaScript library allowing a specific static page (not whole website) to behave like a dashboard interface of CMS for a static website. It provides ways to create dashboard pages to generate most of the content a static site generator can.
 
-Before really diving into it, I'll present some related work regarding static site generators and user interfaces explain, presenting some alternatives and their approaches. After that, I'll explaining more of [NetlifyCMS] features and how we can integrate it with [Jigsaw] static site generator.
+Before really diving into it, I'll present some related work regarding static site generators and user interfaces explain, presenting some alternatives and their approaches. After that, I'll explaining more of NetlifyCMS features and how we can integrate it with Jigsaw static site generator.
 
 ## Related works
 
 ### Flat File CMS
 
-It is valid to point out some alternatives to the approach [NetlifyCMS] uses. The first and oldest one is the use of a Flat File CMS. Those CMS work much like a hosted [WordPress] installation would. The difference is that it does not use a Database, instead it uses a Flat File hierarchy to store content and configuration.
+It is valid to point out some alternatives to the approach NetlifyCMS uses. The first and oldest one is the use of a Flat File CMS. Those CMSes work much like a hosted WordPress installation would. The difference is that it does not use a Database, instead it uses a Flat File hierarchy to store content and configuration.
 
 The use of a Flat File hierarchy allows a fast and somewhat secure site as well. The pages are precompiled to be served as fast as possible, much like a static website would. By default, differently from what static websites do, they do have a dashboard for users to access and create content.
 
@@ -71,7 +71,7 @@ These ones can be self hosted: you have your own server and install the applicat
 
 ### Others
 
-There are others works, like [Siteleaf], that provides an interesting UI to create content and publish to varios places, including GitHub Pages. It is free to experiment, however, the most interesting features are in the paid plans.
+There are others works, like [Siteleaf], that provides an interesting UI to create content and publish to various places, including GitHub Pages. It is free to experiment, however, the most interesting features are in the paid plans.
 
 Other interesting work is from [Publii], which is an Electron app. It has some interesting functionality, like creation of menus, tags and the like. However, being an installable app may stop you from posting on the go. Unfortunately, you are not going to easily access it via tablet or smartphones.
 
@@ -95,9 +95,9 @@ We need a better solution. May not be a perfect one, but one that provides a int
 
 ## Proposed solution
 
-[NetlifyCMS] is the closest to that solution. Better: it is the best I could find that meets this criteria. Together with a <abbr title="Static Site Generator">SSG</abbr>, Jigsaw in the case of this publication, it is a really powerful tool.
+NetlifyCMS is the closest to that solution. Better: it is the best I could find that meets this criteria. Together with a <abbr title="Static Site Generator">SSG</abbr>, Jigsaw in the case of this publication, it is a really powerful tool.
 
-After configuring and opening the [NetlifyCMS] dashboard, we get a nice and simple interface. It can create collection entries, like blog posts, or one off pages, like About, Contact, etc.
+After configuring and opening the NetlifyCMS dashboard, we get a nice and simple interface. It can create collection entries, like blog posts, or one off pages, like About, Contact, etc.
 
 The sections to create those entries are defined in a Yaml file. Each section must list all its fields, pointing out which ones are required. It is also possible to order the fields and hide some with static (not configurable) values.
 
@@ -245,5 +245,6 @@ We also see that we have fixed options for `categories`. For the moment, this is
 [Statamic]: https://statamic.com/
 [Grav]: https://getgrav.org/
 [October CMS]: https://octobercms.com/
+[GitHub Pages]: https://pages.github.com/
 [I created a repository]: https://github.com/erickpatrick/jigsaw-blog-netlify-netlifycms-template
 [Jigsaw's default blog template]: https://github.com/tightenco/jigsaw-blog-template
