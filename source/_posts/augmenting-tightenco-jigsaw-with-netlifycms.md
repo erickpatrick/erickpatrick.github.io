@@ -113,11 +113,112 @@ We still have the same old workflow that a <abbr title="Static Site Generator">S
 
 Another thing that we may get is authentication through email-password or OAuth providers, like GitHub, Google, Facebook, etc. This is really nice as we can invite people to participate into the project as well.
 
-You can have a look into what else is possible to achieve with [NetlifyCMS] by going to their website. Just visit its page by clicking on one of [NetlifyCMS] links throughout this post :) We can see its development openly at GitHub.
+You can have a look into what else is possible to achieve with NetlifyCMS by going to their website. Just visit its page by clicking on one of [NetlifyCMS] links throughout this post :) We can see its development openly at GitHub.
 
 ### Technicalities
 
+As already mentioned, I'm going to use [Jigsaw] as the static site generator for this example. However, NetlifyCMS should work with any other SSG. 
 
+[I created a repository] that extends [Jigsaw's default blog template] adding the necessary files to build NetlifyCMS dashboard for us. Namely, the files are:
+
+#### netlify.toml
+
+```yaml
+[build]
+
+command = "npm run production"
+publish = "build_production"
+environment = { PHP_VERSION = "7.2", NODE_VERSION = "11" }
+```
+
+This file is necessary to deploy our site into Netlify. You can delete it or skip it if you don't deploy into Netlify. We tell the service which `command` should it run to build our website. 
+
+It is also said that it should publish the folder `build_production` and that the `environment` that should be used required PHP with version 7.2 and Node.js with version 11.
+
+> It is not necessary to deploy to Netlify to be able to use NetlifyCMS
+
+#### source/admin.blade.php
+
+```php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin | {{ $page->site->title }}</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+    </script>
+</body>
+</html>
+```
+This file is responsible to render our dashboard and uses the next file as configuration source. It does not use Blade templates as NetlifyCMS will provide the full template for the dashboard. However, we do set the title of the page by using Jigsaw global configuration `$page->site->title`.
+
+We add two external JavaScript files: __*the first one*__ in the head is the one allowing the admin panel to authenticate users. Like already mentioned, it uses Netlify Identity mechanism that leverages various OAuth partners; __*the second one*__, in the body, loads the NetlifyCMS library itself.
+
+There's a third JavaScript, inlined, that is responsible to redirect us back to `http(s)://<site-domain>.<tld>/admin`. This avoids the user being redirected to the homepage as per default.
+
+#### source/admin/config.yml
+
+```yaml
+backend:
+  name: git-gateway
+display_url: https://<your-website-url>
+
+publish_mode: editorial_workflow
+media_folder: "source/assets/images/uploads"
+public_folder: "assets/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    description: >
+      All my blog posts
+    folder: "source/_posts"
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    create: true
+    identifier_field: "title"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true, default: "" }
+      - { label: "Author", name: "author", widget: "string", required: true, default: "" }
+      - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", required: true, default: "" }
+      - { label: "Description", name: "description", widget: "string", required: true, default: "" }
+      - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
+      - label: "Cover image"
+        name: "cover_image"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - label: "Categories"
+        name: "categories"
+        widget: "select"
+        multiple: true
+        options: ["feature", "configuration"]
+      - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be featured on the home page?" }
+      - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
+      - { name: "section", widget: "hidden", required: true, default: "content" }
+```
+Here we see how our post collection is added to the dashboard and which fields should be rendered so we can fill them out and create new post entries.
+
+We also see that we have fixed options for `categories`. For the moment, this is a limitation I did not find a solution. But, seeing the development on GitHub, NetlifyCMS seems to have a solution. I will wait a bit more and see if they come up with something before trying to fix it myself.
 
 * clone jigsaw blog template and add the netlifycms file, and put link here after the solution description
 * https://github.com/raniesantos/artisan-static
@@ -144,3 +245,5 @@ You can have a look into what else is possible to achieve with [NetlifyCMS] by g
 [Statamic]: https://statamic.com/
 [Grav]: https://getgrav.org/
 [October CMS]: https://octobercms.com/
+[I created a repository]: https://github.com/erickpatrick/jigsaw-blog-netlify-netlifycms-template
+[Jigsaw's default blog template]: https://github.com/tightenco/jigsaw-blog-template
