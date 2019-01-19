@@ -99,7 +99,7 @@ NetlifyCMS is the closest to that solution. Better: it is the best I could find 
 
 After configuring and opening the NetlifyCMS dashboard, we get a nice and simple interface. It can create collection entries, like blog posts, or one off pages, like About, Contact, etc.
 
-The sections to create those entries are defined in a Yaml file. Each section must list all its fields, pointing out which ones are required. It is also possible to order the fields and hide some with static (not configurable) values.
+The sections to create those entries are defined in a Yaml file. Each section must list all its fields, pointing out which ones are required. It is also possible to order the fields and hide some with static (not configurable) values. We also get a live preview of what is being written!
 
 We also get an image uploader that can send images to repository which the <abbr title="Static Site Generator">SSG</abbr> belongs, or to a image upload service, like Cloudinary.
 
