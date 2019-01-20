@@ -216,12 +216,19 @@ collections:
       - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
       - { name: "section", widget: "hidden", required: true, default: "content" }
 ```
-Here we see how our post collection is added to the dashboard and which fields should be rendered so we can fill them out and create new post entries.
+The option `git-gateway` we see is what allows us to give access to content editors without giving write permission to our site repository. We also have a Bitbucket and a GitLab (in beta) gateway.
 
-We also see that we have fixed options for `categories`. For the moment, this is a limitation I did not find a solution. But, seeing the development on GitHub, NetlifyCMS seems to have a solution. I will wait a bit more and see if they come up with something before trying to fix it myself.
+If you use Netlify to deploy and build your website (which I recommend), it makes things easier to configure it. It is a toggle in the *Identity* panel of your website. Same is valid for authentication configuration.
 
-* clone jigsaw blog template and add the netlifycms file, and put link here after the solution description
-* https://github.com/raniesantos/artisan-static
+On the other hand, if you do not use it (please switch to it :D) you can configure it by yourself. It is a lot more work, but you can. Or you can use GitHub or GitLab as your sole OAuth mechanism. [You have the choices].
+
+Another configuration we see is that how our post collection is added to the dashboard. We tell which fields should be rendered so we can fill them out and create new post entries.
+
+We also see that we have fixed options for `categories`. For the moment, this is a limitation I did not try to find a solution. But, if I am not mistaken, NetlifyCMS is working into new features. I will wait to see what is coming.
+
+If you want to try it out, I have created a [Jigsaw Template repository that extends their default Blog Template]. It includes those three files for you. The work you have to do is clone the repository to your account and link a Netlify account to it. The **easy** way (tm) of course.
+
+There is also another repository that does something similar to mine, but it does not use Jigsaw's default Blog template. You can visit [raniesantos/artisan-static] and test it. It is also deploy ready if you have a Netlify account.
 
 ## Analysis
 
@@ -248,3 +255,7 @@ We also see that we have fixed options for `categories`. For the moment, this is
 [GitHub Pages]: https://pages.github.com/
 [I created a repository]: https://github.com/erickpatrick/jigsaw-blog-netlify-netlifycms-template
 [Jigsaw's default blog template]: https://github.com/tightenco/jigsaw-blog-template
+[You can delete it or skip it if you don't deploy into Netlify]: https://www.netlifycms.org/docs/intro/
+[You have the choices]: https://www.netlifycms.org/docs/authentication-backends/
+[Jigsaw Template repository that extends their default Blog Template]: https://github.com/erickpatrick/jigsaw-blog-netlify-netlifycms-template
+[raniesantos/artisan-static]: https://github.com/raniesantos/artisan-static
