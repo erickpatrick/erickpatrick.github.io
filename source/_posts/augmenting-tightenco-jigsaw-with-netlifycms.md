@@ -230,10 +230,6 @@ If you want to try it out, I have created a [Jigsaw Template repository that ext
 
 There is also another repository that does something similar to mine, but it does not use Jigsaw's default Blog template. You can visit [raniesantos/artisan-static] and test it. It is also deploy ready if you have a Netlify account.
 
-## Analysis
-
-## Simulation and Experimentation
-
 ## Conclusions
 
 [Gitbook]: https://www.gitbook.com/
