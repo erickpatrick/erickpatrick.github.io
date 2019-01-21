@@ -1,6 +1,6 @@
 ---
 title: Augmenting TightenCo Jigsaw with NetlifyCMS
-date: '2019-01-18'
+date: '2019-01-22'
 description: >-
   Today, I show how to integrate NetlifyCMS to Tighten Co's static site
   generator, Jigsaw, as it gives us a nice interface to manage static content
