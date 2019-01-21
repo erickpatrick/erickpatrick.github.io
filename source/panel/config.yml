@@ -20,7 +20,7 @@ collections:
     identifier_field: "title"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true, default: "" }
-      - { label: "Published Date", name: "date", widget: "date", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", required: true, default: "" }
+      - { label: "Published Date", name: "date", widget: "date", format: "YYYY-DD-MM", dateFormat: "YYYY-DD-MM", required: true, default: "" }
       - { label: "Description", name: "description", widget: "string", required: true, default: "" }
       - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
       - label: "Cover image"
