@@ -123,7 +123,7 @@ As already mentioned, I'm going to use [Jigsaw](http://jigsaw.tighten.co/) as th
 
 #### netlify.toml
 
-```yaml
+```php
 [build]
 
 command = "npm run production"
@@ -174,7 +174,7 @@ There's a third JavaScript, inlined, that is responsible to redirect us back to 
 
 #### source/admin/config.yml
 
-```yaml
+```php
 backend:
   name: git-gateway
 display_url: https://<your-website-url>
