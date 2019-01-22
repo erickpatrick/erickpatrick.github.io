@@ -256,14 +256,14 @@ And if we help them test and bring more features, we may have a new era for onli
 
 Check some of screenshots for NetlifyCMS on this very own website:
 
-![NetlifyCMS Login Page](https://res.cloudinary.com/erickpatrick/image/upload/v1548017008/erickpatrick.net/augmenting-tightenco-jigsaw-with-netlifycms--001.png "NetlifyCMS Login Page")
+![NetlifyCMS Login Page](https://res.cloudinary.com/erickpatrick/image/upload/w_0.5/v1548017008/erickpatrick.net/augmenting-tightenco-jigsaw-with-netlifycms--001.png "NetlifyCMS Login Page")
 
-![NetlifyCMS Contents Page](https://res.cloudinary.com/erickpatrick/image/upload/v1548017008/erickpatrick.net/augmenting-tightenco-jigsaw-with-netlifycms--002.png "NetlifyCMS Contents Page")
+![NetlifyCMS Contents Page](https://res.cloudinary.com/erickpatrick/image/upload/w_0.5/v1548017008/erickpatrick.net/augmenting-tightenco-jigsaw-with-netlifycms--002.png "NetlifyCMS Contents Page")
 
-![NetlifyCMS Content Workflow Page](https://res.cloudinary.com/erickpatrick/image/upload/v1548017008/erickpatrick.net/augmenting-tightenco-jigsaw-with-netlifycms--003.png "NetlifyCMS Content Workflow Page")
+![NetlifyCMS Content Workflow Page](https://res.cloudinary.com/erickpatrick/image/upload/w_0.5/v1548017008/erickpatrick.net/augmenting-tightenco-jigsaw-with-netlifycms--003.png "NetlifyCMS Content Workflow Page")
 
-![NetlifyCMS Media Upload Modal](https://res.cloudinary.com/erickpatrick/image/upload/v1548017008/erickpatrick.net/augmenting-tightenco-jigsaw-with-netlifycms--004.png "NetlifyCMS Media Upload Modal")
+![NetlifyCMS Media Upload Modal](https://res.cloudinary.com/erickpatrick/image/upload/w_0.5/v1548017008/erickpatrick.net/augmenting-tightenco-jigsaw-with-netlifycms--004.png "NetlifyCMS Media Upload Modal")
 
-![NetlifyCMS Collection Item Creation/Editing Page](https://res.cloudinary.com/erickpatrick/image/upload/v1548017008/erickpatrick.net/augmenting-tightenco-jigsaw-with-netlifycms--005.png "NetlifyCMS Collection Item Creation/Editing Page")
+![NetlifyCMS Collection Item Creation/Editing Page](https://res.cloudinary.com/erickpatrick/image/upload/w_0.5/v1548017008/erickpatrick.net/augmenting-tightenco-jigsaw-with-netlifycms--005.png "NetlifyCMS Collection Item Creation/Editing Page")
 
 Thank you for reading!
