@@ -99,7 +99,7 @@ Click `Apply` and `Ok`
 ### Debugging Process
 Select a file where you would like to debug, add a breakpoint to it by clicking on the left gap between the line numbers and the code area itself so you can see a *red dot*. PHPStorm, when communicating to Xdebug will check if the PHP code reached that specific line and if so will halt the execution so we can check the current variables, objects and properties of the request and application.
 
-Before being able to listen for debug messages, we need to tell the browser to send an extra information, via get parameter on the request, so PHPStorm knows that request should be checked. We do that by adding `?XDEBUG_SESSION_START=PHPSTORM`, like http://local.nintendo.de/?XDEBUG_SESSION_START=PHPSTORM. Press end to access the page so the parameter is saved to the session.
+Before being able to listen for debug messages, we need to tell the browser to send an extra information, via get parameter on the request, so PHPStorm knows that request should be checked. We do that by adding `?XDEBUG_SESSION_START=PHPSTORM`, like http://local.application.test/?XDEBUG_SESSION_START=PHPSTORM. Press end to access the page so the parameter is saved to the session.
 
 After that, we can go to PHPStorm and tell it to start listening for connections by pressing the *button that looks like a telephone*, close to the ones where we see a *play button* and a *bug button*. When PHPStorm *is not* listening for debug connections this telephone button will have a *small red crossed circle* in it. On the other hand, while listening we see *3 small arcs* instead of the *small red crossed circle*.
 
