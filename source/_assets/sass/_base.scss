@@ -42,6 +42,11 @@ pre {
   overflow-y: scroll;
 }
 
+a,
+code {
+  word-break: break-word;
+}
+
 .main {
   margin-bottom: 10rem;
 }
