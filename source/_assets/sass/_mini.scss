@@ -7,6 +7,7 @@
     &__title {
       margin: 0;
       font-size: calc(1.15rem + 1vw);
+      word-break: unset;
       
       a,
       a:visited {
