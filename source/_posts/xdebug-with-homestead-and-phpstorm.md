@@ -61,40 +61,40 @@ Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies
 In PHPStorm we have a few places to configure, namely: *Settings > Languages & Frameworks > PHP > Debug*; and *Settings > Build, Execution, Deployment > Deployment*.
 
 - __Settings > Languages & Frameworks > PHP > Debug__
--- __External connections__
---- Check `Ignore external connections through unregistered server configurations`
---- Uncheck `Break at first line in PHP Scripts`
--- __Xdebug__
---- Set `9100` for `Debug port`
---- Check All
--- __Evaluation__
---- Check All
--- __Advanced Settings__
---- Check All
+  - __External connections__
+    - Check `Ignore external connections through unregistered server configurations`
+    - Uncheck `Break at first line in PHP Scripts`
+  - __Xdebug__
+    - Set `9100` for `Debug port`
+    - Check All
+  - __Evaluation__
+    - Check All
+  - __Advanced Settings__
+    - Check All
 
 And for the other we do the following:
 
 - __Settings > Build, Execution, Deployment > Deployment__
--- Click the `+` button and select `SFTP`, and give it a name
--- On the configuration pane that appears do the following:
--- __Connection Tab__
---- Host: `127.0.0.1`
---- Port: `2222`
---- User name: `vagrant`
---- Authentication: `Password`
---- Password: `vagrant`
---- Check `Save password`
---- Root path: `/home/vagrant/<place where your code lives>` (normally would be `/home/vagrant/code`)
---- Web server URL: the url of your application that you added to your `Homestead.yaml` file
---- Advanced
----- Check `Send keep alive messages each:`
----- Use default value of `300`.
--- __Mappings Tab__
---- Local Path: the path where the proejct files reside
---- Deployment path: normally just `/`
---- Web path: normally just `/`
+  - Click the `+` button and select `SFTP`, and give it a name
+  - On the configuration pane that appears do the following:
+  - __Connection Tab__
+    - Host: `127.0.0.1`
+    - Port: `2222`
+    - User name: `vagrant`
+    - Authentication: `Password`
+    - Password: `vagrant`
+    - Check `Save password`
+    - Root path: `/home/vagrant/<place where your code lives>` (normally would be `/home/vagrant/code`)
+    - Web server URL: the url of your application that you added to your `Homestead.yaml` file
+    - Advanced
+      - Check `Send keep alive messages each:`
+      - Use default value of `300`.
+  - __Mappings Tab__
+    - Local Path: the path where the proejct files reside
+    - Deployment path: normally just `/`
+    - Web path: normally just `/`
 
-Click Apply and Ok
+Click `Apply` and `Ok`
 
 ### Debugging Process
 Select a file where you would like to debug, add a breakpoint to it by clicking on the left gap between the line numbers and the code area itself so you can see a *red dot*. PHPStorm, when communicating to Xdebug will check if the PHP code reached that specific line and if so will halt the execution so we can check the current variables, objects and properties of the request and application.
