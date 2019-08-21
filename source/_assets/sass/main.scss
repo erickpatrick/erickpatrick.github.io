@@ -1,6 +1,9 @@
+@tailwind base;
+@tailwind components;
+
 // Code syntax highlighting,
 // powered by https://highlightjs.org
 @import '~highlight.js/styles/a11y-light.css';
+@import '_base';
 
-@import 'base';
-@import 'mini';
+@tailwind utilities;

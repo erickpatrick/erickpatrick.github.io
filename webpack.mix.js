@@ -23,7 +23,8 @@ mix.js('source/_assets/js/main.js', 'js')
     .sass('source/_assets/sass/main.scss', 'css/main.css')
     .sourceMaps()
     .options({
-        processCssUrls: false
+        processCssUrls: false,
+      postCss: [tailwindcss()]
     })
     .purgeCss({
         extensions: ['html', 'md', 'js', 'php', 'vue'],

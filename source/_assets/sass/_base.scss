@@ -1,107 +1,100 @@
-html, body {
-  background-color: #fff;
-  color: #222;
-  font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
-}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply .pt-3;
+  @apply .font-serif;
 
-body {
-  margin: 0;
-  border: 1rem solid #ececec;
-  padding: 2rem;
-  font-size: calc(1.15rem + 1vw);
-}
-
-.header,
-.nav,
-.main,
-.footer {
-  width: 90%;
-  margin: 0 auto;
-
-  @media screen and (min-width: 917px) {
-    width: 80%;
+  .w-full &:first-child {
+    padding-top: 0;
   }
 }
 
-p {
-  line-height: 1.25;
-
-  @media screen and (min-width: 768px) {
-    line-height: 1.5;
-  }
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+  @apply .pt-0;
 }
 
-img {
-  margin: 1rem auto;
-  width: 100%;
-  max-width: 100%;
-  display: block;
-}
-
-pre {
-  overflow-y: scroll;
-}
-
-a,
-code {
-  word-break: break-word;
-}
-
-.main {
-  margin-bottom: 10rem;
-}
-
-.hero {
-  margin: 5rem 0;
-
-  &__title {
-    margin: 0;
-    font-size: calc(3rem + 10vw);
-    line-height: .8;
-
-    @media screen and (min-width: 1327px) {
-      font-size: calc(3.5rem + 12vw);
-    }
-
-    @media screen and (min-width: 2816px) {
-      font-size: calc(3.5rem + 14vw);
-    }
+.sm\:w-9\/12 {
+  a,
+  a:link,
+  a:visited {
+    @apply .bg-gray-200;
   }
 
-  &__subtitle {
-    font-size: calc(1.25rem + 5vw);
-    color: #555;
+  a:hover {
+    @apply .bg-gray-300;
   }
-}
 
-.nav {
-  a {
-    margin-right: 1rem;
-    
-    &.nav--active {
-      color: black;
-      text-decoration: none;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  pre,
+  code,
+  ul,
+  ol {
+    @apply .pb-5;
+  }
+
+  pre > code {
+    max-height: 400px;
+  }
+
+  code {
+    @apply .text-sm;
+  }
+
+  p code {
+    @apply .inline-block;
+    @apply .bg-gray-200;
+    @apply .pb-0;
+  }
+
+  ul {
+    @apply .list-disc;
+    @apply .pl-10;
+
+    ul {
+      @apply .pl-5;
+      @apply .pb-0;
     }
   }
-}
 
-.header + .nav {
-  margin-bottom: 5rem;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 7rem;
+  h1 {
+    @apply text-4xl;
   }
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 10rem;
+  h2 {
+    @apply text-3xl;
   }
-}
 
-.post__collection-meta {
-  font-style: italic;
-  font-weight: normal;
-}
+  h3 {
+    @apply text-2xl;
+  }
 
-.footer {
-  text-align: center;
+  h4 {
+    @apply text-xl;
+  }
+
+  h5 {
+    @apply text-lg;
+  }
+
+  h6 {
+    @apply text-base;
+  }
+
+  p {
+    @apply .font-sans;
+    @apply .text-base;
+    @apply .leading-normal;
+    @apply .break-words;
+  }
 }
