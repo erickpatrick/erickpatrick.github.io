@@ -1,3 +1,7 @@
+a {
+  @apply .break-words;
+}
+
 h1,
 h2,
 h3,
@@ -96,5 +100,16 @@ h5 + h6 {
     @apply .text-base;
     @apply .leading-normal;
     @apply .break-words;
+  }
+
+  blockquote {
+    @apply .mb-5;
+    @apply .p-5;
+    @apply .bg-gray-200;
+    border-left: solid darkgray 4px;
+
+    p:only-child {
+        @apply p-0;
+    }
   }
 }
