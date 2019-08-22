@@ -46,7 +46,7 @@
 
 
         <div class="flex flex-wrap -mx-3 pt-10 sm:pt-20 pb-20">
-            <div class="w-full sm:w-1/2 px-3">
+            <div class="w-full sm:w-1/2 px-3 pb-5">
                 @if ($next = $page->getNext())
                     <a href="{{ $next->getUrl() }}"
                        title="Older Post: {{ $next->title }}"
@@ -57,7 +57,7 @@
                 @endif
             </div>
 
-            <div class="w-full sm:w-1/2 px-3 text-right">
+            <div class="w-full sm:w-1/2 px-3 sm:text-right">
                 @if ($previous = $page->getPrevious())
                     <a href="{{ $previous->getUrl() }}"
                        title="Newer Post: {{ $previous->title }}"
