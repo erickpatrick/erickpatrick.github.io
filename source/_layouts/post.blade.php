@@ -1,11 +1,11 @@
 @extends('_layouts.master')
 
-@push('meta')
+@section('meta')
     <meta property="og:title" content="{{ $page->title }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ $page->getUrl() }}"/>
     <meta property="og:description" content="{{ $page->description }}" />
-@endpush
+@endsection
 
 @section('nav')
     @include('_nav.menu')
