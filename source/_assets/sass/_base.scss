@@ -109,7 +109,27 @@ h5 + h6 {
     border-left: solid darkgray 4px;
 
     p:only-child {
-        @apply .p-0;
+      @apply .p-0;
+    }
+  }
+
+  .quote {
+    @apply .mb-5;
+    @apply .mr-5;
+    @apply .p-5;
+    @apply .relative;
+    @apply .bg-gray-200;
+    @apply .float-left;
+    @apply .text-lg;
+
+    &:before {
+      content: "“";
+      @apply .absolute;
+      @apply .top-0;
+      @apply .left-0;
+      @apply .text-6xl;
+      @apply .leading-none;
+      @apply .text-gray-600;
     }
   }
 }
