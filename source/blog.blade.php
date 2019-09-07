@@ -26,40 +26,14 @@ pagination:
 
 @section('body')
     <div class="container mx-auto px-4">
-        <div class="flex flex-wrap -mx-3">
+        @include('_components.post-pagination')
+
+        <div class="flex flex-wrap -mx-3 mb-10">
             @foreach ($pagination->items as $post)
                 @include('_components.post-preview-inline')
             @endforeach
-
-            <div class="w-full px-3">
-                @if ($pagination->pages->count() > 1)
-                    <nav>
-                        @if ($previous = $pagination->previous)
-                            <a
-                                href="{{ $previous }}"
-                                title="Previous Page"
-
-                            >&LeftArrow;</a>
-                        @endif
-
-                        @foreach ($pagination->pages as $pageNumber => $path)
-                            <a
-                                href="{{ $path }}"
-                                title="Go to Page {{ $pageNumber }}"
-                                class="{{ $pagination->currentPage == $pageNumber ? 'current' : '' }}"
-                            >{{ $pageNumber }}</a>
-                        @endforeach
-
-                        @if ($next = $pagination->next)
-                            <a
-                                href="{{ $next }}"
-                                title="Next Page"
-
-                            >&RightArrow;</a>
-                        @endif
-                    </nav>
-                @endif
-            </div>
         </div>
+
+        @include('_components.post-pagination')
     </div>
 @stop
