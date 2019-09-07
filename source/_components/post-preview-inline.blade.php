@@ -16,6 +16,6 @@
             @endforeach
         @endif
     </p>
-    <p class="font-sans text-gray-700">{!! $post->excerpt(200) !!}</p>
+    <p class="font-sans text-gray-700">{!! $post->description ?? $post->excerpt(200) !!}</p>
 </div>
 
