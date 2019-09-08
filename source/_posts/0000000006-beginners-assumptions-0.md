@@ -1,5 +1,5 @@
 ---
-title: Beginner's Assumption no. 0
+title: Beginner's Assumption - 0
 date: 2019-09-10T00:00:00.000Z
 description: >-
   How far getting experienced in a field can push you from the basics? In this new series, I'll write about the challenges a beginner programmer faces as a mentee will challenge my perspective on programming
