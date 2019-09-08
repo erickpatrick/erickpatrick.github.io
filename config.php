@@ -12,12 +12,12 @@ return [
         'posts' => [
             'author' => 'Erick Patrick', // Default author, if not provided in a post
             'sort' => '-date',
-            'path' => 'blog/{filename}',
+            'path' => 'blog/{-title}',
         ],
         'categories' => [
-            'path' => '/blog/categories/{filename}',
-            'posts' => function ($page, $allPosts) {
-                return $allPosts->filter(function ($post) use ($page) {
+            'path' => '/blog/categories/{-title}',
+            'posts' => static function ($page, $allPosts) {
+                return $allPosts->filter(static function ($post) use ($page) {
                     return $post->categories ? in_array($page->getFilename(), $post->categories, true) : false;
                 });
             },
@@ -25,10 +25,10 @@ return [
     ],
 
     // helpers
-    'getDate' => function ($page) {
+    'getDate' => static function ($page) {
         return Datetime::createFromFormat('U', $page->date);
     },
-    'excerpt' => function ($page, $length = 255) {
+    'excerpt' => static function ($page, $length = 255) {
         $cleaned = strip_tags(
             preg_replace(['/<pre>[\w\W]*?<\/pre>/', '/<h\d>[\w\W]*?<\/h\d>/'], '', $page->getContent()),
             '<code>'
@@ -44,7 +44,7 @@ return [
             ? preg_replace('/\s+?(\S+)?$/', '', $truncated) . '...'
             : $cleaned;
     },
-    'isActive' => function ($page, $path) {
+    'isActive' => static function ($page, $path) {
         return ends_with(trimPath($page->getPath()), trimPath($path));
     },
 ];
