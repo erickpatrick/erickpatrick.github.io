@@ -1,13 +1,13 @@
 ---
- title: I will try to not use Medium anymore
- date: 2019-04-03T22:00:00.000Z
- description: >-
-    How I'm trying to get Medium free as much as possible...
- categories:
-   - miscellanea
- featured: false
- extends: _layouts.post
- section: content
+title: I will try to not use Medium anymore
+date: 2019-04-03T22:00:00.000Z
+description: >-
+   How I'm trying to get Medium free as much as possible...
+categories:
+  - miscellanea
+featured: true
+extends: _layouts.post
+section: content
  ---
 
  It's been a while. During this time I started using/visiting Medium less and less and I in this publication you'll will know the reason.
