@@ -8,7 +8,7 @@ categories:
 featured: true
 extends: _layouts.post
 section: content
- ---
+---
 
  It's been a while. During this time I started using/visiting Medium less and less and I in this publication you'll will know the reason.
 
