@@ -1,9 +1,9 @@
 ---
-title: Making FZF.vim preview window with syntax highlighting from your Neovim theme
+title: Adding syntax highlighting to FZF.vim preview window
 date: 2020-05-03T00:00:00.000Z
 description: >-
-   How to configure FZF.vim to use Bat, *a cat(1) clone with wings*, to highlight syntax 
-   using the colors of your chosen Neovim theme.
+   How to configure FZF.vim to use Bat, Ripgrep, to highlight syntax  using the colors of 
+   your chosen Neovim theme.
 categories:
   - programming
 featured: true
@@ -21,15 +21,15 @@ to have similar experience inside Neovim as well. And to do so, I've used my pre
 plugin manager, [vim-plug], and installed `FZF.vim`. If you follow their instructions
 properly, you'll get `FZF` running in no time.
 
-By default, I've mapped <kbr><ctrl>-p</kbr> to oen FZF to be able to fuzzy find the files
+By default, I've mapped `&lt;ctrl&gt;-p` to oen FZF to be able to fuzzy find the files
 I wanted:
 
 ```vim
 nmap <silent> <C-P> :Files<CR>
 ```
 
-This is quite nice because it resemables the <kbr><ctrl>-p</kbr> from VS Code or the 
-<kbr><tab><tab></kbr> form PHPStorm. However, I was not happy with its interface...
+This is quite nice because it resemables the `&lt;ctrl&gt;-p` from VS Code or the 
+`&lt;tab&gt;&lt;tab&gt;` form PHPStorm. However, I was not happy with its interface...
 
 ![FZF.vim without any configuration](https://res.cloudinary.com/erickpatrick/image/upload/c_fit,h_602,q_80,w_1024/v1588453222/erickpatrick.net/Screenshot_2020-05-02_at_22.59.55.jpg)
 
@@ -112,7 +112,7 @@ Saved the file and restarted ZSH to make the configuration get loaded.
 
 2) I've updated the `$FZF_DEFAULT_OPTS` to the following:
 
-```vim
+```
 let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --layout reverse --margin=1,4 --preview 'bat --color=always --style=header,grid --line-range :300 {}'"
 ```
 
